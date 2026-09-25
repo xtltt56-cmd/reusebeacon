@@ -1,0 +1,2 @@
+# Authoring and CI only; installing or using the skill does not require Python.
+PyYAML==6.0.3

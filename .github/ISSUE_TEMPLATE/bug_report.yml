@@ -1,0 +1,36 @@
+name: Report a problem / 问题反馈
+description: Report an installation, activation, or workflow problem.
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove tokens, private code, customer data, and internal URLs. 请勿提交凭据、私有代码或个人敏感信息。"
+  - type: input
+    id: environment
+    attributes:
+      label: Agent and environment / 工具与环境
+      description: Agent name/version, OS, and skill version or commit.
+      placeholder: "Codex, Windows 11, github-reuse-first v0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction / 复现方式
+      description: Share a minimal prompt or install command and sanitized errors.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior / 预期与实际表现
+    validations:
+      required: true
+  - type: dropdown
+    id: github
+    attributes:
+      label: GitHub access path / GitHub 连接方式
+      options:
+        - Connector or MCP
+        - GitHub CLI (gh)
+        - Explicit anonymous or offline mode
+        - Not applicable or unknown
