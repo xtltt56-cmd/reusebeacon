@@ -14,11 +14,13 @@ These are point-in-time checks over available indexes, not a guarantee that ever
 
 | Check | Result and scope |
 | --- | --- |
-| Local skill/package validation | Pending final renamed-package check. |
-| Fresh public installation | Pending installation from `xtltt56-cmd/reusebeacon`. |
-| Linux and Windows CI | Pending checks on the renamed repository. |
-| Legacy URLs and release assets | Pending public redirect and download verification. |
-| Search visibility | Pending repository search after rename. |
+| Local skill/package validation | Passed metadata, bundled resources, license consistency, local Markdown references, and the authoring skill validator. The decision workflow and supporting references are unchanged from v0.1.0. |
+| Fresh public installation | skills CLI 1.7.0 cloned `xtltt56-cmd/reusebeacon`, discovered exactly one skill named `reusebeacon`, and installed it for Codex, Claude Code, Cursor, and GitHub Copilot. All six files in each of the two copied skill directories matched the source by SHA-256. |
+| Linux and Windows CI | Both package jobs passed at commit `264e5948a50c5f0605bc89d6d50c60154e224846`: [run 36110165087](https://github.com/xtltt56-cmd/reusebeacon/actions/runs/36110165087). |
+| Legacy repository and v0.1.0 download | The old repository URL returned HTTP 200 after redirecting to `xtltt56-cmd/reusebeacon`. The original v0.1.0 ZIP remained downloadable through its old URL and retained SHA-256 `50013ae919ff9afe9a0a7e04372a36e84f1c19cf2ff3c7ba9b0cce65bb4bfb19`. The v0.2.0 assets are checked separately when publishing the release. |
+| Search visibility | GitHub repository search for `reusebeacon in:name` returned exactly one result after renaming: `xtltt56-cmd/reusebeacon`. This does not establish search-engine ranking or third-party directory inclusion. |
+
+The first local Git clone failed with a connection reset. Python's network client used this host's existing system proxy, while Git had no proxy configured. Repeating the public installation with the same proxy supplied only to that command succeeded. No global Git configuration or certificate verification was changed. Installation checks used a disposable project and disabled telemetry.
 
 ## Prior release evidence
 
