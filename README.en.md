@@ -3,7 +3,7 @@
 [简体中文](README.md)
 
 [![Validate skill](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml)
-[MIT](LICENSE) · [Releases](https://github.com/xtltt56-cmd/github-reuse-first/releases) · [Report a problem](https://github.com/xtltt56-cmd/github-reuse-first/issues)
+[MIT](LICENSE) · [Download skill ZIP](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip) · [Releases](https://github.com/xtltt56-cmd/github-reuse-first/releases) · [Report a problem](https://github.com/xtltt56-cmd/github-reuse-first/issues)
 
 A portable Agent Skill that checks GitHub access before implementation, finds suitable open-source solutions, evaluates their fit, and integrates and tests the selected solution in the user's project.
 
@@ -37,6 +37,8 @@ Installation is project-scoped by default; add `--global` only when a user-wide 
 
 Manual installation is also possible: copy the complete `skills/github-reuse-first` folder into the target agent's supported skills directory. Include its references, not only `SKILL.md`.
 
+Alternatively, [download the standalone skill ZIP](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip) and extract its complete `github-reuse-first` folder into the target agent's skills directory. Each release includes `SHA256SUMS.txt` to verify the download.
+
 ## Use
 
 ```text
@@ -54,7 +56,7 @@ Installation compatibility is different from verified model behavior. See [valid
 
 ## Contributing and quality checks
 
-GitHub Actions checks metadata, bundled resources, license consistency, and local references on Linux and Windows for pushes and pull requests. Run these checks in an isolated Python environment:
+GitHub Actions checks metadata, bundled resources, license consistency, and local references on Linux and Windows for pushes and pull requests. Run these checks in an isolated Python 3.10+ environment:
 
 ```shell
 python -m pip install -r requirements-dev.txt

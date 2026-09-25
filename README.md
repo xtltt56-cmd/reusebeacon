@@ -3,7 +3,7 @@
 [English](README.en.md)
 
 [![Validate skill](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml)
-[MIT](LICENSE) · [版本下载](https://github.com/xtltt56-cmd/github-reuse-first/releases) · [问题反馈](https://github.com/xtltt56-cmd/github-reuse-first/issues)
+[MIT](LICENSE) · [下载技能 ZIP](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip) · [版本说明](https://github.com/xtltt56-cmd/github-reuse-first/releases) · [问题反馈](https://github.com/xtltt56-cmd/github-reuse-first/issues)
 
 **GitHub 开源方案优先复用** · 技能标识：`github-reuse-first`
 
@@ -51,6 +51,8 @@ npx skills@1.7.0 add xtltt56-cmd/github-reuse-first --skill github-reuse-first -
 ```
 
 默认安装到当前项目；确实需要用户级安装时加 `--global`。`--copy` 避免依赖符号链接权限，适合 Windows。使用第三方安装器前可先阅读其说明；不希望使用安装器时，把 `skills/github-reuse-first` 整个目录复制到目标工具支持的 Skill 目录。只复制 `SKILL.md` 会丢失参考文件。
+
+也可以[下载独立技能包](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip)，解压后将完整的 `github-reuse-first` 文件夹放入目标工具的 Skill 目录；包内包含两个参考文件和许可证。每个版本同时提供 `SHA256SUMS.txt`，便于核对下载完整性。
 
 下载本仓库后，也可以在仓库目录安装本地版本：
 
@@ -106,7 +108,7 @@ Skill 能否自动触发取决于工具和模型。它不能在所有工具中�
 
 见 [测试场景](tests/scenarios.md)和[本次验证记录](VALIDATION.md)。结构及安装验证不能替代各模型的行为测试。升级规则时，重点回归连接失败、许可证不明、现有依赖足够和用户仅要求方案等情况。
 
-每次提交和 PR 通过 GitHub Actions 在 Linux、Windows 上检查技能元数据、随包资源、许可证一致性和本地引用。贡献修改时，可以在独立 Python 环境运行：
+每次提交和 PR 通过 GitHub Actions 在 Linux、Windows 上检查技能元数据、随包资源、许可证一致性和本地引用。贡献修改时，可以在独立 Python 3.10+ 环境运行：
 
 ```shell
 python -m pip install -r requirements-dev.txt
