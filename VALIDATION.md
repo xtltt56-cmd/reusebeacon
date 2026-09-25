@@ -1,5 +1,25 @@
 # Validation record
 
+## Version 0.3.0
+
+- Date: 2026-09-25.
+- Scope: optional task-specific skill discovery, inspection, project installation, loading, and outcome evidence; operation-specific GitHub access replaces mandatory authentication for public research.
+- Reviewed upstream: Vercel `find-skills` at `7407f3893ad4dceab546ac002c3ef806e4000c73`, including its MIT license. Source attribution is bundled with the skill.
+
+| Check | Observed result and limits |
+| --- | --- |
+| Package validation | `python tests/validate_package.py` passed metadata, bundled resources, license consistency, and local references. |
+| Authoring validator | The skill-creator `quick_validate.py` passed using Python 3.12.14, PyYAML 6.0.3, and UTF-8 mode on Windows. The initial runtime lacked PyYAML; existing isolated validation dependencies were reused. The validator's default GBK read failed until UTF-8 mode was enabled for the process. |
+| CLI syntax | Existing skills CLI 1.7.0 reported its version and confirmed the documented `find`, `--list`, `--skill`, `--agent`, `--copy`, and `--yes` options. This was a syntax check, not a live CLI directory search. |
+| Isolated local installation | From a disposable project on D:, `skills add <local-checkout> --list` discovered exactly one skill; `skills add <local-checkout> --skill reusebeacon --agent claude-code --copy --yes` installed it to `.claude/skills/reusebeacon`. All seven installed files matched the working source by SHA-256. Telemetry was disabled. This used a local checkout, not the public repository or a model session. |
+| Release archive | All seven files in the prepared `reusebeacon.zip` matched the source. Archive SHA-256: `033aa2ef6866072961ccb5e23d50d9c74a4329c56f4b9c936e583530b5b236de`. The legacy filename alias has identical contents. Public download verification follows publication. |
+| Entrypoint size | Whitespace-delimited word count changed from 1,286 to 1,253. The new conditional reference contains 808 words. These are file measurements, not token, latency, or cost savings. |
+| Behavioral evaluation | Cases 17–24 were added and access cases revised in the [scenario list](tests/scenarios.md). No model behavior runs were performed for this update; automatic selection, loading, usefulness, and cost remain unverified. |
+
+Do not replace the pinned skill snapshot in an ongoing comparison with this working tree. Evaluate the new workflow as a separate version, with the same tasks, model, tool access, and permissions. Package checks and manual file comparisons cannot establish a behavioral advantage.
+
+## Published v0.2.0 record
+
 - Version: `0.2.0` — ReuseBeacon naming and distribution update
 - Date: 2026-09-25
 - Authoring environment: Windows, Node.js 24.19.0, skills CLI 1.7.0, Python 3.12.
@@ -30,7 +50,7 @@ This naming update preserves the workflow and both supporting references. Earlie
 
 ## Limits
 
-- Actual model behavior across all advertised agents has not been independently evaluated. [Sixteen behavioral scenarios](tests/scenarios.md) are prepared; they are not claims of completed tests.
+- Actual model behavior across all advertised agents has not been independently evaluated. [Sixteen v0.2.0 behavioral scenarios](https://github.com/xtltt56-cmd/reusebeacon/blob/v0.2.0/tests/scenarios.md) were prepared; they are not claims of completed tests.
 - The author's GitHub connection and publication use an authenticated connector and existing Git credentials. A real `gh` browser-login workflow has not been tested on this host because `gh` is absent.
 - Third-party skills-directory indexing, ranking, and recommendations are unverified. Internal installation checks disable telemetry and are not evidence of organic adoption.
 - Some installation targets share `.agents/skills`; Claude Code uses `.claude/skills`. Four selected targets do not imply four completed model sessions.

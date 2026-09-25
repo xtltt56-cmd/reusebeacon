@@ -1,4 +1,4 @@
 interface:
   display_name: "ReuseBeacon"
-  short_description: "Find, assess, and integrate mature open-source solutions."
-  default_prompt: "Use $reusebeacon before coding to verify GitHub access, select a suitable open-source solution, and integrate and test it in my project."
+  short_description: "Reuse suitable open-source code and task-specific skills."
+  default_prompt: "Use $reusebeacon to reuse suitable open-source implementations and, when useful, find, install, and apply a supporting skill in my project, then verify the result."

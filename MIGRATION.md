@@ -1,5 +1,19 @@
 # Upgrade to ReuseBeacon / 升级到 ReuseBeacon
 
+## v0.3.0
+
+技能标识和仓库不变。此版本按任务需要发现、检查、安装并使用辅助 Skill；公开检索不再要求先登录 GitHub，小型本地修复可以直接使用已有能力。必要、可逆且已授权的项目级安装可直接执行；仅研究请求不授权安装。项目说明中的明确安装或网络限制仍然有效。
+
+沿用原安装范围和目标工具升级，先保留本地修改，再用下方固定版本命令重新安装并按宿主要求重新加载。对照实验应保留旧版本快照；新增流程单独评估。
+
+The skill name and repository stay the same. This release adds optional supporting-skill discovery and project installation, permits anonymous public research, and skips network preflight for small local fixes. Existing project restrictions and research-only scope remain effective. Preserve local edits, reinstall at the original scope for the same host, and reload as required. Keep ongoing evaluations pinned to their original snapshots.
+
+```shell
+npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.0/skills/reusebeacon --skill reusebeacon --copy
+```
+
+This is a workflow update; installation evidence does not establish a model-performance advantage. See [VALIDATION.md](VALIDATION.md).
+
 ## 简体中文
 
 `v0.2.0` 将本项目从 **GitHub Reuse First** 更名为 **ReuseBeacon（开源复用导航）**，用于减少与其他同名 Skill 的混淆。功能仍围绕 GitHub 连接检查、成熟方案筛选、复用集成和验证。

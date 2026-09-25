@@ -1,10 +1,12 @@
 # GitHub access and recovery
 
-Use these instructions when performing the connection check or diagnosing a failure. Keep existing account configuration and repositories intact.
+Use these instructions when required GitHub access needs verification or recovery. Keep existing account configuration and repositories intact. Local tasks and installed-skill use do not require a GitHub check.
 
 ## Choose the existing access path
 
-A working authenticated GitHub connector or MCP tool is sufficient; do not force GitHub CLI installation. Inspect its available operations and make the smallest appropriate authenticated read. A public search result alone does not prove login. If the integration has no way to establish authenticated access, report that verification limit and use a supported alternative.
+For public research or downloads, use a working web tool, public API, or HTTPS Git access. Verify the actual relevant read; no plugin or login is mandatory. Some operations, such as authenticated API code search, require credentials even when their targets are public. Choose the access needed for that operation.
+
+For authenticated operations, a working GitHub connector or MCP tool is sufficient; do not force GitHub CLI installation. Inspect its available operations and make the smallest appropriate authenticated read. A public search result alone does not prove login or private repository access. If the integration cannot verify required access, report that limit and use a supported alternative.
 
 With a terminal, check the official GitHub CLI:
 
@@ -30,8 +32,8 @@ gh api --hostname github.com repos/OWNER/REPO --jq .full_name
 
 | Observation | Appropriate next step |
 | --- | --- |
-| No usable connector and `gh` missing | Offer the host's supported GitHub connection flow if available, or explain how to install GitHub CLI from https://cli.github.com/ or the official installation instructions. Follow the user's authorization and host policy before changing the environment. |
-| No active account or invalid credentials | Guide the user through `gh auth login --hostname github.com --web`, then repeat the authenticated read. Let the user complete browser/device authorization. |
+| No usable connector and `gh` missing | Public research may use web or HTTPS Git. If the operation needs authenticated API access, offer a supported host connection or official GitHub CLI setup from https://cli.github.com/. Follow existing authorization and host policy for environment changes. |
+| No active account or invalid credentials | When authentication is required, guide the user through `gh auth login --hostname github.com --web`, then repeat the authenticated read. Otherwise use working public access. Let the user complete browser/device authorization. |
 | Wrong account | Explain the account mismatch. Use the documented `gh auth switch` flow only after the intended account is established. |
 | Identity read succeeds but repository read fails | Inspect repository name, permissions, and applicable organization SSO. Do not request broader scopes than the task requires. |
 | HTTP 403 or 429 | Check the response evidence for rate limits or access policy. Respect retry timing; a 403 is not automatically an expired login. |
@@ -44,7 +46,7 @@ Do not create/upload SSH keys or change Git credential defaults merely to enable
 
 The browser login flow normally uses the system credential store, but the CLI may fall back to a file if secure storage is unavailable. Do not force insecure storage or silently create a plaintext token file. If secure storage cannot be used, explain the actual condition and let the user choose a suitable credential setup.
 
-Public repository access can work anonymously. This skill's default workflow still verifies authentication first. Use anonymous research only when the user chooses it; label public-only access and do not attempt private repositories.
+Label anonymous public access accurately; do not imply private access or authenticated identity. Recover only access required by the task. Respect an offline instruction and keep independent local work moving if recovery needs user action.
 
 ## Search after access is verified
 

@@ -4,10 +4,10 @@ Apply this assessment to a real implementation decision. Scale the depth to the 
 
 ## Establish whether the candidate can be used
 
-Treat the following as requirements, not points that popularity can compensate for:
+First screen for required behavior, platform/version fit, and identifiable source/license. Investigate the remaining criteria only for plausible finalists, at a depth matching the integration risk. Popularity cannot compensate for a failed requirement.
 
 - It demonstrably supports the necessary behavior on the target platform/runtime, or a small verified adaptation covers the gap.
-- Its license and any bundled components have been identified. Their obligations fit the user's stated distribution and commercial constraints. If conditions are unclear, mark them unverified and prefer a verifiable alternative; ask for relevant guidance only when needed. A publicly readable repository or an API license label alone does not establish permission to copy every file.
+- Identify the license text, relevant bundled notices, revision, and intended use (dependency, copied source, or service). Record evident requirements and unresolved questions against the user's stated constraints; do not claim legal clearance. If a material question remains, prefer an alternative with clearer terms or seek relevant guidance before adoption. Public readability or an API license label alone does not establish permission to copy every file.
 - Its provenance is credible: package, repository, maintainers, version, and documentation refer to the same implementation. Check official links rather than trusting a similarly named package.
 - Known unresolved vulnerabilities or unsafe behavior relevant to this use have a credible fix or mitigation. Do not call a dependency secure simply because no advisory was found.
 - Required external services, data transfers, infrastructure, and ongoing costs fit the task's authorized constraints.
@@ -56,7 +56,7 @@ Build new project-specific logic when existing solutions miss necessary constrai
 
 ## Validate before committing to a dependency
 
-Identify the hardest uncertainty and write or run the smallest experiment that can disprove the choice. Test against the actual runtime and representative synthetic or authorized data. Inspect package provenance and setup behavior before executing external code; use normal project isolation and existing lockfile conventions.
+Identify the hardest uncertainty and use the smallest relevant test that can disprove the choice. Reuse a project test if it already answers that question; avoid a duplicate prototype. Test the actual runtime with representative synthetic or authorized data. Inspect package provenance and setup behavior before execution; use normal isolation and lockfile conventions.
 
 Stop investigating when one suitable choice has sufficient evidence and the remaining uncertainties do not affect the task. If a candidate fails, record the observed failure, try the next plausible alternative, and revisit the approach when evidence no longer narrows the problem.
 

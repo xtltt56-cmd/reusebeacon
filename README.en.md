@@ -5,23 +5,31 @@
 [![Validate skill](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml)
 [MIT](LICENSE) · [Download skill ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) · [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases) · [Upgrade guide](MIGRATION.md) · [Report a problem](https://github.com/xtltt56-cmd/reusebeacon/issues)
 
-**Find, assess, and integrate mature open-source solutions.**
+**Reuse suitable open-source implementations and task-specific skills.**
 
-A portable Agent Skill that checks GitHub access before implementation, finds suitable open-source solutions, evaluates their fit, and integrates and tests the selected solution in the user's project.
+A portable Agent Skill that finds suitable open-source implementations and, when a development workflow needs it, discovers, installs, and applies a supporting agent skill. It verifies the actual task outcome.
+
+`v0.3.0` adds optional supporting-skill discovery, installation, and use, and removes mandatory login for public research. See the [validation record](VALIDATION.md) for package and installation evidence; actual model benefits and costs remain unevaluated. Keep ongoing comparisons pinned to their original version and evaluate this update separately.
 
 ReuseBeacon is the new name of GitHub Reuse First, starting with `v0.2.0`. Existing users should follow the [migration guide](MIGRATION.md) to update the installation source and skill invocation.
 
 ## Workflow
 
-1. Verify the agent's actual GitHub authentication and relevant repository access. Guide the user through recovery when needed.
-2. Inspect the project's existing implementation, dependencies, environment, and acceptance criteria.
-3. Find focused candidates, prioritizing existing dependencies, platform capabilities, official SDKs, and maintained libraries.
-4. Assess functional fit, compatibility, license conditions, maintenance evidence, reliability, and total integration cost.
-5. Validate the hardest uncertainty, integrate the best fit, and verify actual behavior.
+1. Inspect the project's implementation, dependencies, acceptance criteria, and relevant installed skills.
+2. Discover an external skill only for an explicit request or a concrete workflow gap. Inspect its contents and host requirements, install narrowly, and apply it within the user's scope.
+3. Verify the access actually required. Public research can use anonymous reads; private resources and account operations require appropriate authentication.
+4. Find and assess implementations using relevant channels, prioritizing existing dependencies, platform capabilities, official SDKs, and maintained libraries.
+5. Validate the hardest uncertainty, integrate the best fit, and verify actual task behavior and any supporting skill's use.
 
-The default workflow waits for verified authentication before GitHub-backed selection and integration. A user's explicit choice to work anonymously or offline takes precedence. Reuse can mean calling an existing dependency; adding another package or copying source is not always necessary.
+Existing code, tools, or skills can be sufficient. Small local fixes need no external search; offline requests use local evidence. Missing CLI login does not invalidate working public web or Git access. Reuse does not require adding packages or copying source.
 
-The search-channel preflight and adopt/extend/compose/build framing were informed by ECC's `search-first`. See [attribution and license](skills/reusebeacon/THIRD_PARTY_NOTICES.md). This version adds authenticated recovery, portable capability discovery, constraint checks, and end-to-end integration verification.
+Implementation search was informed by ECC's `search-first`; task-oriented skill discovery by Vercel's `find-skills`. See [attribution, pinned revisions, and licenses](skills/reusebeacon/THIRD_PARTY_NOTICES.md). Neither upstream skill is a prerequisite.
+
+## Bounded skill discovery
+
+Reuse installed skills first. Start external discovery with one query and at most one useful reformulation; inspect up to three plausible candidates and normally install one. Expand only for a named unmet requirement. Review actual instructions/resources and host compatibility instead of requiring popularity thresholds or leaderboard browsing.
+
+Ordinary reversible project-local installation necessary for an authorized task can proceed within existing permissions; research-only requests produce recommendations. Preserve existing installations, avoid global or bulk installation and recursive discovery, and check the installed files against the reviewed revision. Invoke through the host's supported mechanism and record the actual task result. Installation does not demonstrate successful execution. Read the [detailed workflow](skills/reusebeacon/references/skill-discovery.md) only when this branch is needed.
 
 ## Install
 
@@ -29,6 +37,12 @@ Use the open-source [skills CLI](https://github.com/vercel-labs/skills). These e
 
 ```shell
 npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
+```
+
+That command follows the default branch. To pin this release:
+
+```shell
+npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.0/skills/reusebeacon --skill reusebeacon --copy
 ```
 
 Or select agents explicitly:
@@ -46,7 +60,7 @@ Alternatively, [download the standalone skill ZIP](https://github.com/xtltt56-cm
 ## Use
 
 ```text
-Use reusebeacon to add CSV import to this project. Check GitHub access,
+Use reusebeacon to add CSV import to this project. Check required access,
 compare suitable maintained implementations, then integrate and test the best fit.
 ```
 
@@ -54,7 +68,7 @@ Use `$reusebeacon` where the agent supports that invocation syntax, or select it
 
 ## Requirements and compatibility
 
-The skill uses the [Agent Skills format](https://agentskills.io/specification), relative file references, and ordinary host tools. It has no custom runtime or server. Full execution requires project file/terminal access and a configured GitHub connector/MCP integration or GitHub CLI. Optional Codex UI metadata is included in `agents/openai.yaml`.
+The skill uses the [Agent Skills format](https://agentskills.io/specification), relative file references, and ordinary host tools. It has no custom runtime or server. Implementation requires project file/terminal access; external research uses available web, API, Git, or connector capabilities. Authentication depends on the operation. Supporting skills cannot supply missing tools or permissions. Optional Codex UI metadata is included in `agents/openai.yaml`.
 
 Installation compatibility is different from verified model behavior. See [validation results](VALIDATION.md) and [behavioral scenarios](tests/scenarios.md).
 
