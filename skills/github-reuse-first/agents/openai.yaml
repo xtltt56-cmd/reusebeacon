@@ -1,4 +1,0 @@
-interface:
-  display_name: "GitHub Reuse First"
-  short_description: "Check GitHub access, assess mature projects, and reuse safely."
-  default_prompt: "Use $github-reuse-first before coding to verify GitHub access, select a suitable open-source solution, and integrate and test it in my project."

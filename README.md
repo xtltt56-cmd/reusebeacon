@@ -1,15 +1,17 @@
-# GitHub Reuse First
+# ReuseBeacon
 
 [English](README.en.md)
 
-[![Validate skill](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml)
-[MIT](LICENSE) · [下载技能 ZIP](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip) · [版本说明](https://github.com/xtltt56-cmd/github-reuse-first/releases) · [问题反馈](https://github.com/xtltt56-cmd/github-reuse-first/issues)
+[![Validate skill](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml)
+[MIT](LICENSE) · [下载技能 ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) · [版本说明](https://github.com/xtltt56-cmd/reusebeacon/releases) · [升级说明](MIGRATION.md) · [问题反馈](https://github.com/xtltt56-cmd/reusebeacon/issues)
 
-**GitHub 开源方案优先复用** · 技能标识：`github-reuse-first`
+**开源复用导航** · 技能标识：`reusebeacon`
 
 让 AI 在编程前检查 GitHub 连接，筛选适合当前项目的成熟开源方案，并完成复用、集成和验证。
 
-Portable Agent Skill for GitHub access checks, open-source discovery, dependency assessment, and reuse-first software development.
+**Find, assess, and integrate mature open-source solutions.** A portable Agent Skill for GitHub access checks, dependency assessment, and verified code reuse.
+
+ReuseBeacon 从 `v0.2.0` 起采用此名称，原名为 GitHub Reuse First。旧用户请按照[迁移说明](MIGRATION.md)更新安装来源和技能调用名称。
 
 这是一个遵循 [Agent Skills 格式](https://agentskills.io/specification)的指令型 Skill。核心流程不绑定特定模型，不包含自制的登录或搜索程序，也不需要运行自己的服务器。
 
@@ -32,7 +34,7 @@ flowchart LR
 
 默认先验证 GitHub 认证，连接失败时指导用户连接；等待期间可以继续读取本地项目。用户明确选择匿名公开检索或离线工作时，按用户选择执行。已有实现满足需求时直接复用，不为每个小改动强制引入新依赖。
 
-筛选框架参考了 [ECC 的 search-first](https://github.com/affaan-m/ECC/blob/db7f2a6fd5b013d56ec0ba0cfc547ba77baddbce/skills/search-first/SKILL.md)，包含“直接采用、少量扩展、组合使用、自行实现”四条路径。这里增加了 GitHub 认证恢复、渠道覆盖说明、项目约束检查和实际集成验证，并在 [THIRD_PARTY_NOTICES.md](skills/github-reuse-first/THIRD_PARTY_NOTICES.md) 保留来源与许可证。
+筛选框架参考了 [ECC 的 search-first](https://github.com/affaan-m/ECC/blob/db7f2a6fd5b013d56ec0ba0cfc547ba77baddbce/skills/search-first/SKILL.md)，包含“直接采用、少量扩展、组合使用、自行实现”四条路径。这里增加了 GitHub 认证恢复、渠道覆盖说明、项目约束检查和实际集成验证，并在 [THIRD_PARTY_NOTICES.md](skills/reusebeacon/THIRD_PARTY_NOTICES.md) 保留来源与许可证。
 
 ## 安装
 
@@ -41,23 +43,23 @@ flowchart LR
 在需要使用技能的项目目录运行：
 
 ```shell
-npx skills@1.7.0 add xtltt56-cmd/github-reuse-first --skill github-reuse-first --copy
+npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 ```
 
 它会让用户选择目标工具。也可以指定多个工具：
 
 ```shell
-npx skills@1.7.0 add xtltt56-cmd/github-reuse-first --skill github-reuse-first --agent codex claude-code cursor github-copilot --copy
+npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --agent codex claude-code cursor github-copilot --copy
 ```
 
-默认安装到当前项目；确实需要用户级安装时加 `--global`。`--copy` 避免依赖符号链接权限，适合 Windows。使用第三方安装器前可先阅读其说明；不希望使用安装器时，把 `skills/github-reuse-first` 整个目录复制到目标工具支持的 Skill 目录。只复制 `SKILL.md` 会丢失参考文件。
+默认安装到当前项目；确实需要用户级安装时加 `--global`。`--copy` 避免依赖符号链接权限，适合 Windows。使用第三方安装器前可先阅读其说明；不希望使用安装器时，把 `skills/reusebeacon` 整个目录复制到目标工具支持的 Skill 目录。只复制 `SKILL.md` 会丢失参考文件。
 
-也可以[下载独立技能包](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip)，解压后将完整的 `github-reuse-first` 文件夹放入目标工具的 Skill 目录；包内包含两个参考文件和许可证。每个版本同时提供 `SHA256SUMS.txt`，便于核对下载完整性。
+也可以[下载独立技能包](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip)，解压后将完整的 `reusebeacon` 文件夹放入目标工具的 Skill 目录；包内包含两个参考文件和许可证。每个版本同时提供 `SHA256SUMS.txt`，便于核对下载完整性。
 
 下载本仓库后，也可以在仓库目录安装本地版本：
 
 ```shell
-npx skills@1.7.0 add . --skill github-reuse-first --copy
+npx skills@1.7.0 add . --skill reusebeacon --copy
 ```
 
 ## 使用
@@ -65,19 +67,19 @@ npx skills@1.7.0 add . --skill github-reuse-first --copy
 在支持 `$` 技能调用的 Codex 界面中：
 
 ```text
-使用 $github-reuse-first。给这个现有项目增加 Excel 导出功能。
+使用 $reusebeacon。给这个现有项目增加 Excel 导出功能。
 请先检查 GitHub，再评估现有依赖和适合的成熟方案，完成集成与测试。
 ```
 
-其他工具可使用其技能选择器，或明确要求使用 `github-reuse-first`：
+其他工具可使用其技能选择器，或明确要求使用 `reusebeacon`：
 
 ```text
-使用 github-reuse-first，帮我实现一个支持断点续传的文件下载功能。
+使用 reusebeacon，帮我实现一个支持断点续传的文件下载功能。
 保留当前 Python 技术栈，优先复用成熟实现。
 ```
 
 ```text
-使用 github-reuse-first，给项目接入 Markdown 编辑器。
+使用 reusebeacon，给项目接入 Markdown 编辑器。
 先比较可维护的候选方案，再实现适合现有界面的方案。
 ```
 
@@ -96,11 +98,11 @@ Skill 能否自动触发取决于工具和模型。它不能在所有工具中�
 
 ## 获取版本、搜索和反馈
 
-- [公开仓库](https://github.com/xtltt56-cmd/github-reuse-first)：源文件、中英文说明和安装入口。
-- [版本发布](https://github.com/xtltt56-cmd/github-reuse-first/releases)：查看变更说明和下载版本归档。
-- [问题与建议](https://github.com/xtltt56-cmd/github-reuse-first/issues)：反馈安装问题、触发失效或筛选流程的缺陷；请隐去凭据和私有项目内容。
+- [公开仓库](https://github.com/xtltt56-cmd/reusebeacon)：源文件、中英文说明和安装入口。
+- [版本发布](https://github.com/xtltt56-cmd/reusebeacon/releases)：查看变更说明和下载版本归档。
+- [问题与建议](https://github.com/xtltt56-cmd/reusebeacon/issues)：反馈安装问题、触发失效或筛选流程的缺陷；请隐去凭据和私有项目内容。
 
-可以在 GitHub 搜索 `github-reuse-first`，或使用 `agent-skills`、`code-reuse` 等主题发现相关项目。第三方目录的收录、排名和推荐由平台决定，发布仓库不保证立即收录；参见 [skills.sh 目录说明](https://skills.sh/docs)。
+可以在 GitHub 搜索 `reusebeacon`，或使用 `agent-skills`、`code-reuse` 等主题发现相关项目。第三方目录的收录、排名和推荐由平台决定，发布仓库不保证立即收录；参见 [skills.sh 目录说明](https://skills.sh/docs)。
 
 上传 GitHub 不会自动进入 OpenAI 公共插件目录。若需要该目录分发，可另行包装为 skills-only plugin 并按[官方流程](https://developers.openai.com/plugins/deploy/submission)提交审核。
 
@@ -140,7 +142,7 @@ Skill 是给模型的流程指令。是否每次自动触发、是否准确执�
 ## 文件
 
 ```text
-skills/github-reuse-first/
+skills/reusebeacon/
 ├── SKILL.md
 ├── LICENSE
 ├── THIRD_PARTY_NOTICES.md

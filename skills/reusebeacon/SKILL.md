@@ -1,12 +1,12 @@
 ---
-name: github-reuse-first
+name: reusebeacon
 description: "Before implementing software or adding features, verify GitHub access, help connect a missing account, find and evaluate mature open-source solutions, then integrate and test the best fit. Use for reuse-first development, library selection, existing implementation searches, or requests to avoid reinventing the wheel. 编程前检查 GitHub 连接，检索筛选成熟开源方案并复用。Do not activate for explanation-only questions or non-programming work."
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
-# GitHub Reuse First
+# ReuseBeacon
 
 Help the user complete their coding task by reusing suitable, proven work. Respond in the user's language. Follow the user's scope, project instructions, and host permissions. A request for research or a plan authorizes that output, not implementation.
 

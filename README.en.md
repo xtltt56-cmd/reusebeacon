@@ -1,11 +1,15 @@
-# GitHub Reuse First
+# ReuseBeacon
 
 [简体中文](README.md)
 
-[![Validate skill](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/github-reuse-first/actions/workflows/validate.yml)
-[MIT](LICENSE) · [Download skill ZIP](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip) · [Releases](https://github.com/xtltt56-cmd/github-reuse-first/releases) · [Report a problem](https://github.com/xtltt56-cmd/github-reuse-first/issues)
+[![Validate skill](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml)
+[MIT](LICENSE) · [Download skill ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) · [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases) · [Upgrade guide](MIGRATION.md) · [Report a problem](https://github.com/xtltt56-cmd/reusebeacon/issues)
+
+**Find, assess, and integrate mature open-source solutions.**
 
 A portable Agent Skill that checks GitHub access before implementation, finds suitable open-source solutions, evaluates their fit, and integrates and tests the selected solution in the user's project.
+
+ReuseBeacon is the new name of GitHub Reuse First, starting with `v0.2.0`. Existing users should follow the [migration guide](MIGRATION.md) to update the installation source and skill invocation.
 
 ## Workflow
 
@@ -17,36 +21,36 @@ A portable Agent Skill that checks GitHub access before implementation, finds su
 
 The default workflow waits for verified authentication before GitHub-backed selection and integration. A user's explicit choice to work anonymously or offline takes precedence. Reuse can mean calling an existing dependency; adding another package or copying source is not always necessary.
 
-The search-channel preflight and adopt/extend/compose/build framing were informed by ECC's `search-first`. See [attribution and license](skills/github-reuse-first/THIRD_PARTY_NOTICES.md). This version adds authenticated recovery, portable capability discovery, constraint checks, and end-to-end integration verification.
+The search-channel preflight and adopt/extend/compose/build framing were informed by ECC's `search-first`. See [attribution and license](skills/reusebeacon/THIRD_PARTY_NOTICES.md). This version adds authenticated recovery, portable capability discovery, constraint checks, and end-to-end integration verification.
 
 ## Install
 
 Use the open-source [skills CLI](https://github.com/vercel-labs/skills). These examples pin the tested installer to `1.7.0`, which requires Node.js 22.20.0 or a later compatible release. Run from the project where you want to use the skill:
 
 ```shell
-npx skills@1.7.0 add xtltt56-cmd/github-reuse-first --skill github-reuse-first --copy
+npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 ```
 
 Or select agents explicitly:
 
 ```shell
-npx skills@1.7.0 add xtltt56-cmd/github-reuse-first --skill github-reuse-first --agent codex claude-code cursor github-copilot --copy
+npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --agent codex claude-code cursor github-copilot --copy
 ```
 
-Installation is project-scoped by default; add `--global` only when a user-wide installation is intended. Copy mode avoids symlink permission requirements. To install a downloaded local checkout, run the same command with `.` instead of `xtltt56-cmd/github-reuse-first` from the repository root.
+Installation is project-scoped by default; add `--global` only when a user-wide installation is intended. Copy mode avoids symlink permission requirements. To install a downloaded local checkout, run the same command with `.` instead of `xtltt56-cmd/reusebeacon` from the repository root.
 
-Manual installation is also possible: copy the complete `skills/github-reuse-first` folder into the target agent's supported skills directory. Include its references, not only `SKILL.md`.
+Manual installation is also possible: copy the complete `skills/reusebeacon` folder into the target agent's supported skills directory. Include its references, not only `SKILL.md`.
 
-Alternatively, [download the standalone skill ZIP](https://github.com/xtltt56-cmd/github-reuse-first/releases/latest/download/github-reuse-first.zip) and extract its complete `github-reuse-first` folder into the target agent's skills directory. Each release includes `SHA256SUMS.txt` to verify the download.
+Alternatively, [download the standalone skill ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) and extract its complete `reusebeacon` folder into the target agent's skills directory. Each release includes `SHA256SUMS.txt` to verify the download.
 
 ## Use
 
 ```text
-Use github-reuse-first to add CSV import to this project. Check GitHub access,
+Use reusebeacon to add CSV import to this project. Check GitHub access,
 compare suitable maintained implementations, then integrate and test the best fit.
 ```
 
-Use `$github-reuse-first` where the agent supports that invocation syntax, or select it through the agent's skill picker. Automatic activation varies by host and model. This skill cannot enforce a universal pre-edit hook. Teams that require it for every implementation task can explicitly reference it in their project instructions and test that behavior in their chosen agent.
+Use `$reusebeacon` where the agent supports that invocation syntax, or select it through the agent's skill picker. Automatic activation varies by host and model. This skill cannot enforce a universal pre-edit hook. Teams that require it for every implementation task can explicitly reference it in their project instructions and test that behavior in their chosen agent.
 
 ## Requirements and compatibility
 
@@ -67,11 +71,11 @@ For workflow changes, include a minimal scenario and observed behavior. Reports 
 
 ## Releases, discovery, and feedback
 
-- [Public repository](https://github.com/xtltt56-cmd/github-reuse-first): source, bilingual documentation, and installation instructions.
-- [Releases](https://github.com/xtltt56-cmd/github-reuse-first/releases): version notes and downloadable archives.
-- [Issues](https://github.com/xtltt56-cmd/github-reuse-first/issues): report installation, activation, or assessment problems without including secrets or private project data.
+- [Public repository](https://github.com/xtltt56-cmd/reusebeacon): source, bilingual documentation, and installation instructions.
+- [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases): version notes and downloadable archives.
+- [Issues](https://github.com/xtltt56-cmd/reusebeacon/issues): report installation, activation, or assessment problems without including secrets or private project data.
 
-Search GitHub for `github-reuse-first`, or browse related topics such as `agent-skills` and `code-reuse`. Third-party directory indexing, ranking, and recommendations are controlled by each platform and are not guaranteed immediately after publication. See [skills.sh documentation](https://skills.sh/docs) for its discovery ecosystem.
+Search GitHub for `reusebeacon`, or browse related topics such as `agent-skills` and `code-reuse`. Third-party directory indexing, ranking, and recommendations are controlled by each platform and are not guaranteed immediately after publication. See [skills.sh documentation](https://skills.sh/docs) for its discovery ecosystem.
 
 GitHub hosting does not automatically list the skill in OpenAI's public plugin directory. That distribution route uses a separate [plugin submission process](https://developers.openai.com/plugins/deploy/submission).
 

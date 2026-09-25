@@ -9,7 +9,7 @@ body:
     attributes:
       label: Agent and environment / 工具与环境
       description: Agent name/version, OS, and skill version or commit.
-      placeholder: "Codex, Windows 11, github-reuse-first v0.1.0"
+      placeholder: "Codex, Windows 11, reusebeacon v0.2.0"
     validations:
       required: true
   - type: textarea
