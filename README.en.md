@@ -9,9 +9,25 @@
 
 A portable Agent Skill that finds suitable open-source implementations and, when a development workflow needs it, discovers, installs, and applies a supporting agent skill. It verifies the actual task outcome.
 
-`v0.3.0` adds optional supporting-skill discovery, installation, and use, and removes mandatory login for public research. See the [validation record](VALIDATION.md) for package and installation evidence; actual model benefits and costs remain unevaluated. Keep ongoing comparisons pinned to their original version and evaluate this update separately.
+## Why ReuseBeacon
 
-ReuseBeacon is the new name of GitHub Reuse First, starting with `v0.2.0`. Existing users should follow the [migration guide](MIGRATION.md) to update the installation source and skill invocation.
+- **Turn requirements into suitable reuse choices.** Check existing project capabilities, standard libraries, official SDKs, and maintained implementations before building project-specific logic.
+- **Consider code and skills together.** When a workflow needs specialist guidance, discover and apply a supporting skill to complete the task.
+- **Keep small tasks small.** Fix and test an adequate existing implementation directly. Public research needs no GitHub login, and external discovery runs only when useful.
+- **Deliver a working integration.** Check versions, platform fit, and license information, verify key behavior, and record sources and test results.
+
+## Project practice
+
+The author reports using ReuseBeacon in their development work. These public projects document related selection, adaptation, and delivery practices:
+
+| Project | What you can inspect |
+| --- | --- |
+| [A-share quant workbench](https://github.com/xtltt56-cmd/a-share-quant-workbench) | An assessment of Qlib, AKShare, DuckDB, and other candidates; core versus optional dependencies; RiceQuant Skills installation and adaptation notes; implementation and Windows test records. |
+| [Windows mouse recorder](https://github.com/xtltt56-cmd/windows-mouse-recorder) | Global mouse recording through `pynput`, project-specific playback controls, unit tests, and a Windows executable build and smoke check. |
+
+[Read the project cases and pinned evidence](PROJECTS.md) · [Validation record](VALIDATION.md)
+
+`v0.3.0` adds optional supporting-skill discovery, installation, and use, with GitHub access checks matched to the operation.
 
 ## Workflow
 
@@ -53,6 +69,8 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --agent codex c
 
 Installation is project-scoped by default; add `--global` only when a user-wide installation is intended. Copy mode avoids symlink permission requirements. To install a downloaded local checkout, run the same command with `.` instead of `xtltt56-cmd/reusebeacon` from the repository root.
 
+Upgrading from the former GitHub Reuse First name? Follow the [migration guide](MIGRATION.md) to update the source and invocation.
+
 Manual installation is also possible: copy the complete `skills/reusebeacon` folder into the target agent's supported skills directory. Include its references, not only `SKILL.md`.
 
 Alternatively, [download the standalone skill ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) and extract its complete `reusebeacon` folder into the target agent's skills directory. Each release includes `SHA256SUMS.txt` to verify the download.
@@ -70,7 +88,7 @@ Use `$reusebeacon` where the agent supports that invocation syntax, or select it
 
 The skill uses the [Agent Skills format](https://agentskills.io/specification), relative file references, and ordinary host tools. It has no custom runtime or server. Implementation requires project file/terminal access; external research uses available web, API, Git, or connector capabilities. Authentication depends on the operation. Supporting skills cannot supply missing tools or permissions. Optional Codex UI metadata is included in `agents/openai.yaml`.
 
-Installation compatibility is different from verified model behavior. See [validation results](VALIDATION.md) and [behavioral scenarios](tests/scenarios.md).
+See the [validation record](VALIDATION.md) for version-specific installation and execution coverage, and the [behavioral scenarios](tests/scenarios.md) for ongoing regression work.
 
 ## Contributing and quality checks
 
@@ -89,9 +107,7 @@ For workflow changes, include a minimal scenario and observed behavior. Reports 
 - [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases): version notes and downloadable archives.
 - [Issues](https://github.com/xtltt56-cmd/reusebeacon/issues): report installation, activation, or assessment problems without including secrets or private project data.
 
-Search GitHub for `reusebeacon`, or browse related topics such as `agent-skills` and `code-reuse`. Third-party directory indexing, ranking, and recommendations are controlled by each platform and are not guaranteed immediately after publication. See [skills.sh documentation](https://skills.sh/docs) for its discovery ecosystem.
-
-GitHub hosting does not automatically list the skill in OpenAI's public plugin directory. That distribution route uses a separate [plugin submission process](https://developers.openai.com/plugins/deploy/submission).
+Search GitHub for `reusebeacon`, or browse related topics such as `agent-skills` and `code-reuse`. The installation commands and ZIP download links point directly to this repository.
 
 ## License
 

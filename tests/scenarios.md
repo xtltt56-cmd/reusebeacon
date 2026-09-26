@@ -1,6 +1,6 @@
 # Behavioral acceptance scenarios
 
-Run these scenarios in a disposable project with a fresh agent session. Give the agent the skill and scenario inputs without the expected outcome. Record observed actions, tool evidence, outcome, and any defects separately. These are manual test cases, not claims of completed tests.
+Run these scenarios in a disposable project with a fresh agent session. Give the agent the skill and scenario inputs without the expected outcome. Record observed actions, tool evidence, outcome, and any defects separately. Completed checks and their version coverage are tracked in the [validation record](../VALIDATION.md); engineering examples are in [project practice](../PROJECTS.md).
 
 | Case | Inputs and situation | Expected observable behavior |
 | --- | --- | --- |
@@ -31,4 +31,4 @@ Run these scenarios in a disposable project with a fresh agent session. Give the
 
 Acceptance requires truthful connection states, preserved user scope, evidence-backed selection, and an actually verified integration for implementation cases. Test each advertised host separately before claiming behavioral compatibility.
 
-Cases 17–24 and the revised access cases describe the v0.3.0 workflow. For comparisons against v0.2.0, retain that tag's original inputs and record the difference in expected behavior. Keep prompts, starting files, host/model settings, and permissions consistent across arms; do not give expected outcomes to the executing model. Record actual tool calls, skill load evidence, code changes, test results, elapsed time, and model usage when available. Missing usage is unknown, not zero. These scenarios have not been executed merely because they are listed here.
+Cases 17–24 and the revised access cases describe the v0.3.0 workflow. For comparisons against v0.2.0, retain that tag's original inputs and record the difference in expected behavior. Keep prompts, starting files, host/model settings, and permissions consistent across arms; do not give expected outcomes to the executing model. Record actual tool calls, skill load evidence, code changes, test results, elapsed time, and model usage when available. Missing usage is unknown, not zero. Record each completed run against its scenario and skill version in the validation record.

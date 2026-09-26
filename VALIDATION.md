@@ -1,5 +1,17 @@
 # Validation record
 
+## Practical use and completed checks
+
+ReuseBeacon is used in the author's development work. [Project cases](PROJECTS.md) link to public candidate assessments, implementation code, supporting-skill adaptation notes, and successful Windows CI runs. These are author-maintained projects, with usage reported by the author and the linked engineering artifacts checked on 2026-09-26.
+
+| Evidence | Completed work | Scope |
+| --- | --- | --- |
+| Project practice | Reviewed the quant workbench's candidate assessment, RiceQuant skill adaptation, DuckDB/Parquet implementation, and the mouse recorder's `pynput` integration and release checks. | Concrete engineering choices and outputs; links are pinned in [PROJECTS.md](PROJECTS.md). |
+| v0.2.0 task-result replay | On 2026-09-26, an independent Codex review reran the maintainer's WorkBuddy experiment: eight cases across three conditions, with all 24 existing checks passing. | Confirms the tested artifacts' behavior. The review found hidden-test access and concurrent directory writes; tool counts were self-reported. This run is not used to claim comparative quality or cost gains. |
+| Distribution | Public installation, copied-file hashes, package validation, and Linux/Windows CI completed for the release records below. | Version-specific package and installation results. |
+
+Project use, task-result checks, and controlled comparisons answer different questions. A pending comparison does not imply an absence of practical use or executed tests. Host-native automatic activation and the v0.3.0 supporting-skill workflow remain separate evaluation targets.
+
 ## Version 0.3.0
 
 - Date: 2026-09-25.
@@ -16,7 +28,7 @@
 | Linux and Windows CI | Both package jobs passed for `6fbcaaa43fd56557993cc6486e8c834b23be458a`: [run 36137180478](https://github.com/xtltt56-cmd/reusebeacon/actions/runs/36137180478). Publication also requires both jobs to pass for the final tagged commit. |
 | Release archive | All seven files in the prepared `reusebeacon.zip` matched the source. Archive SHA-256: `033aa2ef6866072961ccb5e23d50d9c74a4329c56f4b9c936e583530b5b236de`. The legacy filename alias has identical contents. Public download verification follows publication. |
 | Entrypoint size | Whitespace-delimited word count changed from 1,286 to 1,253. The new conditional reference contains 808 words. These are file measurements, not token, latency, or cost savings. |
-| Behavioral evaluation | Cases 17–24 were added and access cases revised in the [scenario list](tests/scenarios.md). No model behavior runs were performed for this update; automatic selection, loading, usefulness, and cost remain unverified. |
+| Version-specific behavioral evaluation | Cases 17–24 were added and access cases revised in the [scenario list](tests/scenarios.md). The v0.3.0 release checks above cover packaging and installation; a controlled comparison of its new supporting-skill workflow is pending. Project practice and the completed v0.2.0 task-result replay are recorded above. |
 
 Do not replace the pinned skill snapshot in an ongoing comparison with this working tree. Evaluate the new workflow as a separate version, with the same tasks, model, tool access, and permissions. Package checks and manual file comparisons cannot establish a behavioral advantage.
 
@@ -50,9 +62,9 @@ The `v0.1.0` release completed fresh public installation for Codex, Claude Code,
 
 This naming update preserves the workflow and both supporting references. Earlier installation checks do not substitute for verification of the new identifier and URLs.
 
-## Limits
+## Coverage notes
 
-- Actual model behavior across all advertised agents has not been independently evaluated. [Sixteen v0.2.0 behavioral scenarios](https://github.com/xtltt56-cmd/reusebeacon/blob/v0.2.0/tests/scenarios.md) were prepared; they are not claims of completed tests.
+- The [v0.2.0 scenario list](https://github.com/xtltt56-cmd/reusebeacon/blob/v0.2.0/tests/scenarios.md) defines sixteen cases. The eight-case artifact replay above covers a subset; it does not establish behavior across every supported host or evaluate all v0.3.0 additions.
 - The author's GitHub connection and publication use an authenticated connector and existing Git credentials. A real `gh` browser-login workflow has not been tested on this host because `gh` is absent.
 - Third-party skills-directory indexing, ranking, and recommendations are unverified. Internal installation checks disable telemetry and are not evidence of organic adoption.
 - Some installation targets share `.agents/skills`; Claude Code uses `.claude/skills`. Four selected targets do not imply four completed model sessions.
