@@ -12,6 +12,19 @@ ReuseBeacon is used in the author's development work. [Project cases](PROJECTS.m
 
 Project use, task-result checks, and controlled comparisons answer different questions. A pending comparison does not imply an absence of practical use or executed tests. Host-native automatic activation and the v0.3.0 supporting-skill workflow remain separate evaluation targets.
 
+## Version 0.3.2
+
+- Date: 2026-09-26.
+- Scope: earlier task-specific exits, consistent reuse of existing authorization, and verification proportional to the actual change.
+
+| Check | Observed result and scope |
+| --- | --- |
+| Package and authoring validation | Package validation, skill-creator `quick_validate.py`, and `git diff --check` passed with the existing Python 3.12 environment. |
+| Archive installation | skills CLI 1.7.0 installed the complete archive into a disposable Claude Code project on D:. All seven installed files matched the source by SHA-256; installer exit code was 0. Telemetry was disabled. |
+| Release archive | SHA-256 of `reusebeacon.zip`: `dcfc94e842ffdf65ba9a0c403e4a7cac747301e9dbb55fbae586279bc8e28332`. |
+| Instruction size | The entrypoint decreased from 1,270 to 1,253 whitespace-delimited words. The package remains seven files with no new runtime dependencies. These measurements do not establish model cost savings. |
+| Scenario coverage | Clarified existing cases 8, 12, and 16 for research scope, authorization already given, and necessary checks for a small fix. They remain acceptance definitions; this update does not add an independent model comparison. |
+
 ## Version 0.3.1
 
 - Date: 2026-09-26.

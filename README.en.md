@@ -27,7 +27,7 @@ The author reports using ReuseBeacon in their development work. These public pro
 
 [Read the project cases and pinned evidence](PROJECTS.md) · [Validation record](VALIDATION.md)
 
-`v0.3.1` improves recovery through verifiable alternative sources and stops investigation when evidence is sufficient. It retains optional supporting-skill discovery, installation, and use.
+`v0.3.2` streamlines task branches: fix isolated issues directly, end research with findings, honor existing authorization, and choose verification appropriate to the change.
 
 ## Workflow
 
@@ -60,7 +60,7 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 That command follows the default branch. To pin this release:
 
 ```shell
-npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.1/skills/reusebeacon --skill reusebeacon --copy
+npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.2/skills/reusebeacon --skill reusebeacon --copy
 ```
 
 Or select agents explicitly:

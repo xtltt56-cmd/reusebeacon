@@ -29,7 +29,7 @@
 
 [查看项目案例与固定版本的证据链接](PROJECTS.md) · [查看验证记录](VALIDATION.md)
 
-`v0.3.1` 完善访问失败时的可信来源切换，已有证据足够时及时停止调查。继续支持按需发现、安装和使用辅助 Skill。
+`v0.3.2` 精简任务分支：小修复直接处理，仅调研时交付结论，已有授权继续执行，并按改动风险选择必要验证。
 
 这是一个遵循 [Agent Skills 格式](https://agentskills.io/specification)的指令型 Skill。核心流程不绑定特定模型，不包含自制的登录或搜索程序，也不需要运行自己的服务器。
 
@@ -82,7 +82,7 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 该命令跟随仓库默认分支。需要固定本次版本时，使用标签路径：
 
 ```shell
-npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.1/skills/reusebeacon --skill reusebeacon --copy
+npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.2/skills/reusebeacon --skill reusebeacon --copy
 ```
 
 它会让用户选择目标工具。也可以指定多个工具：
