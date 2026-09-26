@@ -21,6 +21,8 @@ Project use, task-result checks, and controlled comparisons answer different que
 | --- | --- |
 | Package and authoring validation | Package validation, skill-creator `quick_validate.py`, and `git diff --check` passed with the existing Python 3.12 environment. |
 | Archive installation | skills CLI 1.7.0 installed the complete archive into a disposable Claude Code project on D:. All seven installed files matched the source by SHA-256; installer exit code was 0. Telemetry was disabled. |
+| Fresh public installation | skills CLI 1.7.0 installed public commit `9e102be044027b74571d48569cf056d5f2c8d880` into a separate disposable Claude Code project. All seven files matched the release package by SHA-256; installer exit code was 0. This verifies installation, not a model session. |
+| Linux and Windows CI | Both package jobs passed for `9e102be044027b74571d48569cf056d5f2c8d880`: [run 36226086957](https://github.com/xtltt56-cmd/reusebeacon/actions/runs/36226086957). Publication also requires both jobs to pass for the final tagged commit. |
 | Release archive | SHA-256 of `reusebeacon.zip`: `dcfc94e842ffdf65ba9a0c403e4a7cac747301e9dbb55fbae586279bc8e28332`. |
 | Instruction size | The entrypoint decreased from 1,270 to 1,253 whitespace-delimited words. The package remains seven files with no new runtime dependencies. These measurements do not establish model cost savings. |
 | Scenario coverage | Clarified existing cases 8, 12, and 16 for research scope, authorization already given, and necessary checks for a small fix. They remain acceptance definitions; this update does not add an independent model comparison. |
