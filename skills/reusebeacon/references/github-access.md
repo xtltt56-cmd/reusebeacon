@@ -1,6 +1,14 @@
-# GitHub access and recovery
+# GitHub access and public-source recovery
 
-Use these instructions when required GitHub access needs verification or recovery. Keep existing account configuration and repositories intact. Local tasks and installed-skill use do not require a GitHub check.
+Use these instructions when choosing required GitHub access or recovering an unavailable public source. Keep existing account configuration and repositories intact. Local tasks and installed-skill use do not require a GitHub check.
+
+## When a public source is unavailable
+
+Use the first failed necessary read as evidence; do not probe every host beforehand. A failed website does not invalidate working API or Git access. When that route remains unavailable, choose one suitable alternative for the missing information: local/versioned docs, the official package registry, the project's actual upstream host, or a verifiable mirror. Follow official project links; Gitee and GitLab may host an upstream or a mirror, so establish which it is. Follow the [provenance checks](selection.md) before adopting mirrored material.
+
+Stop when the evidence is sufficient. If the alternative is also unavailable or unverifiable, continue feasible local work and identify the unresolved requirement; expand only for a concrete need. Honor offline requests. A public mirror cannot supply private permissions or authorize moving the user's repository or data to another host.
+
+For package downloads, keep existing registry configuration where it works. If a trusted alternative is necessary, scope changes to the command or project and preserve locked versions, integrity checks, and TLS verification.
 
 ## Choose the existing access path
 

@@ -8,7 +8,7 @@ First screen for required behavior, platform/version fit, and identifiable sourc
 
 - It demonstrably supports the necessary behavior on the target platform/runtime, or a small verified adaptation covers the gap.
 - Identify the license text, relevant bundled notices, revision, and intended use (dependency, copied source, or service). Record evident requirements and unresolved questions against the user's stated constraints; do not claim legal clearance. If a material question remains, prefer an alternative with clearer terms or seek relevant guidance before adoption. Public readability or an API license label alone does not establish permission to copy every file.
-- Its provenance is credible: package, repository, maintainers, version, and documentation refer to the same implementation. Check official links rather than trusting a similarly named package.
+- Its provenance is credible: package, repository, maintainers, version, and documentation refer to the same implementation. Check official links rather than trusting a similarly named package. For mirrors, establish the upstream relationship and required revision using maintainer links, trusted package metadata, or previously verified refs/checksums. A matching name is insufficient. Mirror sync time is not upstream maintenance activity; if currency cannot be verified, do not claim it is the latest release.
 - Known unresolved vulnerabilities or unsafe behavior relevant to this use have a credible fix or mitigation. Do not call a dependency secure simply because no advisory was found.
 - Required external services, data transfers, infrastructure, and ongoing costs fit the task's authorized constraints.
 

@@ -3,7 +3,7 @@ name: reusebeacon
 description: "Find and reuse suitable open-source implementations and task-specific agent skills for software development. Use for library selection, implementation research, requests to avoid reinventing the wheel, or finding and installing a skill for a development task. Verify required access, assess fit and cost, then integrate or apply and test. 按开发需求复用成熟方案，按需发现、安装和使用技能。Skip ordinary explanations and already-isolated small fixes unless explicitly requested."
 license: MIT
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # ReuseBeacon
@@ -33,15 +33,15 @@ If requested, or a workflow gap justifies discovery, follow [skill discovery, in
 
 Let the first relevant read through the intended tool verify public access; avoid a separate network preflight. Verify identity and repository access when private data or account operations require them; public reads do not establish those permissions. Reuse checks unless credentials, host, permissions, or observed errors change.
 
-Use [GitHub access and recovery](references/github-access.md) when choosing a GitHub access path or diagnosing failures. Missing CLI authentication does not invalidate working web or Git access. Recover only the required access, report its limits accurately, and continue independent local work. Respect offline requests; never request tokens in chat or claim an unavailable channel was searched.
+Use [access and recovery](references/github-access.md) when choosing a GitHub access path or a required public source is unavailable. Missing CLI authentication does not invalidate working web or Git access. Recover only required access, report limits accurately, and continue independent local work. Respect offline requests; never request tokens in chat or claim an unavailable channel was searched.
 
 ## 4. Find relevant implementations
 
-Use this order: suitable project code/dependencies, standard library/platform features, official SDKs and examples, then maintained third-party libraries or repositories. Read a project's official repository and version-specific documentation before adopting it.
+Use this order: suitable project code/dependencies, standard library/platform features, official SDKs and examples, then maintained third-party libraries or repositories. Consult version-matched official evidence as needed. Inspect the repository, source, or release notes when provenance, behavior, or compatibility remains unclear; stop when evidence supports the decision.
 
 When GitHub is useful, search with the actual capability, language/framework, supported version, and constraints. Use repository search to identify candidates and inspect promising repositories to verify APIs or examples. Search with generic technical terms; do not send private source code, credentials, internal URLs, or customer data to public search.
 
-Choose channels relevant to the gap: the package registry and official docs for a runtime library; GitHub for source examples or applications; step 2 for agent workflows. An agent skill does not replace the application's runtime dependencies. Avoid repeating completed skill discovery or querying every channel as a checklist. Read only necessary configuration fields; do not dump credential-bearing settings to discover tools.
+Choose channels relevant to the gap: the package registry and official docs for a runtime library; the project's official source host for examples or applications; step 2 for agent workflows. An agent skill does not replace the application's runtime dependencies. Avoid repeating completed skill discovery or querying every channel as a checklist. Read only necessary configuration fields; do not dump credential-bearing settings to discover tools.
 
 Use category examples only to form queries, not as permanent recommendations. Verify capabilities and defaults against the candidate's actual version. Parallelize independent lookups when supported and useful; a researcher subagent is optional and must fit the host's delegation policy and the task's cost.
 

@@ -27,7 +27,7 @@ The author reports using ReuseBeacon in their development work. These public pro
 
 [Read the project cases and pinned evidence](PROJECTS.md) · [Validation record](VALIDATION.md)
 
-`v0.3.0` adds optional supporting-skill discovery, installation, and use, with GitHub access checks matched to the operation.
+`v0.3.1` improves recovery through verifiable alternative sources and stops investigation when evidence is sufficient. It retains optional supporting-skill discovery, installation, and use.
 
 ## Workflow
 
@@ -38,6 +38,8 @@ The author reports using ReuseBeacon in their development work. These public pro
 5. Validate the hardest uncertainty, integrate the best fit, and verify actual task behavior and any supporting skill's use.
 
 Existing code, tools, or skills can be sufficient. Small local fixes need no external search; offline requests use local evidence. Missing CLI login does not invalidate working public web or Git access. Reuse does not require adding packages or copying source.
+
+When a required source is unavailable, choose suitable official docs, a package registry, the project's upstream host, or a verifiable mirror. Switch only when needed, without probing every host; check a mirror's upstream relationship and required revision before adoption.
 
 Implementation search was informed by ECC's `search-first`; task-oriented skill discovery by Vercel's `find-skills`. See [attribution, pinned revisions, and licenses](skills/reusebeacon/THIRD_PARTY_NOTICES.md). Neither upstream skill is a prerequisite.
 
@@ -58,7 +60,7 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 That command follows the default branch. To pin this release:
 
 ```shell
-npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.0/skills/reusebeacon --skill reusebeacon --copy
+npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.1/skills/reusebeacon --skill reusebeacon --copy
 ```
 
 Or select agents explicitly:

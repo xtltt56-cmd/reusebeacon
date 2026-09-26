@@ -29,7 +29,7 @@
 
 [查看项目案例与固定版本的证据链接](PROJECTS.md) · [查看验证记录](VALIDATION.md)
 
-`v0.3.0` 支持按需发现、安装和使用辅助 Skill，并按实际操作需要检查 GitHub 访问。
+`v0.3.1` 完善访问失败时的可信来源切换，已有证据足够时及时停止调查。继续支持按需发现、安装和使用辅助 Skill。
 
 这是一个遵循 [Agent Skills 格式](https://agentskills.io/specification)的指令型 Skill。核心流程不绑定特定模型，不包含自制的登录或搜索程序，也不需要运行自己的服务器。
 
@@ -54,6 +54,8 @@ flowchart LR
 ```
 
 公开检索不要求先登录 GitHub；对实际使用的访问路径进行最小验证，并区分网络、认证、权限和限流问题。离线请求直接使用本地证据。已有实现或技能足够时停止发现流程，不为小修复强制搜索或安装。
+
+必要来源不可访问时，按任务选择可用的官方文档、包注册表、项目托管站或可核实的镜像。只在遇到问题时切换，不逐个平台预检；采用镜像前核对上游关系和所需版本。
 
 实现筛选参考 [ECC 的 search-first](https://github.com/affaan-m/ECC/blob/db7f2a6fd5b013d56ec0ba0cfc547ba77baddbce/skills/search-first/SKILL.md)，技能发现参考 [Vercel 的 find-skills](https://github.com/vercel-labs/skills/blob/7407f3893ad4dceab546ac002c3ef806e4000c73/skills/find-skills/SKILL.md)。来源、固定提交与许可证见 [THIRD_PARTY_NOTICES.md](skills/reusebeacon/THIRD_PARTY_NOTICES.md)。两者都不是安装或运行前置依赖。
 
@@ -80,7 +82,7 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 该命令跟随仓库默认分支。需要固定本次版本时，使用标签路径：
 
 ```shell
-npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.0/skills/reusebeacon --skill reusebeacon --copy
+npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.1/skills/reusebeacon --skill reusebeacon --copy
 ```
 
 它会让用户选择目标工具。也可以指定多个工具：

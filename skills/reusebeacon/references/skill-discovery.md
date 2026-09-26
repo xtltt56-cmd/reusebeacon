@@ -14,7 +14,7 @@ With a compatible Node.js runtime, the documented CLI search is:
 npx skills@1.7.0 find <domain> <task>
 ```
 
-Placeholders are illustrative. Reuse an available compatible installer; do not install Node.js just to perform a web search. Record the installer version actually used. Public discovery does not require authenticated GitHub access; an unavailable directory is not evidence that no skill exists.
+Placeholders are illustrative. Reuse an available compatible installer; do not install Node.js just to perform a web search. Record the installer version actually used. Public discovery does not require authenticated GitHub access; an unavailable directory is not evidence that no skill exists. For unavailable sources, use [public-source recovery](github-access.md#when-a-public-source-is-unavailable) within the same discovery budget.
 
 ## Inspect before selecting
 

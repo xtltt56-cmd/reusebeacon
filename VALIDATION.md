@@ -12,6 +12,19 @@ ReuseBeacon is used in the author's development work. [Project cases](PROJECTS.m
 
 Project use, task-result checks, and controlled comparisons answer different questions. A pending comparison does not imply an absence of practical use or executed tests. Host-native automatic activation and the v0.3.0 supporting-skill workflow remain separate evaluation targets.
 
+## Version 0.3.1
+
+- Date: 2026-09-26.
+- Scope: conditional recovery through official sources or verifiable mirrors; version-appropriate investigation that stops when sufficient evidence is available.
+
+| Check | Observed result and scope |
+| --- | --- |
+| Package and authoring validation | `python tests/validate_package.py`, the skill-creator `quick_validate.py`, and `git diff --check` passed on Windows with the existing Python 3.12 and isolated PyYAML dependency. |
+| Archive and local installation | skills CLI 1.7.0 installed the extracted release archive into a fresh project targeting Claude Code. All seven installed files matched the source by SHA-256, including references and license notices; installer exit code was 0. Temporary files stayed on D: and telemetry was disabled. |
+| Release archive | SHA-256 of `reusebeacon.zip`: `accb0ac132017a227f5ce63f38f565b3c332b7962503d29c5fe67d0379d72c66`. The legacy filename alias has identical bytes. |
+| Instruction size | The entrypoint changed from 1,253 to 1,272 whitespace-delimited words; the package still contains seven files and adds no runtime dependencies. File size does not measure model cost or latency. |
+| Scenario coverage | Case 5 now checks stopping with sufficient local/versioned evidence; cases 25–26 cover an unavailable public source and unverified/stale mirrors. These are acceptance definitions, not completed independent model runs. The executed checks in this section cover packaging and installation. |
+
 ## Version 0.3.0
 
 - Date: 2026-09-25.
