@@ -15,17 +15,16 @@ Project use, task-result checks, and controlled comparisons answer different que
 ## Version 0.3.2
 
 - Date: 2026-09-26.
-- Scope: earlier task-specific exits, consistent reuse of existing authorization, and verification proportional to the actual change.
+- Scope: earlier task-specific exits, consistent reuse of existing authorization, verification proportional to the actual change, and concise English/Chinese trigger metadata.
 
 | Check | Observed result and scope |
 | --- | --- |
 | Package and authoring validation | Package validation, skill-creator `quick_validate.py`, and `git diff --check` passed with the existing Python 3.12 environment. |
 | Archive installation | skills CLI 1.7.0 installed the complete archive into a disposable Claude Code project on D:. All seven installed files matched the source by SHA-256; installer exit code was 0. Telemetry was disabled. |
-| Fresh public installation | skills CLI 1.7.0 installed public commit `9e102be044027b74571d48569cf056d5f2c8d880` into a separate disposable Claude Code project. All seven files matched the release package by SHA-256; installer exit code was 0. This verifies installation, not a model session. |
-| Linux and Windows CI | Both package jobs passed for `9e102be044027b74571d48569cf056d5f2c8d880`: [run 36226086957](https://github.com/xtltt56-cmd/reusebeacon/actions/runs/36226086957). Publication also requires both jobs to pass for the final tagged commit. |
-| Release archive | SHA-256 of `reusebeacon.zip`: `dcfc94e842ffdf65ba9a0c403e4a7cac747301e9dbb55fbae586279bc8e28332`. |
-| Instruction size | The entrypoint decreased from 1,270 to 1,253 whitespace-delimited words. The package remains seven files with no new runtime dependencies. These measurements do not establish model cost savings. |
-| Scenario coverage | Clarified existing cases 8, 12, and 16 for research scope, authorization already given, and necessary checks for a small fix. They remain acceptance definitions; this update does not add an independent model comparison. |
+| Release archive | SHA-256 of `reusebeacon.zip`: `4c478af7cd949c16fb5865a4e14beaea62fab6bfd3589c4a18965cc1f47b173c`. |
+| Instruction size | The entrypoint decreased from 1,270 to 1,230 whitespace-delimited words; its description decreased from 452 to 301 characters. The package remains seven files with no new runtime dependencies. These measurements do not establish model cost savings. |
+| Trigger metadata | Front-loaded English/Chinese use cases, removed workflow detail from the description, and retained exclusions for explanations and isolated fixes. The existing Codex metadata does not disable implicit invocation; no new activation switch was added. |
+| Scenario coverage | Clarified cases 8, 12, and 16 and added six trigger-check prompts covering implicit selection, exclusions, and explicit invocation. These are acceptance definitions, not measured activation rates or a completed independent model comparison. |
 
 ## Version 0.3.1
 

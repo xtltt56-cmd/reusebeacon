@@ -27,7 +27,7 @@ The author reports using ReuseBeacon in their development work. These public pro
 
 [Read the project cases and pinned evidence](PROJECTS.md) · [Validation record](VALIDATION.md)
 
-`v0.3.2` streamlines task branches: fix isolated issues directly, end research with findings, honor existing authorization, and choose verification appropriate to the change.
+`v0.3.2` streamlines task branches and English/Chinese trigger descriptions: fix isolated issues directly, end research with findings, honor existing authorization, and choose verification appropriate to the change.
 
 ## Workflow
 
@@ -84,7 +84,9 @@ Use reusebeacon to add CSV import to this project. Check required access,
 compare suitable maintained implementations, then integrate and test the best fit.
 ```
 
-Use `$reusebeacon` where the agent supports that invocation syntax, or select it through the agent's skill picker. Automatic activation varies by host and model. This skill cannot enforce a universal pre-edit hook. Teams that require it for every implementation task can explicitly reference it in their project instructions and test that behavior in their chosen agent.
+Use `$reusebeacon` where supported, or select ReuseBeacon through the skill picker. Implicit matching targets implementation research, library selection, avoiding reinvention, and development-skill discovery. If it is absent from the picker, check installation location, version, and host refresh requirements; downloading a repository alone does not establish discovery.
+
+Automatic activation varies by host and model. Teams can add a scoped project rule: use ReuseBeacon for open-source selection or skill discovery, and handle isolated fixes directly. Verify that behavior in the target host using the [trigger checks](tests/scenarios.md#trigger-checks).
 
 ## Requirements and compatibility
 

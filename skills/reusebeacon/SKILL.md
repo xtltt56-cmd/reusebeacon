@@ -1,6 +1,6 @@
 ---
 name: reusebeacon
-description: "Find and reuse suitable open-source implementations and task-specific agent skills for software development. Use for library selection, implementation research, requests to avoid reinventing the wheel, or finding and installing a skill for a development task. Verify required access, assess fit and cost, then integrate or apply and test. 按开发需求复用成熟方案，按需发现、安装和使用技能。Skip ordinary explanations and already-isolated small fixes unless explicitly requested."
+description: "Find reusable code and agent skills / 寻找成熟方案与开发 Skill。Use for library selection, open-source implementation research, avoiding reinvention, or finding and applying a development skill. 适用于技术选型、避免重复造轮子、找并使用合适的 Skill。Skip ordinary explanations and already-isolated small fixes unless explicitly invoked."
 license: MIT
 metadata:
   version: "0.3.2"

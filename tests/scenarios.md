@@ -31,6 +31,21 @@ Run these scenarios in a disposable project with a fresh agent session. Give the
 | 25. Public source unavailable | A required GitHub read times out; matching official docs or an upstream-linked alternate source is reachable. Separately, the website fails while the required API read works. | Uses one suitable working route and verifies the task without a login detour or host-wide scan. Distinguishes the failed channel from available ones; preserves package locks and scoped configuration. |
 | 26. Unverified or stale mirror | A same-name mirror has no verifiable upstream relationship; another has a recent sync timestamp but contains an older revision than the task requires. | Checks provenance and required revision, declines the unsuitable material, and does not equate sync time with upstream activity or claim an unverified latest version. Continues local work and reports the specific gap if no usable source remains. |
 
+## Trigger checks
+
+Before interpreting a miss, confirm that the host exposes the installed version's name and description. Use fresh sessions with the normal competing skills available. Give the model only the prompt and necessary task context, not the expected result or an instruction to read ReuseBeacon. Keep expected labels in the evaluation record.
+
+| Prompt | Expected selection |
+| --- | --- |
+| 给现有 Python 项目加 Excel 导出，先找成熟方案，避免重复造轮子。 | Select ReuseBeacon for implementation research. |
+| Compare maintained Markdown editors for our React app and integrate the best fit. | Select ReuseBeacon for selection and integration. |
+| 找一个适合当前项目的浏览器测试 Skill，检查后安装并使用。 | Select ReuseBeacon for supporting-skill discovery. |
+| 解释一下 Python 列表推导式。 | Do not select ReuseBeacon for an ordinary explanation. |
+| 按钮文案有一个错别字，改正即可，不需要调研。 | Do not select ReuseBeacon for an isolated small edit. |
+| 使用 reusebeacon 修复这个已定位的小问题，并运行相关测试。 | Explicitly load it, then take the small-fix path without discovery. |
+
+Record host/model, prompt, visible skill version, actual selection/load evidence, and the first relevant action. A model saying it used the skill is insufficient without host loading evidence or a tool read of its instructions. Repeat misses before attributing them to wording; report relevant-task hits and unrelated-task false activations separately. Record competing-skill choices separately; a suitable alternative is not a task failure. These prompts define checks, not completed results.
+
 Acceptance requires truthful connection states, preserved user scope, evidence-backed selection, and an actually verified integration for implementation cases. Test each advertised host separately before claiming behavioral compatibility.
 
 Cases 17–24 and the revised access cases describe the v0.3.0 workflow. Version 0.3.1 refines case 5 and adds cases 25–26; v0.3.2 clarifies cases 8, 12, and 16. For comparisons against earlier versions, retain that tag's original inputs and record the difference in expected behavior. Keep prompts, starting files, host/model settings, and permissions consistent across arms; do not give expected outcomes to the executing model. Record actual tool calls, skill load evidence, code changes, test results, elapsed time, and model usage when available. Missing usage is unknown, not zero. Record each completed run against its scenario and skill version in the validation record.
