@@ -16,7 +16,7 @@ For public research or downloads, use a working web tool, public API, or HTTPS G
 
 For authenticated operations, a working GitHub connector or MCP tool is sufficient; do not force GitHub CLI installation. Inspect its available operations and make the smallest appropriate authenticated read. A public search result alone does not prove login or private repository access. If the integration cannot verify required access, report that limit and use a supported alternative.
 
-With a terminal, check the official GitHub CLI:
+If the chosen access path uses the GitHub CLI, check that CLI and the authentication needed for the operation:
 
 ```text
 gh --version
@@ -56,7 +56,7 @@ The browser login flow normally uses the system credential store, but the CLI ma
 
 Label anonymous public access accurately; do not imply private access or authenticated identity. Recover only access required by the task. Respect an offline instruction and keep independent local work moving if recovery needs user action.
 
-## Search after access is verified
+## GitHub query examples
 
 The following are templates; replace example terms with the task's actual stack and capability. Reuse available structured tools when they provide the same information.
 

@@ -33,7 +33,7 @@ If requested, or a workflow gap justifies discovery, follow [skill discovery, in
 
 Let the first relevant read through the intended tool verify public access; avoid a separate network preflight. Verify identity and repository access when private data or account operations require them; public reads do not establish those permissions. Reuse checks unless credentials, host, permissions, or observed errors change.
 
-Use [access and recovery](references/github-access.md) when choosing a GitHub access path or a required public source is unavailable. Missing CLI authentication does not invalidate working web or Git access. Recover only required access, report limits accurately, and continue independent local work. Respect offline requests; never request tokens in chat or claim an unavailable channel was searched.
+Read [access and recovery](references/github-access.md) only when required access fails or the access method is unclear. Missing CLI authentication does not invalidate working web or Git access. Recover only required access, report limits accurately, and continue independent local work. Respect offline requests; never request tokens in chat or claim an unavailable channel was searched.
 
 ## 4. Find relevant implementations
 
