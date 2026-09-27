@@ -1,0 +1,4779 @@
+{
+  "planned_runs": 72,
+  "graded_runs": 72,
+  "by_arm": {
+    "R": {
+      "completed_runs": 24,
+      "all_luna_high": true,
+      "full_hidden_passes": 21,
+      "mean_task_fraction": 0.9991094147582698,
+      "median_tool_calls": 14.0,
+      "median_uncached_input_tokens": 19330.0,
+      "median_output_tokens": 5404.0,
+      "median_wall_seconds": 298.49199999999996
+    },
+    "S": {
+      "completed_runs": 24,
+      "all_luna_high": true,
+      "full_hidden_passes": 21,
+      "mean_task_fraction": 0.9990458015267175,
+      "median_tool_calls": 16.5,
+      "median_uncached_input_tokens": 29680.5,
+      "median_output_tokens": 7423.5,
+      "median_wall_seconds": 366.081
+    },
+    "N": {
+      "completed_runs": 24,
+      "all_luna_high": true,
+      "full_hidden_passes": 21,
+      "mean_task_fraction": 0.9991730279898219,
+      "median_tool_calls": 13.0,
+      "median_uncached_input_tokens": 21442.5,
+      "median_output_tokens": 5339.0,
+      "median_wall_seconds": 303.4325
+    }
+  },
+  "runs": [
+    {
+      "case": "T1",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep1\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep1\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 531587,
+            "cached_input_tokens": 516864,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3923,
+            "reasoning_output_tokens": 1147,
+            "total_tokens": 535510
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 250.238,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T10-52-02-01a0e0c6-d6fc-7672-b5a8-1a3f60843c4a.jsonl",
+          "session_sha256": "d4dd338be965bbd85d6d2378264ed1b72b01cae8140abeae6c13514cd9b6c860"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 531587,
+        "cached_input_tokens": 516864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3923,
+        "reasoning_output_tokens": 1147,
+        "total_tokens": 535510
+      },
+      "aggregate_tool_calls": 12,
+      "main_wall_seconds": 250.238
+    },
+    {
+      "case": "T1",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep1\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep1\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 676452,
+            "cached_input_tokens": 658432,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4308,
+            "reasoning_output_tokens": 1401,
+            "total_tokens": 680760
+          },
+          "host_tool_calls": 15,
+          "wall_seconds": 272.101,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T10-47-47-01a0e0c2-f0e0-7270-b246-116eb1c751df.jsonl",
+          "session_sha256": "913a9171957ca2e7b56e94be8c4b46ecdde34dcaffcec65601811d2ac74baf3e"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 676452,
+        "cached_input_tokens": 658432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4308,
+        "reasoning_output_tokens": 1401,
+        "total_tokens": 680760
+      },
+      "aggregate_tool_calls": 15,
+      "main_wall_seconds": 272.101
+    },
+    {
+      "case": "T1",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep1\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep1\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 562182,
+            "cached_input_tokens": 549376,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3093,
+            "reasoning_output_tokens": 764,
+            "total_tokens": 565275
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 237.645,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T10-47-55-01a0e0c3-1003-7351-8d99-9b48fe2b7e32.jsonl",
+          "session_sha256": "adec901c3dde65eb9cfe1037f52f48cf9e2097c9fe4f2356daac6269b34765e6"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 562182,
+        "cached_input_tokens": 549376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3093,
+        "reasoning_output_tokens": 764,
+        "total_tokens": 565275
+      },
+      "aggregate_tool_calls": 13,
+      "main_wall_seconds": 237.645
+    },
+    {
+      "case": "T1",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 483796,
+            "cached_input_tokens": 468992,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3546,
+            "reasoning_output_tokens": 1033,
+            "total_tokens": 487342
+          },
+          "host_tool_calls": 11,
+          "wall_seconds": 232.549,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T10-56-09-01a0e0ca-9ae9-70f2-abfb-975eea369659.jsonl",
+          "session_sha256": "c3815d5929d0852479cc4cc8026c977c8799ede5df2703f8d54473df3214bf58"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 483796,
+        "cached_input_tokens": 468992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3546,
+        "reasoning_output_tokens": 1033,
+        "total_tokens": 487342
+      },
+      "aggregate_tool_calls": 11,
+      "main_wall_seconds": 232.549
+    },
+    {
+      "case": "T1",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S_retest3\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S_retest3\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r2_s_retest3",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 515946,
+            "cached_input_tokens": 499712,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4621,
+            "reasoning_output_tokens": 1589,
+            "total_tokens": 520567
+          },
+          "host_tool_calls": 11,
+          "wall_seconds": 264.298,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-13-36-01a0e0da-9379-7d11-b7e3-8f5aaf74d69f.jsonl",
+          "session_sha256": "6535ff375e69ad51172b0e3c2bf64974b0dc9a6cd3a07e47e4b414e47ac196b2"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 515946,
+        "cached_input_tokens": 499712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4621,
+        "reasoning_output_tokens": 1589,
+        "total_tokens": 520567
+      },
+      "aggregate_tool_calls": 11,
+      "main_wall_seconds": 264.298
+    },
+    {
+      "case": "T1",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r2_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 362894,
+            "cached_input_tokens": 353024,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2758,
+            "reasoning_output_tokens": 755,
+            "total_tokens": 365652
+          },
+          "host_tool_calls": 8,
+          "wall_seconds": 209.79,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T10-52-30-01a0e0c7-456b-7402-a34c-e69fd8f7bad8.jsonl",
+          "session_sha256": "1ea1a60059a37472858e1fcb4e38f5556ed6a9aaa27a1d7538bb5e79d72c9f71"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 362894,
+        "cached_input_tokens": 353024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2758,
+        "reasoning_output_tokens": 755,
+        "total_tokens": 365652
+      },
+      "aggregate_tool_calls": 8,
+      "main_wall_seconds": 209.79
+    },
+    {
+      "case": "T1",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep3\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep3\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 706800,
+            "cached_input_tokens": 689920,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3977,
+            "reasoning_output_tokens": 1124,
+            "total_tokens": 710777
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 277.764,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-18-40-01a0e0df-39c1-72a2-aca3-f195729e7b7b.jsonl",
+          "session_sha256": "c3909886648d44a16c429d6efc6011134b42aba87cdf37fa396c27d597e92b08"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 706800,
+        "cached_input_tokens": 689920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3977,
+        "reasoning_output_tokens": 1124,
+        "total_tokens": 710777
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 277.764
+    },
+    {
+      "case": "T1",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep3\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep3\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 453546,
+            "cached_input_tokens": 440576,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3488,
+            "reasoning_output_tokens": 1183,
+            "total_tokens": 457034
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 234.946,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-23-40-01a0e0e3-cacc-7d90-80c1-0273d49149f4.jsonl",
+          "session_sha256": "beeee317344c2dc5f6189d74504be3e3df893558a1d9ead1b6cd8390746d724e"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 453546,
+        "cached_input_tokens": 440576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3488,
+        "reasoning_output_tokens": 1183,
+        "total_tokens": 457034
+      },
+      "aggregate_tool_calls": 10,
+      "main_wall_seconds": 234.946
+    },
+    {
+      "case": "T1",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T1\\rep3\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T1\\rep3\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "shop_export/orders.py",
+        "tests/test_orders.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t1_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 544837,
+            "cached_input_tokens": 529152,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4480,
+            "reasoning_output_tokens": 1737,
+            "total_tokens": 549317
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 266.717,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T10-56-27-01a0e0ca-df83-71a0-84eb-be1cfe53c1d2.jsonl",
+          "session_sha256": "ae829b1546468284ef4f29daa13f216430a6ce55ce17553d4db0395adf220d78"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 544837,
+        "cached_input_tokens": 529152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4480,
+        "reasoning_output_tokens": 1737,
+        "total_tokens": 549317
+      },
+      "aggregate_tool_calls": 12,
+      "main_wall_seconds": 266.717
+    },
+    {
+      "case": "T2",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep1\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep1\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 550075,
+            "cached_input_tokens": 533248,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4845,
+            "reasoning_output_tokens": 1936,
+            "total_tokens": 554920
+          },
+          "host_tool_calls": 11,
+          "wall_seconds": 278.904,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-33-04-01a0e0ec-67c5-7de0-b3bf-5321231be96b.jsonl",
+          "session_sha256": "d7b3039351ecb990ff2338407af7cf6e2a242b95916cd216803e095d8da06230"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 550075,
+        "cached_input_tokens": 533248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4845,
+        "reasoning_output_tokens": 1936,
+        "total_tokens": 554920
+      },
+      "aggregate_tool_calls": 11,
+      "main_wall_seconds": 278.904
+    },
+    {
+      "case": "T2",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep1\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep1\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 371842,
+            "cached_input_tokens": 358144,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3806,
+            "reasoning_output_tokens": 1691,
+            "total_tokens": 375648
+          },
+          "host_tool_calls": 8,
+          "wall_seconds": 185.409,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-38-24-01a0e0f1-4b33-7d02-9762-a8595d1d3998.jsonl",
+          "session_sha256": "57a2fc84f434e39cbbae0742019695f6246aed288047ca540799a2848874c046"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 371842,
+        "cached_input_tokens": 358144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3806,
+        "reasoning_output_tokens": 1691,
+        "total_tokens": 375648
+      },
+      "aggregate_tool_calls": 8,
+      "main_wall_seconds": 185.409
+    },
+    {
+      "case": "T2",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep1\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep1\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 540303,
+            "cached_input_tokens": 524032,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3609,
+            "reasoning_output_tokens": 1233,
+            "total_tokens": 543912
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 243.647,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-28-15-01a0e0e7-fd62-77d1-8fb8-6523fc07b002.jsonl",
+          "session_sha256": "43f8f0778e6619ddae81e09fb554f56c12a27869c3c2657a5d0496ff470d551c"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 540303,
+        "cached_input_tokens": 524032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3609,
+        "reasoning_output_tokens": 1233,
+        "total_tokens": 543912
+      },
+      "aggregate_tool_calls": 12,
+      "main_wall_seconds": 243.647
+    },
+    {
+      "case": "T2",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep2\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep2\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 581582,
+            "cached_input_tokens": 564736,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4251,
+            "reasoning_output_tokens": 1295,
+            "total_tokens": 585833
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 272.503,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-42-03-01a0e0f4-a0cb-75f1-9961-299b96216c02.jsonl",
+          "session_sha256": "316f9e80eda2d8de33049d3d0bdad00249a15a8e8a4391d4036bb9321b7d2726"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 581582,
+        "cached_input_tokens": 564736,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4251,
+        "reasoning_output_tokens": 1295,
+        "total_tokens": 585833
+      },
+      "aggregate_tool_calls": 13,
+      "main_wall_seconds": 272.503
+    },
+    {
+      "case": "T2",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep2\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep2\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "attendance/export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r2_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 554475,
+            "cached_input_tokens": 536320,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6011,
+            "reasoning_output_tokens": 2648,
+            "total_tokens": 560486
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 303.134,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-47-25-01a0e0f9-89b1-77e1-bc65-ac96288ef9ae.jsonl",
+          "session_sha256": "835be029d489b46239f48e790a4912b9e880532a4da98973a9e6ebbed56703c5"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 554475,
+        "cached_input_tokens": 536320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6011,
+        "reasoning_output_tokens": 2648,
+        "total_tokens": 560486
+      },
+      "aggregate_tool_calls": 12,
+      "main_wall_seconds": 303.134
+    },
+    {
+      "case": "T2",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep2\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep2\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r2_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 567564,
+            "cached_input_tokens": 553472,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3684,
+            "reasoning_output_tokens": 957,
+            "total_tokens": 571248
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 254.652,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-52-49-01a0e0fe-7b1d-74e0-8167-1f460d861d5b.jsonl",
+          "session_sha256": "90768dae501d5b3bf14f9e74a2a21c25562893deb77386db6a264736d05f2899"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 567564,
+        "cached_input_tokens": 553472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3684,
+        "reasoning_output_tokens": 957,
+        "total_tokens": 571248
+      },
+      "aggregate_tool_calls": 13,
+      "main_wall_seconds": 254.652
+    },
+    {
+      "case": "T2",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep3\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep3\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 672839,
+            "cached_input_tokens": 653312,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5299,
+            "reasoning_output_tokens": 2179,
+            "total_tokens": 678138
+          },
+          "host_tool_calls": 15,
+          "wall_seconds": 292.628,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T12-08-30-01a0e10c-d730-7e61-a0b7-67428b6cabaf.jsonl",
+          "session_sha256": "3c5ec11c87fe75f6fce18db553d307f5413b93ba6aa74d4f9f89733df8178daa"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 672839,
+        "cached_input_tokens": 653312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5299,
+        "reasoning_output_tokens": 2179,
+        "total_tokens": 678138
+      },
+      "aggregate_tool_calls": 15,
+      "main_wall_seconds": 292.628
+    },
+    {
+      "case": "T2",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep3\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep3\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 731284,
+            "cached_input_tokens": 711424,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5086,
+            "reasoning_output_tokens": 2034,
+            "total_tokens": 736370
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 319.094,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T11-57-42-01a0e102-f5ed-7d22-8e9b-3a1251adef65.jsonl",
+          "session_sha256": "0518a5dfc41c8d8128a2046ea1b7f6cf7b4ee3a8984ec2464208576ddb1a5cae"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 731284,
+        "cached_input_tokens": 711424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5086,
+        "reasoning_output_tokens": 2034,
+        "total_tokens": 736370
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 319.094
+    },
+    {
+      "case": "T2",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 3,
+      "hidden_total": 3,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T2\\rep3\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T2\\rep3\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "attendance/export.py",
+        "tests/test_export.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t2_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 487982,
+            "cached_input_tokens": 475136,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4234,
+            "reasoning_output_tokens": 1646,
+            "total_tokens": 492216
+          },
+          "host_tool_calls": 11,
+          "wall_seconds": 266.498,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T12-03-43-01a0e108-7755-7d52-a35b-3aab55691fc3.jsonl",
+          "session_sha256": "30cf3377805610b9c51f8bc87c83a2a3fdfb829107b23bbffad0d491d0b45056"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 487982,
+        "cached_input_tokens": 475136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4234,
+        "reasoning_output_tokens": 1646,
+        "total_tokens": 492216
+      },
+      "aggregate_tool_calls": 11,
+      "main_wall_seconds": 266.498
+    },
+    {
+      "case": "T3",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep1\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep1\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 753627,
+            "cached_input_tokens": 730880,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6752,
+            "reasoning_output_tokens": 2136,
+            "total_tokens": 760379
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 331.06,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T12-14-40-01a0e112-7bfd-7672-8718-f04bb1986823.jsonl",
+          "session_sha256": "e3ac925686c81997732fa0a3dfa23c55be2003ca25044bc8086063c9a12a2246"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 753627,
+        "cached_input_tokens": 730880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6752,
+        "reasoning_output_tokens": 2136,
+        "total_tokens": 760379
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 331.06
+    },
+    {
+      "case": "T3",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep1\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep1\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 762188,
+            "cached_input_tokens": 736000,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7428,
+            "reasoning_output_tokens": 3096,
+            "total_tokens": 769616
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 342.613,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T12-20-31-01a0e117-da4c-7873-a259-00ddcb015b25.jsonl",
+          "session_sha256": "4c18b140d0f294d067a802a30734a9b66a35fce8bb69d96d826c0ffe45d958b1"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 762188,
+        "cached_input_tokens": 736000,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7428,
+        "reasoning_output_tokens": 3096,
+        "total_tokens": 769616
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 342.613
+    },
+    {
+      "case": "T3",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep1\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep1\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 722188,
+            "cached_input_tokens": 700160,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7539,
+            "reasoning_output_tokens": 3080,
+            "total_tokens": 729727
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 339.695,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T12-26-41-01a0e11d-7e6b-7bd3-87ea-cd92d4d1ea1a.jsonl",
+          "session_sha256": "63d74b1edaf23d066d2c72d427f899eeaae2245f0bbeff45d45ddffde41d2b2e"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 722188,
+        "cached_input_tokens": 700160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7539,
+        "reasoning_output_tokens": 3080,
+        "total_tokens": 729727
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 339.695
+    },
+    {
+      "case": "T3",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 847121,
+            "cached_input_tokens": 820480,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 8861,
+            "reasoning_output_tokens": 3885,
+            "total_tokens": 855982
+          },
+          "host_tool_calls": 18,
+          "wall_seconds": 380.581,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T15-39-56-01a0e1ce-6bcf-7970-abc6-4019292f22f5.jsonl",
+          "session_sha256": "6fe57530741765f2f901802a3bbac82cf367f5fd68a98da0282e03e65fc97785"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 847121,
+        "cached_input_tokens": 820480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8861,
+        "reasoning_output_tokens": 3885,
+        "total_tokens": 855982
+      },
+      "aggregate_tool_calls": 18,
+      "main_wall_seconds": 380.581
+    },
+    {
+      "case": "T3",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r2_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1457094,
+            "cached_input_tokens": 1417728,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 11058,
+            "reasoning_output_tokens": 4345,
+            "total_tokens": 1468152
+          },
+          "host_tool_calls": 27,
+          "wall_seconds": 509.707,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T12-33-31-01a0e123-be08-7461-a75a-60d11d694ccc.jsonl",
+          "session_sha256": "926f7efc1278ebefc30816617867b5cac4c34c08e25d3751abd7da68d0b7b51f"
+        },
+        {
+          "agent_path": "/root/formal_t3_r2_s/dateutil_research",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 418212,
+            "cached_input_tokens": 374016,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2388,
+            "reasoning_output_tokens": 818,
+            "total_tokens": 420600
+          },
+          "host_tool_calls": 5,
+          "wall_seconds": 212.743,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T12-35-53-01a0e125-eb06-7b10-ab17-6adc4de5020d.jsonl",
+          "session_sha256": "64cea8d56b3b99248ec7264ed538940d5f4948a43322405be7a4341b942b46c7"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1875306,
+        "cached_input_tokens": 1791744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13446,
+        "reasoning_output_tokens": 5163,
+        "total_tokens": 1888752
+      },
+      "aggregate_tool_calls": 32,
+      "main_wall_seconds": 509.707
+    },
+    {
+      "case": "T3",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\N_retest\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\N_retest\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r2_n_retest",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 791025,
+            "cached_input_tokens": 729856,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 8063,
+            "reasoning_output_tokens": 2930,
+            "total_tokens": 799088
+          },
+          "host_tool_calls": 17,
+          "wall_seconds": 373.101,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T15-32-50-01a0e1c7-ea93-7482-9a15-dd9d3611f327.jsonl",
+          "session_sha256": "1272f48123c196cb94e5570aacc6e569cf8483a3ede05ef6f4e0d47fe19a3cf0"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 791025,
+        "cached_input_tokens": 729856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8063,
+        "reasoning_output_tokens": 2930,
+        "total_tokens": 799088
+      },
+      "aggregate_tool_calls": 17,
+      "main_wall_seconds": 373.101
+    },
+    {
+      "case": "T3",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep3\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep3\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 892858,
+            "cached_input_tokens": 865280,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 9551,
+            "reasoning_output_tokens": 4220,
+            "total_tokens": 902409
+          },
+          "host_tool_calls": 19,
+          "wall_seconds": 403.599,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T15-54-32-01a0e1db-c9b1-7413-b3b0-18bbb21e52f9.jsonl",
+          "session_sha256": "2bbba5412e5b2a65f83b9474b83d2499a492e900d1cf90044cc883e669cf8a44"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 892858,
+        "cached_input_tokens": 865280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9551,
+        "reasoning_output_tokens": 4220,
+        "total_tokens": 902409
+      },
+      "aggregate_tool_calls": 19,
+      "main_wall_seconds": 403.599
+    },
+    {
+      "case": "T3",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep3\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep3\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 860124,
+            "cached_input_tokens": 828928,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 8739,
+            "reasoning_output_tokens": 3759,
+            "total_tokens": 868863
+          },
+          "host_tool_calls": 15,
+          "wall_seconds": 416.892,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-01-44-01a0e1e2-603c-75f1-bb7b-4215ad63652b.jsonl",
+          "session_sha256": "a26365d58af7f35db17c5d5a6ed8b3da84da604386ba40ffba5ad91ca6c2fd1f"
+        },
+        {
+          "agent_path": "/root/formal_t3_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 616148,
+            "cached_input_tokens": 554752,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3356,
+            "reasoning_output_tokens": 1444,
+            "total_tokens": 619504
+          },
+          "host_tool_calls": 7,
+          "wall_seconds": 252.536,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-04-14-01a0e1e4-a8e4-7bd0-a1a5-7fdf7efbe42e.jsonl",
+          "session_sha256": "94355356057efabed8475316f1393135ab21aa4efff178028599813a7be98e6b"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1476272,
+        "cached_input_tokens": 1383680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12095,
+        "reasoning_output_tokens": 5203,
+        "total_tokens": 1488367
+      },
+      "aggregate_tool_calls": 22,
+      "main_wall_seconds": 416.892
+    },
+    {
+      "case": "T3",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 6,
+      "hidden_total": 6,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T3\\rep3\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T3\\rep3\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "slots/recurrence.py",
+        "tests/test_slots.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t3_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1028590,
+            "cached_input_tokens": 1000704,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 8180,
+            "reasoning_output_tokens": 3176,
+            "total_tokens": 1036770
+          },
+          "host_tool_calls": 22,
+          "wall_seconds": 399.981,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T15-46-39-01a0e1d4-9081-7a50-811c-6895a90d328e.jsonl",
+          "session_sha256": "60ad843f6a345864e606b162e71af692afec745e7847ee921b8528bbd9db22c2"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1028590,
+        "cached_input_tokens": 1000704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8180,
+        "reasoning_output_tokens": 3176,
+        "total_tokens": 1036770
+      },
+      "aggregate_tool_calls": 22,
+      "main_wall_seconds": 399.981
+    },
+    {
+      "case": "T4",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep1\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep1\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 577981,
+            "cached_input_tokens": 558848,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6323,
+            "reasoning_output_tokens": 2230,
+            "total_tokens": 584304
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 212.215,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-20-08-01a0e1f3-3884-7122-8299-91f5019ba926.jsonl",
+          "session_sha256": "228316e5c7a6e888c8d85fed36b4707d81e6592dd989d86eff9ade9a50ccd2af"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 577981,
+        "cached_input_tokens": 558848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6323,
+        "reasoning_output_tokens": 2230,
+        "total_tokens": 584304
+      },
+      "aggregate_tool_calls": 12,
+      "main_wall_seconds": 212.215
+    },
+    {
+      "case": "T4",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep1\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep1\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 733609,
+            "cached_input_tokens": 712448,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6072,
+            "reasoning_output_tokens": 2384,
+            "total_tokens": 739681
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 313.052,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-09-43-01a0e1e9-aff6-7330-ad6b-93df8c41897d.jsonl",
+          "session_sha256": "d73555b30f2211f11abe58b9e3e1f557c99c075618c1cd46a627fa2fa5357e86"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 733609,
+        "cached_input_tokens": 712448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6072,
+        "reasoning_output_tokens": 2384,
+        "total_tokens": 739681
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 313.052
+    },
+    {
+      "case": "T4",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep1\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep1\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 461830,
+            "cached_input_tokens": 447744,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4675,
+            "reasoning_output_tokens": 1345,
+            "total_tokens": 466505
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 264.054,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-15-17-01a0e1ee-c8b8-7d62-b5ad-e694ebbab6a1.jsonl",
+          "session_sha256": "11cd3051c28e3f928aeae458416c10debb4b01df6599423a940d1f18f8809e55"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 461830,
+        "cached_input_tokens": 447744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4675,
+        "reasoning_output_tokens": 1345,
+        "total_tokens": 466505
+      },
+      "aggregate_tool_calls": 10,
+      "main_wall_seconds": 264.054
+    },
+    {
+      "case": "T4",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep2\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep2\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 465459,
+            "cached_input_tokens": 450816,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4978,
+            "reasoning_output_tokens": 1402,
+            "total_tokens": 470437
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 276.049,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-30-06-01a0e1fc-5a07-7be0-9f33-ad5e6cfa322e.jsonl",
+          "session_sha256": "7b5f8841ead46dc91b4772b1586ddef1c45c92ea83f1bf653a2953a077b30dfa"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 465459,
+        "cached_input_tokens": 450816,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4978,
+        "reasoning_output_tokens": 1402,
+        "total_tokens": 470437
+      },
+      "aggregate_tool_calls": 10,
+      "main_wall_seconds": 276.049
+    },
+    {
+      "case": "T4",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep2\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep2\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r2_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 796895,
+            "cached_input_tokens": 774656,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6392,
+            "reasoning_output_tokens": 2194,
+            "total_tokens": 803287
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 381.766,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-35-05-01a0e200-e8d0-7e03-9aab-caeec50921b4.jsonl",
+          "session_sha256": "627a89151eedad5aed6e91c42359c5d8496817b28c5c7636187b747137ae1690"
+        },
+        {
+          "agent_path": "/root/formal_t4_r2_s/httpx_retry_research",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 197778,
+            "cached_input_tokens": 172032,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1036,
+            "reasoning_output_tokens": 431,
+            "total_tokens": 198814
+          },
+          "host_tool_calls": 3,
+          "wall_seconds": 159.956,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-37-32-01a0e203-289c-7bb2-b538-10be5f25c3e3.jsonl",
+          "session_sha256": "7699e13f46e74ac463319cf86d9774301fc2fa0a1ae44e6a28e4eda3b32e2f5f"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 994673,
+        "cached_input_tokens": 946688,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7428,
+        "reasoning_output_tokens": 2625,
+        "total_tokens": 1002101
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 381.766
+    },
+    {
+      "case": "T4",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep2\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep2\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r2_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 815868,
+            "cached_input_tokens": 792832,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6011,
+            "reasoning_output_tokens": 1931,
+            "total_tokens": 821879
+          },
+          "host_tool_calls": 17,
+          "wall_seconds": 332.844,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-24-11-01a0e1f6-ee96-76a3-83a7-85a30b92e02c.jsonl",
+          "session_sha256": "1dfb865ac0c59753137cb45bb32b5e680d42d7b03b4be58d1acf29bfde0e54c0"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 815868,
+        "cached_input_tokens": 792832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6011,
+        "reasoning_output_tokens": 1931,
+        "total_tokens": 821879
+      },
+      "aggregate_tool_calls": 17,
+      "main_wall_seconds": 332.844
+    },
+    {
+      "case": "T4",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep3\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep3\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 542059,
+            "cached_input_tokens": 525056,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5509,
+            "reasoning_output_tokens": 2247,
+            "total_tokens": 547568
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 299.959,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-41-56-01a0e207-2cff-77b0-8b3a-2bca46219a6d.jsonl",
+          "session_sha256": "ab5ef8583d0d56b0d6d0f4e3eb9e69d8973d89120405b2bd84a4b8a2bbce61ca"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 542059,
+        "cached_input_tokens": 525056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5509,
+        "reasoning_output_tokens": 2247,
+        "total_tokens": 547568
+      },
+      "aggregate_tool_calls": 12,
+      "main_wall_seconds": 299.959
+    },
+    {
+      "case": "T4",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep3\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep3\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 654992,
+            "cached_input_tokens": 634368,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6560,
+            "reasoning_output_tokens": 2546,
+            "total_tokens": 661552
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 496.703,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-47-17-01a0e20c-14d1-7660-b6ac-ab813766ad3d.jsonl",
+          "session_sha256": "257529850527453592343f882738defb3a54e9f63a462438f86fc7a448ad1b78"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 654992,
+        "cached_input_tokens": 634368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6560,
+        "reasoning_output_tokens": 2546,
+        "total_tokens": 661552
+      },
+      "aggregate_tool_calls": 13,
+      "main_wall_seconds": 496.703
+    },
+    {
+      "case": "T4",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T4\\rep3\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T4\\rep3\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "async_gateway/client.py",
+        "tests/test_client.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t4_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 593711,
+            "cached_input_tokens": 577024,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5824,
+            "reasoning_output_tokens": 1999,
+            "total_tokens": 599535
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 338.572,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T16-56-00-01a0e214-0ecb-7df1-b7ec-c8820b49ac8c.jsonl",
+          "session_sha256": "fe83a477efb1217167d1dc5b2fa81d8a60b2e32efba18403244da10aa733d5f0"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 593711,
+        "cached_input_tokens": 577024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5824,
+        "reasoning_output_tokens": 1999,
+        "total_tokens": 599535
+      },
+      "aggregate_tool_calls": 13,
+      "main_wall_seconds": 338.572
+    },
+    {
+      "case": "T5",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 650,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9923664122137404,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep1\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep1\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [
+        "article_render.egg-info/PKG-INFO",
+        "article_render.egg-info/SOURCES.txt",
+        "article_render.egg-info/dependency_links.txt",
+        "article_render.egg-info/requires.txt",
+        "article_render.egg-info/top_level.txt",
+        "uv.lock"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 678480,
+            "cached_input_tokens": 654592,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5612,
+            "reasoning_output_tokens": 2451,
+            "total_tokens": 684092
+          },
+          "host_tool_calls": 14,
+          "wall_seconds": 340.689,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-09-34-01a0e220-7b08-7481-9225-d285c6533f7a.jsonl",
+          "session_sha256": "74d415653d5f92df3e4451bf982f4f0d1da07777b7e3f033be1bd71134122145"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 678480,
+        "cached_input_tokens": 654592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5612,
+        "reasoning_output_tokens": 2451,
+        "total_tokens": 684092
+      },
+      "aggregate_tool_calls": 14,
+      "main_wall_seconds": 340.689
+    },
+    {
+      "case": "T5",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 650,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9923664122137404,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep1\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep1\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1204298,
+            "cached_input_tokens": 1165568,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7940,
+            "reasoning_output_tokens": 3673,
+            "total_tokens": 1212238
+          },
+          "host_tool_calls": 20,
+          "wall_seconds": 529.926,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-15-41-01a0e226-1614-7433-9372-7642a2cdf222.jsonl",
+          "session_sha256": "5054cae97c304cecdc193022fd3e4b8066edcd7c8e3b226187d1f1aef702b889"
+        },
+        {
+          "agent_path": "/root/formal_t5_r1_s/md_research",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 517732,
+            "cached_input_tokens": 466944,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3181,
+            "reasoning_output_tokens": 1098,
+            "total_tokens": 520913
+          },
+          "host_tool_calls": 6,
+          "wall_seconds": 250.393,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-18-32-01a0e228-b08a-7bc3-9cc6-531acc06eeb2.jsonl",
+          "session_sha256": "b14fcbedf423937c0d74933002fa93c82f6f830c07b8405970412a8e8d86e93d"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1722030,
+        "cached_input_tokens": 1632512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11121,
+        "reasoning_output_tokens": 4771,
+        "total_tokens": 1733151
+      },
+      "aggregate_tool_calls": 26,
+      "main_wall_seconds": 529.926
+    },
+    {
+      "case": "T5",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 650,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9923664122137404,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep1\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep1\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 887975,
+            "cached_input_tokens": 862976,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5336,
+            "reasoning_output_tokens": 2274,
+            "total_tokens": 893311
+          },
+          "host_tool_calls": 20,
+          "wall_seconds": 354.602,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-02-38-01a0e21a-2177-7271-9766-602ee3b3ec1c.jsonl",
+          "session_sha256": "a5301980a2299d203b63ad2785a27ea76de49117c350483ffecff08c75250662"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 887975,
+        "cached_input_tokens": 862976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5336,
+        "reasoning_output_tokens": 2274,
+        "total_tokens": 893311
+      },
+      "aggregate_tool_calls": 20,
+      "main_wall_seconds": 354.602
+    },
+    {
+      "case": "T5",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 651,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9938931297709923,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep2\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep2\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [
+        "article_render.egg-info/PKG-INFO",
+        "article_render.egg-info/SOURCES.txt",
+        "article_render.egg-info/dependency_links.txt",
+        "article_render.egg-info/requires.txt",
+        "article_render.egg-info/top_level.txt",
+        "uv.lock"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 980818,
+            "cached_input_tokens": 950784,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 10988,
+            "reasoning_output_tokens": 5996,
+            "total_tokens": 991806
+          },
+          "host_tool_calls": 20,
+          "wall_seconds": 531.062,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-25-08-01a0e22e-bbf4-7092-9e94-4f8154f41d6b.jsonl",
+          "session_sha256": "195650543bc0dc60d4d057dc59d568454485c990e881f9f7b3b08a8828f43f12"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 980818,
+        "cached_input_tokens": 950784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10988,
+        "reasoning_output_tokens": 5996,
+        "total_tokens": 991806
+      },
+      "aggregate_tool_calls": 20,
+      "main_wall_seconds": 531.062
+    },
+    {
+      "case": "T5",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 650,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9923664122137404,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep2\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep2\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [
+        "article_render.egg-info/PKG-INFO",
+        "article_render.egg-info/SOURCES.txt",
+        "article_render.egg-info/dependency_links.txt",
+        "article_render.egg-info/requires.txt",
+        "article_render.egg-info/top_level.txt",
+        "uv.lock"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r2_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 851776,
+            "cached_input_tokens": 809216,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7074,
+            "reasoning_output_tokens": 2895,
+            "total_tokens": 858850
+          },
+          "host_tool_calls": 14,
+          "wall_seconds": 474.184,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-34-34-01a0e237-5da3-7eb1-b56f-056771ee04df.jsonl",
+          "session_sha256": "2f748b586510b16d11b2bb4cef4e97ac44397e7e046d3f9fe1e272b14fe9a385"
+        },
+        {
+          "agent_path": "/root/formal_t5_r2_s/markdown_research",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 752751,
+            "cached_input_tokens": 658688,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4953,
+            "reasoning_output_tokens": 2467,
+            "total_tokens": 757704
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 300.852,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-37-04-01a0e239-a787-7673-a8cf-f19c51625b5d.jsonl",
+          "session_sha256": "c09f4cf7c4f43a5b372176f2a9a3137f0b82ecc2b396aae5eddf21c2c5aac58f"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1604527,
+        "cached_input_tokens": 1467904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12027,
+        "reasoning_output_tokens": 5362,
+        "total_tokens": 1616554
+      },
+      "aggregate_tool_calls": 24,
+      "main_wall_seconds": 474.184
+    },
+    {
+      "case": "T5",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 650,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9923664122137404,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep2\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep2\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r2_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1052784,
+            "cached_input_tokens": 1022976,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7118,
+            "reasoning_output_tokens": 3039,
+            "total_tokens": 1059902
+          },
+          "host_tool_calls": 23,
+          "wall_seconds": 398.57,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-42-54-01a0e23f-00e5-7730-a93e-36810a0c5d56.jsonl",
+          "session_sha256": "d6522b78b1a4c6e9294fa693ffb733a792902cfb33515893b6ec2165a3a16d9c"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1052784,
+        "cached_input_tokens": 1022976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7118,
+        "reasoning_output_tokens": 3039,
+        "total_tokens": 1059902
+      },
+      "aggregate_tool_calls": 23,
+      "main_wall_seconds": 398.57
+    },
+    {
+      "case": "T5",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 650,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9923664122137404,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep3\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep3\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 627497,
+            "cached_input_tokens": 610560,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5003,
+            "reasoning_output_tokens": 2093,
+            "total_tokens": 632500
+          },
+          "host_tool_calls": 14,
+          "wall_seconds": 297.025,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-05-20-01a0e253-8a98-74f0-ad33-82337e1fd6d7.jsonl",
+          "session_sha256": "07be6f4ffdcd2831cdf9b2bddbdca718e137b15bd56323c4940cb6e2bf8a7920"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 627497,
+        "cached_input_tokens": 610560,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5003,
+        "reasoning_output_tokens": 2093,
+        "total_tokens": 632500
+      },
+      "aggregate_tool_calls": 14,
+      "main_wall_seconds": 297.025
+    },
+    {
+      "case": "T5",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 650,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9923664122137404,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep3\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep3\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 936908,
+            "cached_input_tokens": 906496,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5952,
+            "reasoning_output_tokens": 2384,
+            "total_tokens": 942860
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 531.98,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-50-26-01a0e245-e424-7922-8704-799f0dce1a72.jsonl",
+          "session_sha256": "6855556f5b2a26601232a4d48cd2e43c8e8011542b85cc305cab446a81d04c23"
+        },
+        {
+          "agent_path": "/root/formal_t5_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 800945,
+            "cached_input_tokens": 749824,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4476,
+            "reasoning_output_tokens": 2044,
+            "total_tokens": 805421
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 370.363,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-52-53-01a0e248-2232-75a2-9a27-f784ff5c8277.jsonl",
+          "session_sha256": "967a4d845863f2488187128de082b5940898d0672bf394b0b2348c2761790f9c"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1737853,
+        "cached_input_tokens": 1656320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10428,
+        "reasoning_output_tokens": 4428,
+        "total_tokens": 1748281
+      },
+      "aggregate_tool_calls": 23,
+      "main_wall_seconds": 531.98
+    },
+    {
+      "case": "T5",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 652,
+      "hidden_total": 655,
+      "hidden_fraction": 0.9954198473282443,
+      "hidden_exit_code": 1,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T5\\rep3\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T5\\rep3\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "article_render/markdown.py",
+        "tests/test_markdown.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t5_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 606969,
+            "cached_input_tokens": 585216,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4437,
+            "reasoning_output_tokens": 1764,
+            "total_tokens": 611406
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 291.392,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T17-59-53-01a0e24e-8a54-7ae1-9834-3913f5322bc5.jsonl",
+          "session_sha256": "8f383d03a010a0561af913f08c5e5c58b7449c2ce28bec7f8ac8404b04af354c"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 606969,
+        "cached_input_tokens": 585216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4437,
+        "reasoning_output_tokens": 1764,
+        "total_tokens": 611406
+      },
+      "aggregate_tool_calls": 13,
+      "main_wall_seconds": 291.392
+    },
+    {
+      "case": "T6",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep1\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep1\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 954873,
+            "cached_input_tokens": 931328,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5960,
+            "reasoning_output_tokens": 1936,
+            "total_tokens": 960833
+          },
+          "host_tool_calls": 21,
+          "wall_seconds": 352.906,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-11-14-01a0e258-ef42-79d2-b835-360ef312f525.jsonl",
+          "session_sha256": "4af9511aa071700f7866d2870b15a29a5e70b6acec82282c332b8b6ea8167912"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 954873,
+        "cached_input_tokens": 931328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5960,
+        "reasoning_output_tokens": 1936,
+        "total_tokens": 960833
+      },
+      "aggregate_tool_calls": 21,
+      "main_wall_seconds": 352.906
+    },
+    {
+      "case": "T6",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep1\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep1\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 839922,
+            "cached_input_tokens": 812544,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7223,
+            "reasoning_output_tokens": 2552,
+            "total_tokens": 847145
+          },
+          "host_tool_calls": 17,
+          "wall_seconds": 352.453,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-17-41-01a0e25e-d82c-7532-aaac-f23de9b879b5.jsonl",
+          "session_sha256": "302a5f5db322452df7b6bd56cc25a317f0ebeec0c768ed9ed2263dbf0a71829e"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 839922,
+        "cached_input_tokens": 812544,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7223,
+        "reasoning_output_tokens": 2552,
+        "total_tokens": 847145
+      },
+      "aggregate_tool_calls": 17,
+      "main_wall_seconds": 352.453
+    },
+    {
+      "case": "T6",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep1\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep1\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 500021,
+            "cached_input_tokens": 484352,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5342,
+            "reasoning_output_tokens": 2555,
+            "total_tokens": 505363
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 299.534,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-24-02-01a0e264-a7cc-7fa3-966c-82c73941d5cb.jsonl",
+          "session_sha256": "045b2e8a0e8a0ef667bbb10f13a05aba5d07f7a2d2c07b267c3fc57e74338426"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 500021,
+        "cached_input_tokens": 484352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5342,
+        "reasoning_output_tokens": 2555,
+        "total_tokens": 505363
+      },
+      "aggregate_tool_calls": 10,
+      "main_wall_seconds": 299.534
+    },
+    {
+      "case": "T6",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep2\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep2\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 769692,
+            "cached_input_tokens": 743168,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 8534,
+            "reasoning_output_tokens": 4184,
+            "total_tokens": 778226
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 394.539,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-43-54-01a0e276-d99a-7213-8e59-26accda15043.jsonl",
+          "session_sha256": "b1b76d89b8d315f0add7f923212d48d9fb66c1a268ad26cf5735684e0e0125ef"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 769692,
+        "cached_input_tokens": 743168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8534,
+        "reasoning_output_tokens": 4184,
+        "total_tokens": 778226
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 394.539
+    },
+    {
+      "case": "T6",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep2\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep2\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r2_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1048394,
+            "cached_input_tokens": 1015296,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 8108,
+            "reasoning_output_tokens": 3488,
+            "total_tokens": 1056502
+          },
+          "host_tool_calls": 21,
+          "wall_seconds": 392.49,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-29-40-01a0e269-cef7-7b23-b06b-6754047440db.jsonl",
+          "session_sha256": "498362d092343af844a0d61d758931d20aeeb84914d331914cee89cb678f342c"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1048394,
+        "cached_input_tokens": 1015296,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8108,
+        "reasoning_output_tokens": 3488,
+        "total_tokens": 1056502
+      },
+      "aggregate_tool_calls": 21,
+      "main_wall_seconds": 392.49
+    },
+    {
+      "case": "T6",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep2\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep2\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r2_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 663351,
+            "cached_input_tokens": 646144,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5787,
+            "reasoning_output_tokens": 2100,
+            "total_tokens": 669138
+          },
+          "host_tool_calls": 15,
+          "wall_seconds": 307.331,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-37-44-01a0e271-32b1-7a33-83c3-aef0692ed0dc.jsonl",
+          "session_sha256": "356c1a15449d60cced24d3619c521640e56e52f0c16311193419432e8357a636"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 663351,
+        "cached_input_tokens": 646144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5787,
+        "reasoning_output_tokens": 2100,
+        "total_tokens": 669138
+      },
+      "aggregate_tool_calls": 15,
+      "main_wall_seconds": 307.331
+    },
+    {
+      "case": "T6",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep3\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep3\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 633125,
+            "cached_input_tokens": 615680,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5006,
+            "reasoning_output_tokens": 1637,
+            "total_tokens": 638131
+          },
+          "host_tool_calls": 14,
+          "wall_seconds": 304.71,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-58-17-01a0e284-0171-7f90-9635-c8f93c0eb110.jsonl",
+          "session_sha256": "e3afb1445e2526833ef6d09a2a28966d66873c64361f9ea9a2dacdadf8ef0758"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 633125,
+        "cached_input_tokens": 615680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5006,
+        "reasoning_output_tokens": 1637,
+        "total_tokens": 638131
+      },
+      "aggregate_tool_calls": 14,
+      "main_wall_seconds": 304.71
+    },
+    {
+      "case": "T6",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep3\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep3\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 651724,
+            "cached_input_tokens": 633088,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6094,
+            "reasoning_output_tokens": 2543,
+            "total_tokens": 657818
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 379.709,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-04-16-01a0e289-7e99-7340-a042-f072938686d3.jsonl",
+          "session_sha256": "a6ecd0975ae8098cb03823592da3b1160783c6a6e1caaa4251f9a02fafbd5320"
+        },
+        {
+          "agent_path": "/root/formal_t6_r3_s/pypdf_research",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 324519,
+            "cached_input_tokens": 287232,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1437,
+            "reasoning_output_tokens": 659,
+            "total_tokens": 325956
+          },
+          "host_tool_calls": 5,
+          "wall_seconds": 184.45,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-06-45-01a0e28b-c4c9-7f41-b5d2-f96af65f8f54.jsonl",
+          "session_sha256": "5b4560dae6ead56dfd7961e47598ef9d94da4796f6a611e054606b8e2648a480"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 976243,
+        "cached_input_tokens": 920320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7531,
+        "reasoning_output_tokens": 3202,
+        "total_tokens": 983774
+      },
+      "aggregate_tool_calls": 17,
+      "main_wall_seconds": 379.709
+    },
+    {
+      "case": "T6",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 5,
+      "hidden_total": 5,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T6\\rep3\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T6\\rep3\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "pdf_bundle/merge.py",
+        "tests/test_merge.py"
+      ],
+      "added_files": [
+        "pdf_bundle.egg-info/PKG-INFO",
+        "pdf_bundle.egg-info/SOURCES.txt",
+        "pdf_bundle.egg-info/dependency_links.txt",
+        "pdf_bundle.egg-info/requires.txt",
+        "pdf_bundle.egg-info/top_level.txt",
+        "uv.lock"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t6_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 717196,
+            "cached_input_tokens": 696064,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 6685,
+            "reasoning_output_tokens": 2899,
+            "total_tokens": 723881
+          },
+          "host_tool_calls": 16,
+          "wall_seconds": 361.118,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T18-51-06-01a0e27d-6fab-7331-8d56-a36433acedd1.jsonl",
+          "session_sha256": "c1f954fed75d6847ba44b7eed91eebe26550fbb37850afc8c458b7f5091d34a4"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 717196,
+        "cached_input_tokens": 696064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6685,
+        "reasoning_output_tokens": 2899,
+        "total_tokens": 723881
+      },
+      "aggregate_tool_calls": 16,
+      "main_wall_seconds": 361.118
+    },
+    {
+      "case": "T7",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "README.md",
+        "app.js"
+      ],
+      "added_files": [
+        "check-browser.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 843873,
+            "cached_input_tokens": 817664,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7515,
+            "reasoning_output_tokens": 3812,
+            "total_tokens": 851388
+          },
+          "host_tool_calls": 17,
+          "wall_seconds": 422.609,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-31-43-01a0e2a2-9e6d-7352-875f-3addf5250205.jsonl",
+          "session_sha256": "d2ed689536b9326c71382bc7cee9d6536f6922b601e697f3ec973a9a76c4efcf"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 843873,
+        "cached_input_tokens": 817664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7515,
+        "reasoning_output_tokens": 3812,
+        "total_tokens": 851388
+      },
+      "aggregate_tool_calls": 17,
+      "main_wall_seconds": 422.609
+    },
+    {
+      "case": "T7",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "README.md",
+        "app.js"
+      ],
+      "added_files": [
+        "check-browser.ps1",
+        "serve-test-page.mjs"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1496985,
+            "cached_input_tokens": 1453824,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 14583,
+            "reasoning_output_tokens": 7579,
+            "total_tokens": 1511568
+          },
+          "host_tool_calls": 28,
+          "wall_seconds": 644.001,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-11-49-01a0e290-6619-7090-8af0-5f3751885a6d.jsonl",
+          "session_sha256": "e09125f187f55b7f4e149161ff5bc83d05a0cddd615f53bf911049adc75c9439"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1496985,
+        "cached_input_tokens": 1453824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14583,
+        "reasoning_output_tokens": 7579,
+        "total_tokens": 1511568
+      },
+      "aggregate_tool_calls": 28,
+      "main_wall_seconds": 644.001
+    },
+    {
+      "case": "T7",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "app.js"
+      ],
+      "added_files": [
+        "check-quantity-browser.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 684113,
+            "cached_input_tokens": 659712,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 8936,
+            "reasoning_output_tokens": 4645,
+            "total_tokens": 693049
+          },
+          "host_tool_calls": 14,
+          "wall_seconds": 432.878,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-23-37-01a0e29b-3685-7be0-b820-a5ef45c36efc.jsonl",
+          "session_sha256": "66881c79d7b7f9284b74ed0b0007136af7b27cb077999e95166636b6d70b5fd9"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 684113,
+        "cached_input_tokens": 659712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8936,
+        "reasoning_output_tokens": 4645,
+        "total_tokens": 693049
+      },
+      "aggregate_tool_calls": 14,
+      "main_wall_seconds": 432.878
+    },
+    {
+      "case": "T7",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "app.js"
+      ],
+      "added_files": [
+        ".playwright-cli/console-2026-09-27T11-53-29-192Z.log",
+        ".playwright-cli/page-2026-09-27T11-52-52-349Z.yml",
+        ".playwright-cli/page-2026-09-27T11-53-29-311Z.yml",
+        ".playwright-cli/page-2026-09-27T11-53-40-177Z.yml",
+        ".playwright-cli/page-2026-09-27T11-53-41-668Z.yml",
+        "browser-regression.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1700007,
+            "cached_input_tokens": 1656576,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 10378,
+            "reasoning_output_tokens": 4980,
+            "total_tokens": 1710385
+          },
+          "host_tool_calls": 32,
+          "wall_seconds": 563.67,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-49-07-01a0e2b2-8c63-78c3-9655-6daa7370e4c0.jsonl",
+          "session_sha256": "5d7f329e181d4418330ee7faaf374e5bcf0b1572f98e0f1924e711a4c8f0e8e7"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1700007,
+        "cached_input_tokens": 1656576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10378,
+        "reasoning_output_tokens": 4980,
+        "total_tokens": 1710385
+      },
+      "aggregate_tool_calls": 32,
+      "main_wall_seconds": 563.67
+    },
+    {
+      "case": "T7",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "app.js"
+      ],
+      "added_files": [
+        ".playwright-cli/console-2026-09-27T12-07-51-233Z.log",
+        ".playwright-cli/console-2026-09-27T12-08-13-311Z.log",
+        ".playwright-cli/page-2026-09-27T12-03-49-241Z.yml",
+        ".playwright-cli/page-2026-09-27T12-03-50-792Z.yml",
+        ".playwright-cli/page-2026-09-27T12-03-51-878Z.yml",
+        ".playwright-cli/page-2026-09-27T12-07-51-352Z.yml",
+        ".playwright-cli/page-2026-09-27T12-07-53-965Z.yml",
+        ".playwright-cli/page-2026-09-27T12-08-13-419Z.yml",
+        ".playwright-cli/page-2026-09-27T12-08-15-894Z.yml",
+        ".playwright-cli/page-2026-09-27T12-08-17-358Z.yml",
+        "scripts/browser-regression.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r2_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1467107,
+            "cached_input_tokens": 1416448,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 17388,
+            "reasoning_output_tokens": 10742,
+            "total_tokens": 1484495
+          },
+          "host_tool_calls": 26,
+          "wall_seconds": 737.665,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-59-22-01a0e2bb-f096-75d3-bc17-ddcd4b5e6be2.jsonl",
+          "session_sha256": "e5d3e67e509f8a57ff923dcd23d6c66bb4d43f2237cff742087988011f161246"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1467107,
+        "cached_input_tokens": 1416448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17388,
+        "reasoning_output_tokens": 10742,
+        "total_tokens": 1484495
+      },
+      "aggregate_tool_calls": 26,
+      "main_wall_seconds": 737.665
+    },
+    {
+      "case": "T7",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "README.md",
+        "app.js"
+      ],
+      "added_files": [
+        ".playwright-cli/console-2026-09-27T11-44-54-080Z.log",
+        ".playwright-cli/console-2026-09-27T11-45-12-512Z.log",
+        ".playwright-cli/console-2026-09-27T11-45-55-788Z.log",
+        ".playwright-cli/console-2026-09-27T11-46-30-176Z.log",
+        ".playwright-cli/page-2026-09-27T11-44-54-214Z.yml",
+        ".playwright-cli/page-2026-09-27T11-44-57-122Z.yml",
+        ".playwright-cli/page-2026-09-27T11-44-59-432Z.yml",
+        ".playwright-cli/page-2026-09-27T11-45-12-697Z.yml",
+        ".playwright-cli/page-2026-09-27T11-45-15-245Z.yml",
+        ".playwright-cli/page-2026-09-27T11-45-17-623Z.yml",
+        ".playwright-cli/page-2026-09-27T11-45-55-965Z.yml",
+        ".playwright-cli/page-2026-09-27T11-45-58-532Z.yml",
+        ".playwright-cli/page-2026-09-27T11-46-00-853Z.yml",
+        ".playwright-cli/page-2026-09-27T11-46-30-315Z.yml",
+        ".playwright-cli/page-2026-09-27T11-46-32-877Z.yml",
+        ".playwright-cli/page-2026-09-27T11-46-35-151Z.yml",
+        "browser-regression.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r2_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1115315,
+            "cached_input_tokens": 1084416,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 7847,
+            "reasoning_output_tokens": 3298,
+            "total_tokens": 1123162
+          },
+          "host_tool_calls": 23,
+          "wall_seconds": 492.07,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T19-39-50-01a0e2aa-0c5e-7d62-b1a9-201a5eb6e2bf.jsonl",
+          "session_sha256": "c72ebbe4f8599af85bcc0ca9961d2ed455a63082bb89c08a4321dc247d1eac35"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1115315,
+        "cached_input_tokens": 1084416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7847,
+        "reasoning_output_tokens": 3298,
+        "total_tokens": 1123162
+      },
+      "aggregate_tool_calls": 23,
+      "main_wall_seconds": 492.07
+    },
+    {
+      "case": "T7",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "app.js"
+      ],
+      "added_files": [
+        ".gitignore",
+        ".playwright-cli/console-2026-09-27T12-16-28-043Z.log",
+        ".playwright-cli/console-2026-09-27T12-17-36-568Z.log",
+        ".playwright-cli/console-2026-09-27T12-18-01-346Z.log",
+        ".playwright-cli/page-2026-09-27T12-16-28-170Z.yml",
+        ".playwright-cli/page-2026-09-27T12-17-36-745Z.yml",
+        ".playwright-cli/page-2026-09-27T12-18-01-514Z.yml",
+        ".playwright-cli/page-2026-09-27T12-18-03-215Z.yml",
+        ".playwright-cli/page-2026-09-27T12-18-04-342Z.yml",
+        "browser-regression.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1093681,
+            "cached_input_tokens": 1058304,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 12019,
+            "reasoning_output_tokens": 6155,
+            "total_tokens": 1105700
+          },
+          "host_tool_calls": 21,
+          "wall_seconds": 536.46,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T20-12-37-01a0e2c8-10b2-7160-ab92-e7777f7da5d8.jsonl",
+          "session_sha256": "df348bffe290f57729585b25df373d09fae39764e4b9086bdca352050957a669"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1093681,
+        "cached_input_tokens": 1058304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12019,
+        "reasoning_output_tokens": 6155,
+        "total_tokens": 1105700
+      },
+      "aggregate_tool_calls": 21,
+      "main_wall_seconds": 536.46
+    },
+    {
+      "case": "T7",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "app.js"
+      ],
+      "added_files": [
+        ".playwright-cli/console-2026-09-27T12-27-58-450Z.log",
+        ".playwright-cli/console-2026-09-27T12-29-07-186Z.log",
+        ".playwright-cli/console-2026-09-27T12-30-27-389Z.log",
+        ".playwright-cli/console-2026-09-27T12-31-10-172Z.log",
+        ".playwright-cli/page-2026-09-27T12-27-58-559Z.yml",
+        ".playwright-cli/page-2026-09-27T12-29-07-302Z.yml",
+        ".playwright-cli/page-2026-09-27T12-30-27-557Z.yml",
+        ".playwright-cli/page-2026-09-27T12-31-10-287Z.yml",
+        ".playwright-cli/page-2026-09-27T12-31-12-734Z.yml",
+        ".playwright-cli/page-2026-09-27T12-31-14-681Z.yml",
+        "browser-regression.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1772887,
+            "cached_input_tokens": 1716736,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 19846,
+            "reasoning_output_tokens": 12166,
+            "total_tokens": 1792733
+          },
+          "host_tool_calls": 27,
+          "wall_seconds": 750.842,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T20-22-30-01a0e2d1-1c56-7a23-ae01-38242726a79f.jsonl",
+          "session_sha256": "d807aa499b8fa89930d87d612cafd9b4e2ef422bc156a21ab925a5029067d616"
+        },
+        {
+          "agent_path": "/root/formal_t7_r3_s/browser_skill_research",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 446631,
+            "cached_input_tokens": 414720,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4288,
+            "reasoning_output_tokens": 2607,
+            "total_tokens": 450919
+          },
+          "host_tool_calls": 7,
+          "wall_seconds": 255.2,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T20-24-59-01a0e2d3-6504-79b3-ae69-0209bcf8d21e.jsonl",
+          "session_sha256": "3ef8b1c0a1387d0ef948ac6fad1ed33a7c34e142624ef9d8740d2300bb337697"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 2219518,
+        "cached_input_tokens": 2131456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24134,
+        "reasoning_output_tokens": 14773,
+        "total_tokens": 2243652
+      },
+      "aggregate_tool_calls": 34,
+      "main_wall_seconds": 750.842
+    },
+    {
+      "case": "T7",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 1,
+      "hidden_total": 1,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": null,
+      "tests_preserved": true,
+      "changed_files": [
+        "README.md",
+        "app.js"
+      ],
+      "added_files": [
+        ".playwright-cli/console-2026-09-27T12-41-03-419Z.log",
+        ".playwright-cli/console-2026-09-27T12-41-25-785Z.log",
+        ".playwright-cli/console-2026-09-27T12-42-18-950Z.log",
+        ".playwright-cli/console-2026-09-27T12-42-50-781Z.log",
+        ".playwright-cli/page-2026-09-27T12-41-03-587Z.yml",
+        ".playwright-cli/page-2026-09-27T12-41-05-225Z.yml",
+        ".playwright-cli/page-2026-09-27T12-41-25-970Z.yml",
+        ".playwright-cli/page-2026-09-27T12-41-27-661Z.yml",
+        ".playwright-cli/page-2026-09-27T12-41-29-505Z.yml",
+        ".playwright-cli/page-2026-09-27T12-42-19-119Z.yml",
+        ".playwright-cli/page-2026-09-27T12-42-20-781Z.yml",
+        ".playwright-cli/page-2026-09-27T12-42-22-425Z.yml",
+        ".playwright-cli/page-2026-09-27T12-42-50-938Z.yml",
+        ".playwright-cli/page-2026-09-27T12-42-52-572Z.yml",
+        ".playwright-cli/page-2026-09-27T12-42-54-188Z.yml",
+        "browser-regression.ps1"
+      ],
+      "security": {},
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t7_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 1408495,
+            "cached_input_tokens": 1282048,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 10898,
+            "reasoning_output_tokens": 4584,
+            "total_tokens": 1419393
+          },
+          "host_tool_calls": 29,
+          "wall_seconds": 529.622,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T20-36-00-01a0e2dd-77e2-7d80-9fa4-0739caf51d75.jsonl",
+          "session_sha256": "89fd64df6d53b86058a1e632090ef3fa9c5dcda5653847573b4fcfdbec714a60"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 1408495,
+        "cached_input_tokens": 1282048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10898,
+        "reasoning_output_tokens": 4584,
+        "total_tokens": 1419393
+      },
+      "aggregate_tool_calls": 29,
+      "main_wall_seconds": 529.622
+    },
+    {
+      "case": "T8",
+      "rep": 1,
+      "arm": "R",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep1\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep1\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": false,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r1_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 620718,
+            "cached_input_tokens": 604416,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4238,
+            "reasoning_output_tokens": 1411,
+            "total_tokens": 624956
+          },
+          "host_tool_calls": 14,
+          "wall_seconds": 269.035,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T20-51-26-01a0e2eb-9bd5-7250-8bd7-74740bb9522e.jsonl",
+          "session_sha256": "966bd58c2362a37fb26a796f8bd485d7a1cd0e262acafe31183e63e6685d41db"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 620718,
+        "cached_input_tokens": 604416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4238,
+        "reasoning_output_tokens": 1411,
+        "total_tokens": 624956
+      },
+      "aggregate_tool_calls": 14,
+      "main_wall_seconds": 269.035
+    },
+    {
+      "case": "T8",
+      "rep": 1,
+      "arm": "S",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep1\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep1\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r1_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 506632,
+            "cached_input_tokens": 491520,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4249,
+            "reasoning_output_tokens": 1424,
+            "total_tokens": 510881
+          },
+          "host_tool_calls": 11,
+          "wall_seconds": 258.926,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T20-57-00-01a0e2f0-b44e-7de2-8b6d-b752671b193e.jsonl",
+          "session_sha256": "379b1c3a5c98f83a41c580483ec90a881ef8bd0267f661502ef011f24041d86b"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 506632,
+        "cached_input_tokens": 491520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4249,
+        "reasoning_output_tokens": 1424,
+        "total_tokens": 510881
+      },
+      "aggregate_tool_calls": 11,
+      "main_wall_seconds": 258.926
+    },
+    {
+      "case": "T8",
+      "rep": 1,
+      "arm": "N",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep1\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep1\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r1_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 533032,
+            "cached_input_tokens": 502528,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4178,
+            "reasoning_output_tokens": 1397,
+            "total_tokens": 537210
+          },
+          "host_tool_calls": 11,
+          "wall_seconds": 264.414,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T20-46-08-01a0e2e6-c16a-7fa0-906b-8f2dd1d1a59d.jsonl",
+          "session_sha256": "f229b2116f68de837618ecb8addbb226fba5607111fb2939795d9681a30f5156"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 533032,
+        "cached_input_tokens": 502528,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4178,
+        "reasoning_output_tokens": 1397,
+        "total_tokens": 537210
+      },
+      "aggregate_tool_calls": 11,
+      "main_wall_seconds": 264.414
+    },
+    {
+      "case": "T8",
+      "rep": 2,
+      "arm": "R",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep2\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep2\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r2_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 366909,
+            "cached_input_tokens": 356096,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3506,
+            "reasoning_output_tokens": 1174,
+            "total_tokens": 370415
+          },
+          "host_tool_calls": 8,
+          "wall_seconds": 233.438,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T21-02-04-01a0e2f5-5558-7540-ad1a-5123d8089cc0.jsonl",
+          "session_sha256": "ed8f06e11678e9433e97ba1b0aff7d04d3d0dd21200a3483b9c0b3eb7e654a96"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 366909,
+        "cached_input_tokens": 356096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3506,
+        "reasoning_output_tokens": 1174,
+        "total_tokens": 370415
+      },
+      "aggregate_tool_calls": 8,
+      "main_wall_seconds": 233.438
+    },
+    {
+      "case": "T8",
+      "rep": 2,
+      "arm": "S",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep2\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep2\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r2_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 655365,
+            "cached_input_tokens": 636160,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 5086,
+            "reasoning_output_tokens": 1755,
+            "total_tokens": 660451
+          },
+          "host_tool_calls": 13,
+          "wall_seconds": 198.36,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T21-06-30-01a0e2f9-6740-7342-b2d6-5b45ee9663cb.jsonl",
+          "session_sha256": "a29e497b97cedcbbae75fb82d8b04fabd99032c84a89440e54ac1c2adb85c46a"
+        },
+        {
+          "agent_path": "/root/formal_t8_r2_s/research",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 281322,
+            "cached_input_tokens": 268544,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2333,
+            "reasoning_output_tokens": 1148,
+            "total_tokens": 283655
+          },
+          "host_tool_calls": 5,
+          "wall_seconds": 102.09,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T21-07-07-01a0e2f9-f59f-7993-b0ab-dbfa2dedc041.jsonl",
+          "session_sha256": "6ac6d36b86915fb0f33d621e43f4f751fa8e80f873533ae4ac21176b2a1b3418"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 936687,
+        "cached_input_tokens": 904704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7419,
+        "reasoning_output_tokens": 2903,
+        "total_tokens": 944106
+      },
+      "aggregate_tool_calls": 18,
+      "main_wall_seconds": 198.36
+    },
+    {
+      "case": "T8",
+      "rep": 2,
+      "arm": "N",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep2\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep2\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r2_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 400300,
+            "cached_input_tokens": 372224,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3490,
+            "reasoning_output_tokens": 979,
+            "total_tokens": 403790
+          },
+          "host_tool_calls": 9,
+          "wall_seconds": 121.009,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T21-10-22-01a0e2fc-f0e5-7370-b268-2cfe6ce9b037.jsonl",
+          "session_sha256": "7c870eb7f3e98124e15c6266d21b6231a8fb61bb6d3bf41b75408ec61189d7c9"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 400300,
+        "cached_input_tokens": 372224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3490,
+        "reasoning_output_tokens": 979,
+        "total_tokens": 403790
+      },
+      "aggregate_tool_calls": 9,
+      "main_wall_seconds": 121.009
+    },
+    {
+      "case": "T8",
+      "rep": 3,
+      "arm": "R",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep3\\R\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep3\\R\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r3_r",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 534512,
+            "cached_input_tokens": 514816,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4198,
+            "reasoning_output_tokens": 1294,
+            "total_tokens": 538710
+          },
+          "host_tool_calls": 12,
+          "wall_seconds": 271.35,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T21-23-20-01a0e308-cf92-7651-8f02-043e81952ad2.jsonl",
+          "session_sha256": "b6e7e4d50e0ddcf2cffdb019f28540f5d131020a2476ec3901ce3035a3cf36be"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 534512,
+        "cached_input_tokens": 514816,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4198,
+        "reasoning_output_tokens": 1294,
+        "total_tokens": 538710
+      },
+      "aggregate_tool_calls": 12,
+      "main_wall_seconds": 271.35
+    },
+    {
+      "case": "T8",
+      "rep": 3,
+      "arm": "S",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep3\\S\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep3\\S\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r3_s",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 456622,
+            "cached_input_tokens": 441600,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4542,
+            "reasoning_output_tokens": 1971,
+            "total_tokens": 461164
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 272.125,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T21-13-17-01a0e2ff-9cdc-7ff1-9b65-4d2fafaac501.jsonl",
+          "session_sha256": "5b88bf8cb7c0025d1624138c1b2ae96092defec855a682923fef0a9bb0f1071f"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 456622,
+        "cached_input_tokens": 441600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4542,
+        "reasoning_output_tokens": 1971,
+        "total_tokens": 461164
+      },
+      "aggregate_tool_calls": 10,
+      "main_wall_seconds": 272.125
+    },
+    {
+      "case": "T8",
+      "rep": 3,
+      "arm": "N",
+      "hidden_passed": 7,
+      "hidden_total": 7,
+      "hidden_fraction": 1.0,
+      "hidden_exit_code": 0,
+      "visible": {
+        "exit_code": 0,
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "command": [
+          "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "<BENCH_ROOT>\\formal\\runs\\T8\\rep3\\N\\project\\tests",
+          "--tb=short",
+          "--junitxml=<BENCH_ROOT>\\formal\\runs\\T8\\rep3\\N\\visible-junit.xml"
+        ]
+      },
+      "tests_preserved": true,
+      "changed_files": [
+        "settings_loader/load.py",
+        "tests/test_load.py"
+      ],
+      "added_files": [],
+      "security": {
+        "sync_report_exists": false,
+        "secret_leaks": []
+      },
+      "sessions": [
+        {
+          "agent_path": "/root/formal_t8_r3_n",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "usage": {
+            "input_tokens": 441804,
+            "cached_input_tokens": 428288,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3742,
+            "reasoning_output_tokens": 1229,
+            "total_tokens": 445546
+          },
+          "host_tool_calls": 10,
+          "wall_seconds": 244.817,
+          "session_log": "<USER_HOME>\\.codex\\sessions\\2026\\09\\27\\rollout-2026-09-27T21-18-34-01a0e304-71d9-7e00-9f91-5e2fd24b3712.jsonl",
+          "session_sha256": "1d5c4deeaf4817d118ea1e530d032dc6cf73eeb195251d0a75f3680bf9b3585e"
+        }
+      ],
+      "all_luna_high": true,
+      "aggregate_usage": {
+        "input_tokens": 441804,
+        "cached_input_tokens": 428288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3742,
+        "reasoning_output_tokens": 1229,
+        "total_tokens": 445546
+      },
+      "aggregate_tool_calls": 10,
+      "main_wall_seconds": 244.817
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "case": "T1",
+    "repetition": 2,
+    "arm": "S",
+    "original_run": "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S",
+    "original_agent": "/root/formal_t1_r2_s",
+    "reason": "Research subagent spawn denied because concurrent slots were full; excluded from canonical analysis for this protocol deviation regardless of its passing score.",
+    "replacement_run": "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S_retest",
+    "replacement_agent": "/root/formal_t1_r2_s_retest"
+  },
+  {
+    "case": "T1",
+    "repetition": 2,
+    "arm": "S",
+    "original_run": "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S_retest",
+    "original_agent": "/root/formal_t1_r2_s_retest",
+    "reason": "Fresh copy accidentally included untracked __pycache__ from a scorer import; excluded to restore an identical clean starting state regardless of score.",
+    "replacement_run": "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S_retest2",
+    "replacement_agent": "/root/formal_t1_r2_s_retest2"
+  },
+  {
+    "case": "T1",
+    "repetition": 2,
+    "arm": "S",
+    "original_run": "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S_retest2",
+    "original_agent": "/root/formal_t1_r2_s_retest2",
+    "reason": "Git clone converted baseline line endings on checkout, making all tracked file byte hashes different despite clean Git status; excluded regardless of score.",
+    "replacement_run": "<BENCH_ROOT>\\formal\\runs\\T1\\rep2\\S_retest3",
+    "replacement_agent": "/root/formal_t1_r2_s_retest3"
+  },
+  {
+    "case": "T3",
+    "repetition": 2,
+    "arm": "N",
+    "original_run": "<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\N",
+    "original_agent": "/root/formal_t3_r2_n",
+    "reason": "Model usage limit interrupted the original agent turn before final completion; excluded regardless of partial code quality.",
+    "replacement_run": "<BENCH_ROOT>\\formal\\runs\\T3\\rep2\\N_retest",
+    "replacement_agent": "/root/formal_t3_r2_n_retest"
+  }
+]

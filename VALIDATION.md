@@ -8,9 +8,10 @@ ReuseBeacon is used in the author's development work. [Project cases](PROJECTS.m
 | --- | --- | --- |
 | Project practice | Reviewed the quant workbench's candidate assessment, RiceQuant skill adaptation, DuckDB/Parquet implementation, and the mouse recorder's `pynput` integration and release checks. | Concrete engineering choices and outputs; links are pinned in [PROJECTS.md](PROJECTS.md). |
 | v0.2.0 task-result replay | On 2026-09-26, an independent Codex review reran the maintainer's WorkBuddy experiment: eight cases across three conditions, with all 24 existing checks passing. | Confirms the tested artifacts' behavior. The review found hidden-test access and concurrent directory writes; tool counts were self-reported. This run is not used to claim comparative quality or cost gains. |
+| v0.3.2 model comparison | 72 GPT-6 Luna high runs (8 tasks × 3 arms × 3 repetitions), with host telemetry and external scoring; all 72 output scores reproduced from the public export, including nine real-browser checks. | Each arm fully passed 21/24 runs. All other results are partial T5 scores; frozen grader conflicts are retained. [Report and evidence](evaluations/luna-high-2026-09-27/README.md). |
 | Distribution | Public installation, copied-file hashes, package validation, and Linux/Windows CI completed for the release records below. | Version-specific package and installation results. |
 
-Project use, task-result checks, and controlled comparisons answer different questions. A pending comparison does not imply an absence of practical use or executed tests. Host-native automatic activation and the v0.3.0 supporting-skill workflow remain separate evaluation targets.
+Project use, task-result checks, and controlled comparisons answer different questions. A pending comparison does not imply an absence of practical use or executed tests. Host-native automatic activation remains unmeasured. The v0.3.2 comparison observed supporting-skill use under an explicit task request; it does not establish spontaneous discovery or cross-host behavior.
 
 ## Version 0.3.2
 
@@ -26,7 +27,15 @@ Project use, task-result checks, and controlled comparisons answer different que
 | Release archive | SHA-256 of `reusebeacon.zip`: `4ed5b281234f0db4120f5855a7b825f90e540585b2ee16cec1ae801470fd79b7`. |
 | Instruction size | The entrypoint decreased from 1,270 to 690 whitespace-delimited words; its description decreased from 452 to 301 characters. Existing references hold detailed assessment and recovery guidance. The package remains seven files with no new runtime dependencies. These measurements do not establish model cost savings. |
 | Trigger metadata | Front-loaded English/Chinese use cases, removed workflow detail from the description, and retained exclusions for explanations and isolated fixes. The existing Codex metadata does not disable implicit invocation; no new activation switch was added. |
-| Scenario coverage | Clarified research scope, existing authorization, bounded adaptation, and small-fix cases. Case 16 separates forced loading from native selection; six trigger prompts cover implicit selection, exclusions, and explicit invocation. These are acceptance definitions, not measured activation rates or a completed new-version model comparison. |
+| Scenario coverage | Clarified research scope, existing authorization, bounded adaptation, and small-fix cases. Case 16 separates forced loading from native selection; six trigger prompts cover implicit selection, exclusions, and explicit invocation. These are acceptance definitions, not measured activation rates. A separate 72-run forced-load model comparison is now published below. |
+
+### Executed GPT-6 Luna high comparison
+
+[Full report, per-run records and downloadable evidence](evaluations/luna-high-2026-09-27/README.md): eight tasks × three arms × three repeats, frozen ReuseBeacon commit `03a0902dd0583c76ecb6bb2fb4a996ac3d6fadb8` and ECC search-first commit `db7f2a6fd5b013d56ec0ba0cfc547ba77baddbce`. All main/research agents were GPT-6 Luna high; researcher cost is included.
+
+The three arms each fully passed 21/24 runs. Relative to the no-general-skill arm, paired median host-tool-call / wall-time changes were +2.9% / +3.1% for ReuseBeacon and +14.2% / +19.0% for search-first. No correctness gain over that strong baseline was measured. T5 has a documented frozen instruction/grader conflict; all partial scores remain available. Publication replay reproduced every score without model calls.
+
+Shared user instructions already favored reuse, several tasks named dependencies, and T7 explicitly requested a supporting skill. These conditions limit inference about discovery and implicit activation. See [next steps and the separate GLM record audit](evaluations/NEXT_STEPS.md).
 
 ### Review of the v0.3.1 issue artifacts
 

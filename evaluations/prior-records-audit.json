@@ -1,0 +1,115 @@
+{
+  "scope": "Recalculation of already-published JSON; no independent replay of these model runs.",
+  "sources": [
+    {
+      "file": "results/iteration-1.json",
+      "sha256_lf": "225fee2add25ab862f4c3bf3b5a6c44966f66997d57cea68c04bc835c5fdd30a",
+      "runs": 4
+    },
+    {
+      "file": "results/iteration-2.json",
+      "sha256_lf": "fe51bebf2bc5d5eecd8d982b9b0a50afbdc776528de844f818f25e95e63c7cd0",
+      "runs": 6
+    },
+    {
+      "file": "results/iteration-3.json",
+      "sha256_lf": "631b420461400a12e903fc7a8af726e36dad907e7a88b9da3570dff9fd4241f0",
+      "runs": 6
+    },
+    {
+      "file": "results/iteration-4.json",
+      "sha256_lf": "fb121208d6655da6d0be908e30f1fe4932b082e1ba23a23275973ae18aa72e2b",
+      "runs": 18
+    },
+    {
+      "file": "results/iteration-5.json",
+      "sha256_lf": "2cdc2d653cfe9895390e9b433e184042894f3621d33e5715833e37dee4dec1d9",
+      "runs": 15
+    },
+    {
+      "file": "results/iteration-6.json",
+      "sha256_lf": "594b3e2d41c5677a038ea4beac57f81a890f9232573494e7b921c4cc702962e2",
+      "runs": 9
+    },
+    {
+      "file": "results/iteration-7.json",
+      "sha256_lf": "d914e974db32c4d5b38d2961ff57b29a91d4add35e8bc8273de65a92db6f3026",
+      "runs": 27
+    }
+  ],
+  "record_count": 85,
+  "unique_run_keys": 85,
+  "task_ids": [
+    "eval-1",
+    "eval-2",
+    "eval-3",
+    "eval-4",
+    "eval-5",
+    "eval-6",
+    "eval-7",
+    "eval-8",
+    "eval-9"
+  ],
+  "records_in_iterations_5_6_7": 51,
+  "pass_rate_with_partial_assertions": [
+    {
+      "file": "results/iteration-3.json",
+      "run": "eval-5-commonmark/with_search_first",
+      "pass_rate": 1,
+      "partial_assertion_counts": [
+        [
+          649,
+          652
+        ]
+      ]
+    },
+    {
+      "file": "results/iteration-4.json",
+      "run": "eval-5-commonmark-trial3/with_search_first",
+      "pass_rate": 1,
+      "partial_assertion_counts": [
+        [
+          649,
+          652
+        ]
+      ]
+    },
+    {
+      "file": "results/iteration-7.json",
+      "run": "eval-5-commonmark-trial5/with_skill",
+      "pass_rate": 1,
+      "partial_assertion_counts": [
+        [
+          649,
+          652
+        ]
+      ]
+    }
+  ],
+  "v032_csv": {
+    "n_per_arm": {
+      "with_skill": 3,
+      "without_skill": 3,
+      "with_search_first": 3
+    },
+    "mean_reported_total_tokens": {
+      "with_skill": 215621.66666666666,
+      "without_skill": 198594.33333333334,
+      "with_search_first": 250405.66666666666
+    },
+    "reusebeacon_vs_no_skill_percent": 8.573927084190046
+  },
+  "v032_cron": {
+    "n_per_arm": {
+      "with_skill": 3,
+      "without_skill": 3,
+      "with_search_first": 3
+    },
+    "mean_reported_total_tokens": {
+      "with_skill": 426631,
+      "without_skill": 3103445.6666666665,
+      "with_search_first": 441123.3333333333
+    },
+    "reusebeacon_vs_no_skill_percent": -86.25298955343936
+  }
+}

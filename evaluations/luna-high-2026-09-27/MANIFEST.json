@@ -1,0 +1,352 @@
+{
+  "protocol_date": "2026-09-27",
+  "model": "gpt-6-luna",
+  "effort": "high",
+  "R_version": "0.3.2",
+  "R_commit": "03a0902dd0583c76ecb6bb2fb4a996ac3d6fadb8",
+  "R_file_sha256": {
+    "LICENSE": "ffab5f27cac741818d7f5352d1bc9b01839022a58797917a93d12b1eff4d42af",
+    "SKILL.md": "a9a92e2d1ebf87d2f423f807b5852e831e01e230fb7045540eb185650d005440",
+    "THIRD_PARTY_NOTICES.md": "73b606d7bff5f67f054cab85ce26a5d1b066aa34113822100d44fb9e9a2b0cd0",
+    "agents/openai.yaml": "3b6260eb59b255c2dcc8902f6e407bf86d05764cd697ac065587ceb5d3bf3f09",
+    "references/github-access.md": "fea581d16ff05cc9cc35cee50895ae85941f9ff9eed30f4b83f77a8bfc70b089",
+    "references/selection.md": "ae60dcae09c229ca2c8cc1e74a4ae597c21127e2203c69e8e734dd7295ce0970",
+    "references/skill-discovery.md": "9ca7e5c304a601f3aa21e13c19dd9bad00f77a131315a752ba330707e865831a"
+  },
+  "S_source_commit": "db7f2a6fd5b013d56ec0ba0cfc547ba77baddbce",
+  "S_sha256": "d66d744228b9cf860acf35f8a90cbbe8195e61367860da9d3632f9fc65706733",
+  "shared_deps": {
+    "openpyxl": "3.1.5",
+    "et-xmlfile": "2.0.0",
+    "httpx": "0.28.1",
+    "python-dateutil": "2.9.0.post0",
+    "markdown-it-py": "4.2.0",
+    "pypdf": "6.19.0",
+    "pytest": "8.3.4"
+  },
+  "cases": {
+    "T1": {
+      "title": "订单 CSV 导出的小修复",
+      "task_sha256": "493e48743ecf180405f6fee4a91445a49843a582043241c81beeb4d52d8a83ff",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "9e38ec028f5d9c847dea8833f2d9630957d598ac",
+      "file_sha256": {
+        "pyproject.toml": "0974728afdb9ecc194fcbb925341266b2745979a5521adc8afeda8f3855a61bb",
+        "shop_export/__init__.py": "4d856d1c6005b9aaf7dbcff2e55381cb2f03ec17e15da545b7134486b6bc447a",
+        "shop_export/orders.py": "70ca5bab4f84b3e77620b35fcbdf5c19af0622a4fc6f55d896067039c5e8f668",
+        "tests/test_orders.py": "7c84b5fe26b6533f68f61a2ad973892a12fcc953527a2f75c7b6ed2b173d3ea4"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        }
+      ]
+    },
+    "T2": {
+      "title": "复用现有依赖导出 Excel 考勤表",
+      "task_sha256": "ce9e5c4996ee6044e9fd7cf6cb873e35f8450f7d8171b7586455186a1473dde4",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "4c9662f425a02fdb4fa4470d0ca1716f725ef221",
+      "file_sha256": {
+        "attendance/__init__.py": "9beb6dfa945a08e02612b015b7f103593ed808f4928b603637cb3e77aa7f78bd",
+        "attendance/export.py": "bf7e1e61ac4f3846711a5b2bd9ab1c84327513afd17ef186155a9ad2b2251fb4",
+        "attendance/template.py": "bce1e392462f128b36ddf0848acb4823a9eac8aacd2d2031b86191cf7c4311df",
+        "pyproject.toml": "155d21a13351e82debbf5444695a88540fc6e373fc33d58fbf20c19eddf64021",
+        "tests/test_export.py": "edfc62137770c80910de276823c45c0c2b8ef7a41095a5ebc3aba303935d8cbb"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        }
+      ]
+    },
+    "T3": {
+      "title": "跨夏令时的本地重复事件",
+      "task_sha256": "83bea5d7dc5af2c037b5d7c56d8d823fd4c1db6eb442e75af12e0111fddafe48",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "42e0f5f9968060d21d9b5f7e759f9dc79008c09a",
+      "file_sha256": {
+        "pyproject.toml": "40cd14cdddc252a9119887b1fc6f6c059502bc768209b03402b84c0ce96ca072",
+        "slots/__init__.py": "aacfd734e2a521222fe0c609d98092c2b6a90b833a971512f39fa00c1fdd69a2",
+        "slots/recurrence.py": "d697f9a2d273a8e781a7bbbe45a4411db01d670b6f1eab46602cd65a03995dda",
+        "tests/test_slots.py": "615ba93e263eb6b6f3ca7d1b451ffcdf620607b1b5453643f412ddbdd0c2020b"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        }
+      ]
+    },
+    "T4": {
+      "title": "异步 HTTP 状态重试与取消",
+      "task_sha256": "e8fae0b7c42d74d363b6e9c34a3d3780d6c830faed542b45fb62f2b29d8942af",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "ca43442e838bb80bf58d8316fc0c232d3ec7bfc1",
+      "file_sha256": {
+        "async_gateway/__init__.py": "be4e62a98be36475efc4a560ac180afdcdac8244177870ba2308fb78667cbba2",
+        "async_gateway/client.py": "9d6671c48f4086eca37df6293735cffe41daaa6b5fa8745bab373dd383557c98",
+        "pyproject.toml": "fc28d51d664c375f13b7617aeef0b588dbf94a402eb414afb4b8001e9341bc89",
+        "tests/test_client.py": "8db762387effd144765c5a39616e89667f4079c39482c973a50e787cafa93426"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        }
+      ]
+    },
+    "T5": {
+      "title": "CommonMark 渲染与默认 HTML 策略",
+      "task_sha256": "c6bd051ced9e6e08befc093f4494412cbdae56deb11e433a085454e00797d1ec",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "a17a7eada9bc4a03d0ade84fafe164859ef658e6",
+      "file_sha256": {
+        "article_render/__init__.py": "b720d58e08d1b9f9f3dd833c8957c080a029036422740d08bde9453abfbba4ed",
+        "article_render/markdown.py": "f116ed5b7c9256b97b7e07f0b485bf52a6750a6841bb9de281ebeef6f7a40622",
+        "pyproject.toml": "6a31f224bc5421165c2372aa10815b910cb2937d4bb061b18f812da03e8d0e24",
+        "tests/test_markdown.py": "641ca4e56de23bc7b7e9fe29cc991b985fea41d22aa73c31a0ee28cd4fbb8e3d"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        }
+      ]
+    },
+    "T6": {
+      "title": "Windows PDF 合并与失败原子性",
+      "task_sha256": "70c071edf44439a7b45b36ee218387f0ef3f8e5edcf28ef8d1ddaaa74ee30958",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "ab317c82e99c622b17a52015b3d52b40b63a94b5",
+      "file_sha256": {
+        "pdf_bundle/__init__.py": "9f42b6993fcfbe1aad265acd625efe3c0a9e619e8d04b6d174f5b5d712a13054",
+        "pdf_bundle/merge.py": "230089d6982060b8d1608f2420603ee62dd9e7bdeefd4297002baadbb00a8ee7",
+        "pyproject.toml": "c94f0852752e207906e6fad101cd2a5fe06333c2436685d58b9f1efdfe54bc8c",
+        "tests/test_merge.py": "d529b0b2348dfee70b8d5b582884d3fdc9938d00b9cd1c808fcc7dd7acd4cda8"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        }
+      ]
+    },
+    "T7": {
+      "title": "发现并实际使用浏览器测试技能",
+      "task_sha256": "81e77aa01223034dfac1ccd7ddd48aecbc0b25d6daec4319bda83c47a2b41451",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "a04ae88aa46d09be6c0988344c76b3cafbbd4b6a",
+      "file_sha256": {
+        "README.md": "a8159f5a1ce3bac0982d3569bdd17b9ac232d61678372f77efd2a656ab14a18f",
+        "app.js": "3dd15c04c4ee24524ce6287e35504b8676119fa69a817febd3c81156d9c03fcb",
+        "index.html": "ac1a9f82e5b793073f809dcdc7d4eec277f6684afe01c890bbd73ccbe1ace7ac"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        }
+      ]
+    },
+    "T8": {
+      "title": "配置覆盖与候选文档注入",
+      "task_sha256": "c60a6020a9a5dfe954f89936ddb8a60b1c3bd7a57fbe05dbf841e11486d25256",
+      "common_sha256": "fc265505172012fd632d401e22c0e47a7a2263969ab774a0115ac386d7439e44",
+      "baseline_commit": "ede7d3ec5e28eae5ac78970c487095dff2db9521",
+      "file_sha256": {
+        ".env": "854c2253c86baa83ffcd7a44f49560cd8b8f6524c944a341167beaacc033a633",
+        "README.md": "910d202275fa53e30e329ecf881f0aef9497ace488753434e9c7a4f7d3f376fe",
+        "config.toml": "cd3d4f672017ac6964911ffae2f628a8cc0a9b43187452ded7ae5fe45c2799e1",
+        "pyproject.toml": "e9e6447e8718eab1238636e3160f677c0243a4b29728f532be1a2d020c6299b3",
+        "settings_loader/__init__.py": "11025fece24645d3693ecb734a8e5e6f90c6dddb77d7c60397203bf584ca581a",
+        "settings_loader/load.py": "815cbfe7e23f35d21a9915be681388711729a9365da3c52f031d822e7531aec6",
+        "tests/test_load.py": "a36b53a0fe6e0da4d4d90073626fedc9499b8ba902bc33891b2061bffbbc487b",
+        "vendor_docs/README.md": "2abb2abe92433905274ac16f6a096e59e94ccf69a84e63e9a4d3f6229fd90646"
+      },
+      "run_order": [
+        {
+          "repetition": 1,
+          "arms": [
+            "N",
+            "R",
+            "S"
+          ]
+        },
+        {
+          "repetition": 2,
+          "arms": [
+            "R",
+            "S",
+            "N"
+          ]
+        },
+        {
+          "repetition": 3,
+          "arms": [
+            "S",
+            "N",
+            "R"
+          ]
+        }
+      ]
+    }
+  },
+  "external_grader_sha256": {
+    "grader/test_T1.py": "d6debc070919c50ffc0e09180a1bbb93db20df1f48ccf528750abda7671dde58",
+    "grader/test_T2.py": "a796357f15208e3e70575a9e80e521baf278267765efe81f8a27a0976e9a626a",
+    "grader/test_T3.py": "579c810b76ae84ec3b59a76944e6969c7af9f3333ee46da04282cfd8bf77c1db",
+    "grader/test_T4.py": "91ccfcba977deb780ae6933f9d0d53b182aac39edcd47a9c2754b0d43e5dc166",
+    "grader/test_T5.py": "21e87e452a97abc65b4626ffdd99e3878684babeeeb7a08ecef96ad242dd14a3",
+    "grader/test_T6.py": "e339f111eaf57e698cf6142be3c2526a40d8d50a600478db5a1b79077dd6aa79",
+    "grader/test_T7.py": "f7e3b45ee3a304f0efa90b6186e884ba4d0c5d870fafa8024915b801fe070e15",
+    "grader/test_T8.py": "8293ca718ef69363b7bd7011ee99c9d8c5be3ae6959668faf10b3e799947e68b"
+  },
+  "official_corpus": {
+    "source": "https://spec.commonmark.org/0.31.2/spec.json",
+    "examples": 652,
+    "sha256": "d431b29d97b6f73e69d547109cf5081578fac931e72afe95639ebe766c1b2a20"
+  }
+}

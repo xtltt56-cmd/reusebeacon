@@ -20,13 +20,10 @@
 
 ## 实测（三臂对照评测）
 
-独立三臂对照评测（ReuseBeacon / ECC search-first / 无技能基线，同题并行，判分套件经参考实现交叉验证）：**8 个题型、约 87 组运行、质量验收零失败**。v0.3.2 要点：
+- **GPT-6 Luna high：72 次真实运行。** ReuseBeacon、ECC search-first 与无通用 Skill 组各有 21/24 次外部测试全过；本套题中，ReuseBeacon 相比 search-first 总工具调用少 **16.7%**、总执行时间少 **16.1%**。逐次指标、工具轨迹、代码差异与可重跑证据均已公开。[查看报告与下载证据](evaluations/luna-high-2026-09-27/README.md)
+- **GLM / ZCode：已归档 85 条记录、9 个题型。** 记录涵盖复用选型、小任务、规范一致性和辅助 Skill 使用；v0.3.2 的三次 cron 样本中，平均报告总 tokens 比基线低约 **86%**。[查看既有评测](evaluations/README.md)
 
-- 小修复任务相对基线的开销从 **+50% 降到 +5%**（Small-fix 出口）；
-- cron 域任务相对基线 **tokens −86%**（基线 6/6 次自建引擎，ReuseBeacon 3/3 次复用成熟库）；
-- 已知局限与对己不利的记录（含一次护栏误判的完整过程）一并发布。
-
-协议、判分套件与逐运行原始记录见 [evaluations/](evaluations/README.md)；完整报告见 [#2](https://github.com/xtltt56-cmd/reusebeacon/issues/2) 与 [#4](https://github.com/xtltt56-cmd/reusebeacon/issues/4)（另有 [#1](https://github.com/xtltt56-cmd/reusebeacon/issues/1)、[#3](https://github.com/xtltt56-cmd/reusebeacon/issues/3)）。
+以上是指定任务与环境下的结果。两批模型与成本口径不同，分别统计；完整报告保留部分通过、重测与评分说明。[后续改进方向与统计复核](evaluations/NEXT_STEPS.md)
 
 ## 项目实践
 

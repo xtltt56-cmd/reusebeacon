@@ -1,5 +1,9 @@
 # 评测协议与工件（三臂对照实测）
 
+[新增：GPT-6 Luna high 的 72 次对照与完整证据](luna-high-2026-09-27/README.md) · [统计复核与改进方向](NEXT_STEPS.md)
+
+下文为原 GLM/ZCode 批次。已上传七个 JSON 共 85 条互异记录、9 个题型；其二元 `pass_rate` 不等于逐条断言全过，三条 CommonMark 记录为 649/652。原始记录保留，复核详情见 [prior-records-audit.json](prior-records-audit.json)。不同模型和成本口径不合并。
+
 本目录承载 Issue #1–#4 中全部实测结论的**可复现层**：任务模板、冻结的判分套件、参考实现、
 各轮运行的计时与判分原始记录（JSON），以及运行协议。所有数字均可由本目录核对。
 

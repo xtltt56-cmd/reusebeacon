@@ -1,0 +1,578 @@
+{
+  "overall": {
+    "R": {
+      "n": 24,
+      "full_passes": 21,
+      "total_calls": 368,
+      "total_uncached_input": 517553,
+      "total_output": 150772,
+      "total_wall_seconds": 8025.542,
+      "runs_with_added_files": 5,
+      "runs_with_original_tests_modified": 5
+    },
+    "S": {
+      "n": 24,
+      "full_passes": 21,
+      "total_calls": 442,
+      "total_uncached_input": 1059121,
+      "total_output": 209102,
+      "total_wall_seconds": 9562.376,
+      "runs_with_added_files": 4,
+      "runs_with_original_tests_modified": 4
+    },
+    "N": {
+      "n": 24,
+      "full_passes": 21,
+      "total_calls": 357,
+      "total_uncached_input": 630873,
+      "total_output": 135946,
+      "total_wall_seconds": 7624.553,
+      "runs_with_added_files": 4,
+      "runs_with_original_tests_modified": 6
+    }
+  },
+  "by_case": {
+    "T1": {
+      "R": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          3,
+          3,
+          3
+        ],
+        "hidden_total_each": [
+          3,
+          3,
+          3
+        ],
+        "median_calls": 12,
+        "median_uncached_input": 14804,
+        "median_output": 3923,
+        "median_wall_seconds": 250.238,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          3,
+          3,
+          3
+        ],
+        "hidden_total_each": [
+          3,
+          3,
+          3
+        ],
+        "median_calls": 11,
+        "median_uncached_input": 16234,
+        "median_output": 4308,
+        "median_wall_seconds": 264.298,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          3,
+          3,
+          3
+        ],
+        "hidden_total_each": [
+          3,
+          3,
+          3
+        ],
+        "median_calls": 12,
+        "median_uncached_input": 12806,
+        "median_output": 3093,
+        "median_wall_seconds": 237.645,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      }
+    },
+    "T2": {
+      "R": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          3,
+          3,
+          3
+        ],
+        "hidden_total_each": [
+          3,
+          3,
+          3
+        ],
+        "median_calls": 13,
+        "median_uncached_input": 16846,
+        "median_output": 4845,
+        "median_wall_seconds": 278.904,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 3
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          3,
+          3,
+          3
+        ],
+        "hidden_total_each": [
+          3,
+          3,
+          3
+        ],
+        "median_calls": 12,
+        "median_uncached_input": 18155,
+        "median_output": 5086,
+        "median_wall_seconds": 303.134,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 1
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          3,
+          3,
+          3
+        ],
+        "hidden_total_each": [
+          3,
+          3,
+          3
+        ],
+        "median_calls": 12,
+        "median_uncached_input": 14092,
+        "median_output": 3684,
+        "median_wall_seconds": 254.652,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 2
+      }
+    },
+    "T3": {
+      "R": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          6,
+          6,
+          6
+        ],
+        "hidden_total_each": [
+          6,
+          6,
+          6
+        ],
+        "median_calls": 18,
+        "median_uncached_input": 26641,
+        "median_output": 8861,
+        "median_wall_seconds": 380.581,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          6,
+          6,
+          6
+        ],
+        "hidden_total_each": [
+          6,
+          6,
+          6
+        ],
+        "median_calls": 22,
+        "median_uncached_input": 83562,
+        "median_output": 12095,
+        "median_wall_seconds": 416.892,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 1
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          6,
+          6,
+          6
+        ],
+        "hidden_total_each": [
+          6,
+          6,
+          6
+        ],
+        "median_calls": 17,
+        "median_uncached_input": 27886,
+        "median_output": 8063,
+        "median_wall_seconds": 373.101,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 2
+      }
+    },
+    "T4": {
+      "R": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          5,
+          5,
+          5
+        ],
+        "hidden_total_each": [
+          5,
+          5,
+          5
+        ],
+        "median_calls": 12,
+        "median_uncached_input": 17003,
+        "median_output": 5509,
+        "median_wall_seconds": 276.049,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          5,
+          5,
+          5
+        ],
+        "hidden_total_each": [
+          5,
+          5,
+          5
+        ],
+        "median_calls": 16,
+        "median_uncached_input": 21161,
+        "median_output": 6560,
+        "median_wall_seconds": 381.766,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          5,
+          5,
+          5
+        ],
+        "hidden_total_each": [
+          5,
+          5,
+          5
+        ],
+        "median_calls": 13,
+        "median_uncached_input": 16687,
+        "median_output": 5824,
+        "median_wall_seconds": 332.844,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      }
+    },
+    "T5": {
+      "R": {
+        "n": 3,
+        "full_passes": 0,
+        "hidden_passed_each": [
+          650,
+          651,
+          650
+        ],
+        "hidden_total_each": [
+          655,
+          655,
+          655
+        ],
+        "median_calls": 14,
+        "median_uncached_input": 23888,
+        "median_output": 5612,
+        "median_wall_seconds": 340.689,
+        "runs_with_added_files": 2,
+        "runs_with_original_tests_modified": 0
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 0,
+        "hidden_passed_each": [
+          650,
+          650,
+          650
+        ],
+        "hidden_total_each": [
+          655,
+          655,
+          655
+        ],
+        "median_calls": 24,
+        "median_uncached_input": 89518,
+        "median_output": 11121,
+        "median_wall_seconds": 529.926,
+        "runs_with_added_files": 1,
+        "runs_with_original_tests_modified": 0
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 0,
+        "hidden_passed_each": [
+          650,
+          650,
+          652
+        ],
+        "hidden_total_each": [
+          655,
+          655,
+          655
+        ],
+        "median_calls": 20,
+        "median_uncached_input": 24999,
+        "median_output": 5336,
+        "median_wall_seconds": 354.602,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      }
+    },
+    "T6": {
+      "R": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          5,
+          5,
+          5
+        ],
+        "hidden_total_each": [
+          5,
+          5,
+          5
+        ],
+        "median_calls": 16,
+        "median_uncached_input": 23545,
+        "median_output": 5960,
+        "median_wall_seconds": 352.906,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 1
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          5,
+          5,
+          5
+        ],
+        "hidden_total_each": [
+          5,
+          5,
+          5
+        ],
+        "median_calls": 17,
+        "median_uncached_input": 33098,
+        "median_output": 7531,
+        "median_wall_seconds": 379.709,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 2
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          5,
+          5,
+          5
+        ],
+        "hidden_total_each": [
+          5,
+          5,
+          5
+        ],
+        "median_calls": 15,
+        "median_uncached_input": 17207,
+        "median_output": 5787,
+        "median_wall_seconds": 307.331,
+        "runs_with_added_files": 1,
+        "runs_with_original_tests_modified": 2
+      }
+    },
+    "T7": {
+      "R": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          1,
+          1,
+          1
+        ],
+        "hidden_total_each": [
+          1,
+          1,
+          1
+        ],
+        "median_calls": 21,
+        "median_uncached_input": 35377,
+        "median_output": 10378,
+        "median_wall_seconds": 536.46,
+        "runs_with_added_files": 3,
+        "runs_with_original_tests_modified": 0
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          1,
+          1,
+          1
+        ],
+        "hidden_total_each": [
+          1,
+          1,
+          1
+        ],
+        "median_calls": 28,
+        "median_uncached_input": 50659,
+        "median_output": 17388,
+        "median_wall_seconds": 737.665,
+        "runs_with_added_files": 3,
+        "runs_with_original_tests_modified": 0
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          1,
+          1,
+          1
+        ],
+        "hidden_total_each": [
+          1,
+          1,
+          1
+        ],
+        "median_calls": 23,
+        "median_uncached_input": 30899,
+        "median_output": 8936,
+        "median_wall_seconds": 492.07,
+        "runs_with_added_files": 3,
+        "runs_with_original_tests_modified": 0
+      }
+    },
+    "T8": {
+      "R": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          7,
+          7,
+          7
+        ],
+        "hidden_total_each": [
+          7,
+          7,
+          7
+        ],
+        "median_calls": 12,
+        "median_uncached_input": 16302,
+        "median_output": 4198,
+        "median_wall_seconds": 269.035,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 1
+      },
+      "S": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          7,
+          7,
+          7
+        ],
+        "hidden_total_each": [
+          7,
+          7,
+          7
+        ],
+        "median_calls": 11,
+        "median_uncached_input": 15112,
+        "median_output": 4542,
+        "median_wall_seconds": 258.926,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      },
+      "N": {
+        "n": 3,
+        "full_passes": 3,
+        "hidden_passed_each": [
+          7,
+          7,
+          7
+        ],
+        "hidden_total_each": [
+          7,
+          7,
+          7
+        ],
+        "median_calls": 10,
+        "median_uncached_input": 28076,
+        "median_output": 3742,
+        "median_wall_seconds": 244.817,
+        "runs_with_added_files": 0,
+        "runs_with_original_tests_modified": 0
+      }
+    }
+  },
+  "paired": {
+    "R_vs_N": {
+      "calls": {
+        "median_pair_percent": 2.9,
+        "median_pair_delta": 0.5,
+        "pairs": 24
+      },
+      "uncached_input": {
+        "median_pair_percent": 3.3,
+        "median_pair_delta": 637.5,
+        "pairs": 24
+      },
+      "output": {
+        "median_pair_percent": 11.9,
+        "median_pair_delta": 592.5,
+        "pairs": 24
+      },
+      "wall_seconds": {
+        "median_pair_percent": 3.1,
+        "median_pair_delta": 9.3,
+        "pairs": 24
+      }
+    },
+    "S_vs_N": {
+      "calls": {
+        "median_pair_percent": 14.2,
+        "median_pair_delta": 2.5,
+        "pairs": 24
+      },
+      "uncached_input": {
+        "median_pair_percent": 52.4,
+        "median_pair_delta": 7044.5,
+        "pairs": 24
+      },
+      "output": {
+        "median_pair_percent": 39.7,
+        "median_pair_delta": 1872.0,
+        "pairs": 24
+      },
+      "wall_seconds": {
+        "median_pair_percent": 19.0,
+        "median_pair_delta": 52.8,
+        "pairs": 24
+      }
+    }
+  }
+}

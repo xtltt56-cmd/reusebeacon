@@ -16,6 +16,12 @@ A portable Agent Skill that finds suitable open-source implementations and, when
 - **Keep small tasks small.** Fix and test an adequate existing implementation directly. Public research needs no GitHub login, and external discovery runs only when useful.
 - **Deliver a working integration.** Check versions, platform fit, and license information, verify key behavior, and record sources and test results.
 
+## Measured comparisons
+
+**72 GPT-6 Luna high runs:** ReuseBeacon, ECC search-first, and the no-general-skill arm each passed every external assertion in 21/24 runs. In this suite, ReuseBeacon used **16.7% fewer total host tool calls and 16.1% less total execution time than search-first**. Per-run metrics, tool trajectories, code differences and replayable evidence are public. [Report and downloads](evaluations/luna-high-2026-09-27/README.md)
+
+The earlier GLM/ZCode archive contains 85 records across nine task types. Its three v0.3.2 cron samples report about 86% lower mean total tokens than the baseline. These are separate task-specific observations with different models and token accounting. See the [earlier evaluation](evaluations/README.md) and [data review and improvement priorities](evaluations/NEXT_STEPS.md).
+
 ## Project practice
 
 The author reports using ReuseBeacon in their development work. These public projects document related selection, adaptation, and delivery practices:
