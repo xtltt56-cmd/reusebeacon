@@ -18,6 +18,16 @@
 - **小任务保持轻量**：已有实现足够就直接修复与测试；公开检索无需先登录 GitHub，外部搜索与安装按需进行。
 - **以集成结果作交付**：检查版本、平台和许可证信息，验证关键行为，并留下采用来源与测试结果。
 
+## 实测（三臂对照评测）
+
+独立三臂对照评测（ReuseBeacon / ECC search-first / 无技能基线，同题并行，判分套件经参考实现交叉验证）：**8 个题型、约 87 组运行、质量验收零失败**。v0.3.2 要点：
+
+- 小修复任务相对基线的开销从 **+50% 降到 +5%**（Small-fix 出口）；
+- cron 域任务相对基线 **tokens −86%**（基线 6/6 次自建引擎，ReuseBeacon 3/3 次复用成熟库）；
+- 已知局限与对己不利的记录（含一次护栏误判的完整过程）一并发布。
+
+协议、判分套件与逐运行原始记录见 [evaluations/](evaluations/README.md)；完整报告见 [#2](https://github.com/xtltt56-cmd/reusebeacon/issues/2) 与 [#4](https://github.com/xtltt56-cmd/reusebeacon/issues/4)（另有 [#1](https://github.com/xtltt56-cmd/reusebeacon/issues/1)、[#3](https://github.com/xtltt56-cmd/reusebeacon/issues/3)）。
+
 ## 项目实践
 
 作者已将 ReuseBeacon 用于自己的开发任务。以下公开项目记录展示相关的开源选型、适配和交付实践：

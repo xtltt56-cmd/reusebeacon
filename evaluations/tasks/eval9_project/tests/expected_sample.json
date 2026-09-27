@@ -1,0 +1,25 @@
+{
+ "total": 100,
+ "by_type": {
+  "search": 30,
+  "login": 31,
+  "view_item": 20,
+  "add_cart": 7,
+  "purchase": 7,
+  "logout": 5
+ },
+ "top3_users": [
+  [
+   "u016",
+   9
+  ],
+  [
+   "u002",
+   8
+  ],
+  [
+   "u007",
+   8
+  ]
+ ]
+}

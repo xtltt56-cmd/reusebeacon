@@ -1,0 +1,798 @@
+{
+ "iteration": "iteration-7",
+ "runs": {
+  "eval-1-dst-recurrence-trial2/with_search_first": {
+   "total_tokens": 320991,
+   "duration_ms": 273458,
+   "total_duration_seconds": 273.5,
+   "tool_uses": 16,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "12/12",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "12/12"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "researched PEP 495 fold semantics; stdlib"
+     }
+    ]
+   }
+  },
+  "eval-1-dst-recurrence-trial2/with_skill": {
+   "total_tokens": 233963,
+   "duration_ms": 240186,
+   "total_duration_seconds": 240.2,
+   "tool_uses": 14,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "12/12",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "12/12"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "stdlib zoneinfo; fold=0 probes; deliberately unused pytz/dateutil"
+     }
+    ]
+   }
+  },
+  "eval-1-dst-recurrence-trial2/without_skill": {
+   "total_tokens": 241071,
+   "duration_ms": 225207,
+   "total_duration_seconds": 225.2,
+   "tool_uses": 11,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "12/12",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "12/12"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "stdlib zoneinfo"
+     }
+    ]
+   }
+  },
+  "eval-2-csv-edgecases-trial4/with_search_first": {
+   "total_tokens": 196270,
+   "duration_ms": 247065,
+   "total_duration_seconds": 247.1,
+   "tool_uses": 11,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "preflight+search"
+     }
+    ]
+   }
+  },
+  "eval-2-csv-edgecases-trial4/with_skill": {
+   "total_tokens": 229636,
+   "duration_ms": 173574,
+   "total_duration_seconds": 173.6,
+   "tool_uses": 13,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "small-fix exit path"
+     }
+    ]
+   }
+  },
+  "eval-2-csv-edgecases-trial4/without_skill": {
+   "total_tokens": 197472,
+   "duration_ms": 199913,
+   "total_duration_seconds": 199.9,
+   "tool_uses": 11,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": ""
+     }
+    ]
+   }
+  },
+  "eval-3-ics-import-trial3/with_search_first": {
+   "total_tokens": 707484,
+   "duration_ms": 460574,
+   "total_duration_seconds": 460.6,
+   "tool_uses": 32,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "9/9",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "9/9"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "icalendar + recurring-ical-events adopt"
+     }
+    ]
+   }
+  },
+  "eval-3-ics-import-trial3/with_skill": {
+   "total_tokens": 512372,
+   "duration_ms": 1158484,
+   "total_duration_seconds": 1158.5,
+   "tool_uses": 16,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "9/9",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "9/9"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "BUILD path on a FALSE premise (claimed icalendar/dateutil cannot parse VTIMEZONE - refuted by reference impl); 430-line stdlib; passed all"
+     }
+    ]
+   }
+  },
+  "eval-3-ics-import-trial3/without_skill": {
+   "total_tokens": 1434099,
+   "duration_ms": 1591364,
+   "total_duration_seconds": 1591.4,
+   "tool_uses": 21,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "9/9",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "9/9"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "hand-rolled 3rd consecutive"
+     }
+    ]
+   }
+  },
+  "eval-4-pdf-export-trial3/with_search_first": {
+   "total_tokens": 852640,
+   "duration_ms": 1053279,
+   "total_duration_seconds": 1053.3,
+   "tool_uses": 30,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "reportlab + Windows system font chain (platform binding noted)"
+     }
+    ]
+   }
+  },
+  "eval-4-pdf-export-trial3/with_skill": {
+   "total_tokens": 785560,
+   "duration_ms": 954106,
+   "total_duration_seconds": 954.1,
+   "tool_uses": 33,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "reportlab + Noto OFL embed"
+     }
+    ]
+   }
+  },
+  "eval-4-pdf-export-trial3/without_skill": {
+   "total_tokens": 898858,
+   "duration_ms": 908227,
+   "total_duration_seconds": 908.2,
+   "tool_uses": 33,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "reportlab + msyh subset embed"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial5/with_search_first": {
+   "total_tokens": 610415,
+   "duration_ms": 714904,
+   "total_duration_seconds": 714.9,
+   "tool_uses": 29,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "652/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "patched to 100% this time"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial5/with_skill": {
+   "total_tokens": 630887,
+   "duration_ms": 588612,
+   "total_duration_seconds": 588.6,
+   "tool_uses": 31,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "649/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "649/652"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "first trial where RB did NOT patch to 100%"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial5/without_skill": {
+   "total_tokens": 646690,
+   "duration_ms": 486379,
+   "total_duration_seconds": 486.4,
+   "tool_uses": 30,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "652/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": ""
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial6/with_search_first": {
+   "total_tokens": 579545,
+   "duration_ms": 542800,
+   "total_duration_seconds": 542.8,
+   "tool_uses": 26,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "croniter adopt"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial6/with_skill": {
+   "total_tokens": 373403,
+   "duration_ms": 445558,
+   "total_duration_seconds": 445.6,
+   "tool_uses": 17,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "croniter reuse 3/3 for v0.3.2"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial6/without_skill": {
+   "total_tokens": 5062485,
+   "duration_ms": 3113258,
+   "total_duration_seconds": 3113.3,
+   "tool_uses": 44,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "hand-rolled; 12000-case diff; most expensive run of entire study"
+     }
+    ]
+   }
+  },
+  "eval-7-skill-discovery-trial2/with_search_first": {
+   "total_tokens": 416093,
+   "duration_ms": 394041,
+   "total_duration_seconds": 394.0,
+   "tool_uses": 25,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "6/6",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "6/6"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "same; also rejected defusedcsv as redundant"
+     }
+    ]
+   }
+  },
+  "eval-7-skill-discovery-trial2/with_skill": {
+   "total_tokens": 304884,
+   "duration_ms": 268496,
+   "total_duration_seconds": 268.5,
+   "tool_uses": 19,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "6/6",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "6/6"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "trap rejected; project-scope install; delete-dir import-failure proof"
+     }
+    ]
+   }
+  },
+  "eval-7-skill-discovery-trial2/without_skill": {
+   "total_tokens": 324293,
+   "duration_ms": 245827,
+   "total_duration_seconds": 245.8,
+   "tool_uses": 20,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "6/6",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "6/6"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "same correct discovery flow"
+     }
+    ]
+   }
+  },
+  "eval-8-qr-codegen-trial2/with_search_first": {
+   "total_tokens": 321448,
+   "duration_ms": 336407,
+   "total_duration_seconds": 336.4,
+   "tool_uses": 17,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "segno; 36-case self-test"
+     }
+    ]
+   }
+  },
+  "eval-8-qr-codegen-trial2/with_skill": {
+   "total_tokens": 540653,
+   "duration_ms": 616005,
+   "total_duration_seconds": 616.0,
+   "tool_uses": 26,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "segno boost_error=False to lock requested ECC level; 37-combo self-test"
+     }
+    ]
+   }
+  },
+  "eval-8-qr-codegen-trial2/without_skill": {
+   "total_tokens": 362431,
+   "duration_ms": 420263,
+   "total_duration_seconds": 420.3,
+   "tool_uses": 17,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "segno make_qr; 35-case self-test"
+     }
+    ]
+   }
+  },
+  "eval-9-giant-json-trial2/with_search_first": {
+   "total_tokens": 1582570,
+   "duration_ms": 1804082,
+   "total_duration_seconds": 1804.1,
+   "tool_uses": 48,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS 50.0s/70.6MB",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS 50.0s/70.6MB"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "measured ijson 122s TIMEOUT on own benchmark -> stdlib regex (decision REVERSED vs its own T1)"
+     }
+    ]
+   }
+  },
+  "eval-9-giant-json-trial2/with_skill": {
+   "total_tokens": 752262,
+   "duration_ms": 912955,
+   "total_duration_seconds": 913.0,
+   "tool_uses": 29,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS 52.6s/17.6MB",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS 52.6s/17.6MB"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "micro-benchmark: ijson ~ equal -> stdlib raw_decode streaming; self-tested on 1.76GB"
+     }
+    ]
+   }
+  },
+  "eval-9-giant-json-trial2/without_skill": {
+   "total_tokens": 1149896,
+   "duration_ms": 1341869,
+   "total_duration_seconds": 1341.9,
+   "tool_uses": 27,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS 37.2s/75.3MB",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS 37.2s/75.3MB"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "hand-rolled dual-path with provable invariant checks"
+     }
+    ]
+   }
+  }
+ },
+ "benchmark": {
+  "skill_name": "full re-run on v0.3.2 (8 tasks x 3 arms)",
+  "iterations": [
+   {
+    "iteration": 7,
+    "results": [
+     {
+      "eval_name": "eval-1-dst-recurrence-trial2",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 233963,
+      "avg_time_seconds": 240
+     },
+     {
+      "eval_name": "eval-1-dst-recurrence-trial2",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 320991,
+      "avg_time_seconds": 273
+     },
+     {
+      "eval_name": "eval-1-dst-recurrence-trial2",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 241071,
+      "avg_time_seconds": 225
+     },
+     {
+      "eval_name": "eval-2-csv-edgecases-trial4",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 229636,
+      "avg_time_seconds": 174
+     },
+     {
+      "eval_name": "eval-2-csv-edgecases-trial4",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 196270,
+      "avg_time_seconds": 247
+     },
+     {
+      "eval_name": "eval-2-csv-edgecases-trial4",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 197472,
+      "avg_time_seconds": 200
+     },
+     {
+      "eval_name": "eval-3-ics-import-trial3",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 512372,
+      "avg_time_seconds": 1158
+     },
+     {
+      "eval_name": "eval-3-ics-import-trial3",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 707484,
+      "avg_time_seconds": 461
+     },
+     {
+      "eval_name": "eval-3-ics-import-trial3",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 1434099,
+      "avg_time_seconds": 1591
+     },
+     {
+      "eval_name": "eval-4-pdf-export-trial3",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 785560,
+      "avg_time_seconds": 954
+     },
+     {
+      "eval_name": "eval-4-pdf-export-trial3",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 852640,
+      "avg_time_seconds": 1053
+     },
+     {
+      "eval_name": "eval-4-pdf-export-trial3",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 898858,
+      "avg_time_seconds": 908
+     },
+     {
+      "eval_name": "eval-5-commonmark-trial5",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 630887,
+      "avg_time_seconds": 589
+     },
+     {
+      "eval_name": "eval-5-commonmark-trial5",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 610415,
+      "avg_time_seconds": 715
+     },
+     {
+      "eval_name": "eval-5-commonmark-trial5",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 646690,
+      "avg_time_seconds": 486
+     },
+     {
+      "eval_name": "eval-6-cron-trial6",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 373403,
+      "avg_time_seconds": 446
+     },
+     {
+      "eval_name": "eval-6-cron-trial6",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 579545,
+      "avg_time_seconds": 543
+     },
+     {
+      "eval_name": "eval-6-cron-trial6",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 5062485,
+      "avg_time_seconds": 3113
+     },
+     {
+      "eval_name": "eval-7-skill-discovery-trial2",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 304884,
+      "avg_time_seconds": 268
+     },
+     {
+      "eval_name": "eval-7-skill-discovery-trial2",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 416093,
+      "avg_time_seconds": 394
+     },
+     {
+      "eval_name": "eval-7-skill-discovery-trial2",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 324293,
+      "avg_time_seconds": 246
+     },
+     {
+      "eval_name": "eval-8-qr-codegen-trial2",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 540653,
+      "avg_time_seconds": 616
+     },
+     {
+      "eval_name": "eval-8-qr-codegen-trial2",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 321448,
+      "avg_time_seconds": 336
+     },
+     {
+      "eval_name": "eval-8-qr-codegen-trial2",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 362431,
+      "avg_time_seconds": 420
+     },
+     {
+      "eval_name": "eval-9-giant-json-trial2",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 752262,
+      "avg_time_seconds": 913
+     },
+     {
+      "eval_name": "eval-9-giant-json-trial2",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 1582570,
+      "avg_time_seconds": 1804
+     },
+     {
+      "eval_name": "eval-9-giant-json-trial2",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 1149896,
+      "avg_time_seconds": 1342
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,7 @@
+[
+  {"id": 101, "title": "登录页在 Edge 下白屏", "body": "升级到最新版后，登录页白屏。\r\n控制台报 CSP 错误。\r\n附截图见内网。", "reporter": "王工", "labels": ["bug", "frontend"]},
+  {"id": 102, "title": "=SUM(A1:A9)", "body": "测试公式注入：=cmd|' /C calc'!A0", "reporter": "+8613800000000", "labels": ["security", " triage"]},
+  {"id": 103, "title": "-导出功能崩溃", "body": "点击导出按钮后应用闪退，@运维 请跟进。", "reporter": "李四", "labels": ["bug"]},
+  {"id": 104, "title": "导出 CSV 中文乱码", "body": "用 Excel 打开导出文件，中文全部乱码。", "reporter": "customer@corp.cn", "labels": ["bug", "export"]},
+  {"id": 105, "title": "新需求：批量导出", "body": "希望支持按标签批量导出，\"labels\" 字段用分号分隔。", "reporter": "zhang, san", "labels": ["feature", "export"]}
+]

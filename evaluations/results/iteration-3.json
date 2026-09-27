@@ -1,0 +1,195 @@
+{
+ "iteration": "iteration-3",
+ "runs": {
+  "eval-5-commonmark/with_search_first": {
+   "total_tokens": 858639,
+   "duration_ms": 501449,
+   "total_duration_seconds": 501.4,
+   "tool_uses": 48,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "649/652 (99.54%) pass; adopted markdown-it-py after empirical 3-way comparison; MIT verified; offline proven via socket audit hook"
+     },
+     {
+      "text": "Evidence-based selection and honest delivery.md",
+      "passed": true,
+      "evidence": "Fastest wall clock of the three"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Fastest wall clock of the three"
+   }
+  },
+  "eval-5-commonmark/with_skill": {
+   "total_tokens": 927839,
+   "duration_ms": 763998,
+   "total_duration_seconds": 764.0,
+   "tool_uses": 32,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652 exact match (100%); benchmarked markdown-it-py/marko/mistune empirically then patched last 3 blockquote divergences via renderer override; MIT verified; offline proven"
+     },
+     {
+      "text": "Evidence-based selection and honest delivery.md",
+      "passed": true,
+      "evidence": "Only arm to also fix upstream's 3-example gap to 100%"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Only arm to also fix upstream's 3-example gap to 100%"
+   }
+  },
+  "eval-5-commonmark/without_skill": {
+   "total_tokens": 833049,
+   "duration_ms": 719546,
+   "total_duration_seconds": 719.5,
+   "tool_uses": 39,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652 (100%); benchmarked 5 candidates; same patch approach; kept conformance_check.py in repo"
+     },
+     {
+      "text": "Evidence-based selection and honest delivery.md",
+      "passed": true,
+      "evidence": "Matched skill arms without one"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Matched skill arms without one"
+   }
+  },
+  "eval-6-cron/with_search_first": {
+   "total_tokens": 871810,
+   "duration_ms": 1377455,
+   "total_duration_seconds": 1377.5,
+   "tool_uses": 21,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11; adopted croniter 6.2.4 after parallel research incl. cronie source; hardened wrapper (5-field enforcement, day_or=True, pre-1970 shift)"
+     },
+     {
+      "text": "Evidence-based selection and honest delivery.md",
+      "passed": true,
+      "evidence": "Documented a real cronie-vs-man-page semantic divergence"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Documented a real cronie-vs-man-page semantic divergence"
+   }
+  },
+  "eval-6-cron/with_skill": {
+   "total_tokens": 809152,
+   "duration_ms": 823721,
+   "total_duration_seconds": 823.7,
+   "tool_uses": 26,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11 (3 visible + 8 hidden incl. DOM/DOW OR); adopted croniter 6.2.4 MIT; found+patched croniter gap (name-range-with-step); 25 integration assertions"
+     },
+     {
+      "text": "Evidence-based selection and honest delivery.md",
+      "passed": true,
+      "evidence": "Cheapest arm; reuse-with-patch approach"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Cheapest arm; reuse-with-patch approach"
+   }
+  },
+  "eval-6-cron/without_skill": {
+   "total_tokens": 1351910,
+   "duration_ms": 1359763,
+   "total_duration_seconds": 1359.8,
+   "tool_uses": 30,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11; hand-rolled full cron engine after reading cronie entry.c/cron.c; fuzz cross-checked vs croniter 407 cases; found 10 croniter limitations"
+     },
+     {
+      "text": "Evidence-based selection and honest delivery.md",
+      "passed": true,
+      "evidence": "Most expensive (1.35M tokens, +67% vs ReuseBeacon); riskiest artifact yet passed everything"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Most expensive (1.35M tokens, +67% vs ReuseBeacon); riskiest artifact yet passed everything"
+   }
+  }
+ },
+ "benchmark": {
+  "skill_name": "reusebeacon vs search-first (3-arm, round 3)",
+  "iterations": [
+   {
+    "iteration": 3,
+    "results": [
+     {
+      "eval_name": "commonmark-renderer",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 764.0,
+      "avg_tokens": 927839,
+      "score": "652/652"
+     },
+     {
+      "eval_name": "commonmark-renderer",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 501.4,
+      "avg_tokens": 858639,
+      "score": "649/652"
+     },
+     {
+      "eval_name": "commonmark-renderer",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 719.5,
+      "avg_tokens": 833049,
+      "score": "652/652"
+     },
+     {
+      "eval_name": "vixie-cron-evaluator",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 823.7,
+      "avg_tokens": 809152,
+      "score": "11/11"
+     },
+     {
+      "eval_name": "vixie-cron-evaluator",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 1377.5,
+      "avg_tokens": 871810,
+      "score": "11/11"
+     },
+     {
+      "eval_name": "vixie-cron-evaluator",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 1359.8,
+      "avg_tokens": 1351910,
+      "score": "11/11"
+     }
+    ]
+   }
+  ]
+ }
+}

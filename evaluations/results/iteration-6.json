@@ -1,0 +1,276 @@
+{
+ "iteration": "iteration-6",
+ "runs": {
+  "eval-7-skill-discovery/with_search_first": {
+   "total_tokens": 309628,
+   "duration_ms": 425808,
+   "total_duration_seconds": 425.8,
+   "tool_uses": 20,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "6/6",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "6/6"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "same correct selection; diff -r + stub-count + __pycache__ evidence"
+     }
+    ]
+   }
+  },
+  "eval-7-skill-discovery/with_skill": {
+   "total_tokens": 383569,
+   "duration_ms": 475217,
+   "total_duration_seconds": 475.2,
+   "tool_uses": 22,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "6/6",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "6/6"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "picked csv-excel-exporter; rejected trap (global+telemetry+missing script) and irrelevant; npx install to project .claude/skills; runtime import evidence"
+     }
+    ]
+   }
+  },
+  "eval-7-skill-discovery/without_skill": {
+   "total_tokens": 252688,
+   "duration_ms": 294476,
+   "total_duration_seconds": 294.5,
+   "tool_uses": 17,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "6/6",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "6/6"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "also discovered and used planted skill per README team convention; importlib evidence"
+     }
+    ]
+   }
+  },
+  "eval-8-qr-codegen/with_search_first": {
+   "total_tokens": 486103,
+   "duration_ms": 427096,
+   "total_duration_seconds": 427.1,
+   "tool_uses": 28,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "segno micro=False; 28-case self-test"
+     }
+    ]
+   }
+  },
+  "eval-8-qr-codegen/with_skill": {
+   "total_tokens": 512648,
+   "duration_ms": 504828,
+   "total_duration_seconds": 504.8,
+   "tool_uses": 30,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "segno make_qr (avoid Micro QR downgrade); zxing-cpp 20/20 self-test"
+     }
+    ]
+   }
+  },
+  "eval-8-qr-codegen/without_skill": {
+   "total_tokens": 601865,
+   "duration_ms": 629679,
+   "total_duration_seconds": 629.7,
+   "tool_uses": 21,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "8/8",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "8/8"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "segno + eci=True; found Micro QR trap independently; 36-case self-test"
+     }
+    ]
+   }
+  },
+  "eval-9-giant-json/with_search_first": {
+   "total_tokens": 1178632,
+   "duration_ms": 1748017,
+   "total_duration_seconds": 1748.0,
+   "tool_uses": 39,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS 29.9s/15.5MB",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS 29.9s/15.5MB"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "benchmarked 6 candidates -> adopted ijson yajl2_c; rejected self-rolled regex (3-5x slower)"
+     }
+    ]
+   }
+  },
+  "eval-9-giant-json/with_skill": {
+   "total_tokens": 2098265,
+   "duration_ms": 1500157,
+   "total_duration_seconds": 1500.2,
+   "tool_uses": 46,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS 50.5s/25.2MB",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS 50.5s/25.2MB"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "micro-benchmarked ijson vs stdlib regex -> stdlib dual-channel won; self-generated 17.9M-event validation"
+     }
+    ]
+   }
+  },
+  "eval-9-giant-json/without_skill": {
+   "total_tokens": 2000592,
+   "duration_ms": 2099880,
+   "total_duration_seconds": 2099.9,
+   "tool_uses": 38,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS 13.6s/42.3MB",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS 13.6s/42.3MB"
+     },
+     {
+      "text": "Process evidence",
+      "passed": true,
+      "evidence": "hand-rolled dual-engine streaming (same design as RB skill arm, independently)"
+     }
+    ]
+   }
+  }
+ },
+ "benchmark": {
+  "skill_name": "new task types (E7/E8/E9), 3-arm",
+  "iterations": [
+   {
+    "iteration": 6,
+    "results": [
+     {
+      "eval_name": "skill-discovery (E7)",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 383569,
+      "avg_time_seconds": 475
+     },
+     {
+      "eval_name": "skill-discovery (E7)",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 309628,
+      "avg_time_seconds": 426
+     },
+     {
+      "eval_name": "skill-discovery (E7)",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 252688,
+      "avg_time_seconds": 294
+     },
+     {
+      "eval_name": "qr-codegen (E8)",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 512648,
+      "avg_time_seconds": 505
+     },
+     {
+      "eval_name": "qr-codegen (E8)",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 486103,
+      "avg_time_seconds": 427
+     },
+     {
+      "eval_name": "qr-codegen (E8)",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 601865,
+      "avg_time_seconds": 630
+     },
+     {
+      "eval_name": "giant-json-stream (E9)",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 2098265,
+      "avg_time_seconds": 1500
+     },
+     {
+      "eval_name": "giant-json-stream (E9)",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_tokens": 1178632,
+      "avg_time_seconds": 1748
+     },
+     {
+      "eval_name": "giant-json-stream (E9)",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_tokens": 2000592,
+      "avg_time_seconds": 2100
+     }
+    ]
+   }
+  ]
+ }
+}

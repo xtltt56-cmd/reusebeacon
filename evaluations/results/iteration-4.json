@@ -1,0 +1,401 @@
+{
+ "iteration": "iteration-4",
+ "runs": {
+  "eval-3-ics-import-trial2/with_search_first": {
+   "total_tokens": 1279960,
+   "duration_ms": 1395571,
+   "total_duration_seconds": 1395.6,
+   "tool_uses": 31,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "9/9",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "9/9"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "icalendar + dateutil compose; rejected recurring-ical-events (window semantics)"
+     }
+    ]
+   }
+  },
+  "eval-3-ics-import-trial2/with_skill": {
+   "total_tokens": 1089847,
+   "duration_ms": 1015137,
+   "total_duration_seconds": 1015.1,
+   "tool_uses": 33,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "9/9",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "9/9"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "dateutil (rrule+tzical) reuse; hardest-behavior probe first"
+     }
+    ]
+   }
+  },
+  "eval-3-ics-import-trial2/without_skill": {
+   "total_tokens": 984968,
+   "duration_ms": 1314489,
+   "total_duration_seconds": 1314.5,
+   "tool_uses": 21,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "9/9",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "9/9"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "hand-rolled stdlib incl. custom _VTimezoneInfo"
+     }
+    ]
+   }
+  },
+  "eval-4-pdf-export-trial2/with_search_first": {
+   "total_tokens": 1108656,
+   "duration_ms": 1031686,
+   "total_duration_seconds": 1031.7,
+   "tool_uses": 37,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "reportlab + Noto Sans SC static (OFL); fonttools check; pdfium visual"
+     }
+    ]
+   }
+  },
+  "eval-4-pdf-export-trial2/with_skill": {
+   "total_tokens": 930298,
+   "duration_ms": 619148,
+   "total_duration_seconds": 619.1,
+   "tool_uses": 31,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "reportlab + STSong-Light CID (non-embedded); license screen; dual extractor"
+     }
+    ]
+   }
+  },
+  "eval-4-pdf-export-trial2/without_skill": {
+   "total_tokens": 1438799,
+   "duration_ms": 1222955,
+   "total_duration_seconds": 1223.0,
+   "tool_uses": 40,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "PASS",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "PASS"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "reportlab + Noto Sans SC (instanced VF via fonttools); sdist build verified"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial2/with_search_first": {
+   "total_tokens": 669175,
+   "duration_ms": 443601,
+   "total_duration_seconds": 443.6,
+   "tool_uses": 31,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "652/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "markdown-it-py + 9-line blockquote override"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial2/with_skill": {
+   "total_tokens": 719453,
+   "duration_ms": 549294,
+   "total_duration_seconds": 549.3,
+   "tool_uses": 31,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "652/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "markdown-it-py + blockquote patch; 5-candidate empirical benchmark"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial2/without_skill": {
+   "total_tokens": 707119,
+   "duration_ms": 639577,
+   "total_duration_seconds": 639.6,
+   "tool_uses": 32,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "652/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "markdown-it-py + renderer subclass patch; 4-candidate benchmark"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial3/with_search_first": {
+   "total_tokens": 430175,
+   "duration_ms": 407418,
+   "total_duration_seconds": 407.4,
+   "tool_uses": 23,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "649/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "649/652"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "markdown-it-py as-is (divergence intentionally kept)"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial3/with_skill": {
+   "total_tokens": 809740,
+   "duration_ms": 631348,
+   "total_duration_seconds": 631.3,
+   "tool_uses": 30,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "652/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "markdown-it-py + minimal rule extension; 5-candidate benchmark"
+     }
+    ]
+   }
+  },
+  "eval-5-commonmark-trial3/without_skill": {
+   "total_tokens": 647888,
+   "duration_ms": 536289,
+   "total_duration_seconds": 536.3,
+   "tool_uses": 32,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "652/652",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "652/652"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "markdown-it-py + blockquote_open override"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial2/with_search_first": {
+   "total_tokens": 524468,
+   "duration_ms": 639782,
+   "total_duration_seconds": 639.8,
+   "tool_uses": 20,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "croniter adopt-as-is; 29 assertions"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial2/with_skill": {
+   "total_tokens": 453435,
+   "duration_ms": 565582,
+   "total_duration_seconds": 565.6,
+   "tool_uses": 18,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "croniter thin wrapper (day_or=True); pre-integration probe"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial2/without_skill": {
+   "total_tokens": 1369733,
+   "duration_ms": 2139024,
+   "total_duration_seconds": 2139.0,
+   "tool_uses": 24,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "hand-rolled stdlib after reading cronie source; 75 cases + croniter diff"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial3/with_search_first": {
+   "total_tokens": 284154,
+   "duration_ms": 273602,
+   "total_duration_seconds": 273.6,
+   "tool_uses": 15,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "croniter thin wrapper (cheapest run overall)"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial3/with_skill": {
+   "total_tokens": 1398177,
+   "duration_ms": 1981618,
+   "total_duration_seconds": 1981.6,
+   "tool_uses": 21,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "BUILD path: croniter conflicts found -> 230-line stdlib impl; 300-expr fuzz vs croniter"
+     }
+    ]
+   }
+  },
+  "eval-6-cron-trial3/without_skill": {
+   "total_tokens": 2252405,
+   "duration_ms": 1358351,
+   "total_duration_seconds": 1358.4,
+   "tool_uses": 49,
+   "grading": {
+    "pass_rate": 1.0,
+    "grade": "11/11",
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance criteria pass",
+      "passed": true,
+      "evidence": "11/11"
+     },
+     {
+      "text": "Evidence-based approach",
+      "passed": true,
+      "evidence": "hand-rolled stdlib; 45+22 cases; croniter diff on 30 exprs"
+     }
+    ]
+   }
+  }
+ }
+}

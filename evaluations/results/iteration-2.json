@@ -1,0 +1,219 @@
+{
+ "iteration": "iteration-2",
+ "runs": {
+  "eval-3-ics-import/with_search_first": {
+   "total_tokens": 1525971,
+   "duration_ms": 1051311,
+   "total_duration_seconds": 1051.3,
+   "tool_uses": 50,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance tests pass",
+      "passed": true,
+      "evidence": "pytest 9/9 (eval3) or grader pass=true + 2/2 (eval4)"
+     },
+     {
+      "text": "Evidence-based approach: mature-library adoption or justified equivalent",
+      "passed": true,
+      "evidence": "Preflight: gh missing -> WebSearch; icalendar+dateutil.rrule; cross-checked vs recurring-ical-events oracle; 9 edge cases; 2.35x baseline tokens"
+     },
+     {
+      "text": "delivery.md accurate: claims consistent with grading",
+      "passed": true,
+      "evidence": "delivery.md exists; license/candidates present (eval4); verification claims match artifacts"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Preflight: gh missing -> WebSearch; icalendar+dateutil.rrule; cross-checked vs recurring-ical-events oracle; 9 edge cases; 2.35x baseline tokens"
+   }
+  },
+  "eval-3-ics-import/with_skill": {
+   "total_tokens": 688517,
+   "duration_ms": 924754,
+   "total_duration_seconds": 924.8,
+   "tool_uses": 24,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance tests pass",
+      "passed": true,
+      "evidence": "pytest 9/9 (eval3) or grader pass=true + 2/2 (eval4)"
+     },
+     {
+      "text": "Evidence-based approach: mature-library adoption or justified equivalent",
+      "passed": true,
+      "evidence": "Adopted python-dateutil (tzical+rruleset) after trial experiment on real fixtures; pinned requirements.txt; hand-RFC expectation script all passed"
+     },
+     {
+      "text": "delivery.md accurate: claims consistent with grading",
+      "passed": true,
+      "evidence": "delivery.md exists; license/candidates present (eval4); verification claims match artifacts"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Adopted python-dateutil (tzical+rruleset) after trial experiment on real fixtures; pinned requirements.txt; hand-RFC expectation script all passed"
+   }
+  },
+  "eval-3-ics-import/without_skill": {
+   "total_tokens": 647955,
+   "duration_ms": 1400782,
+   "total_duration_seconds": 1400.8,
+   "tool_uses": 18,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance tests pass",
+      "passed": true,
+      "evidence": "pytest 9/9 (eval3) or grader pass=true + 2/2 (eval4)"
+     },
+     {
+      "text": "Evidence-based approach: mature-library adoption or justified equivalent",
+      "passed": true,
+      "evidence": "Hand-rolled pure stdlib incl. custom IcsTimezone tzinfo from VTIMEZONE; passed all cases; slowest wall clock"
+     },
+     {
+      "text": "delivery.md accurate: claims consistent with grading",
+      "passed": true,
+      "evidence": "delivery.md exists; license/candidates present (eval4); verification claims match artifacts"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Hand-rolled pure stdlib incl. custom IcsTimezone tzinfo from VTIMEZONE; passed all cases; slowest wall clock"
+   }
+  },
+  "eval-4-pdf-export/with_search_first": {
+   "total_tokens": 1191125,
+   "duration_ms": 1076411,
+   "total_duration_seconds": 1076.4,
+   "tool_uses": 37,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance tests pass",
+      "passed": true,
+      "evidence": "pytest 9/9 (eval3) or grader pass=true + 2/2 (eval4)"
+     },
+     {
+      "text": "Evidence-based approach: mature-library adoption or justified equivalent",
+      "passed": true,
+      "evidence": "9 candidates compared; reportlab BSD; audit-hook offline proof; dual extractor (pypdf+pdfminer)"
+     },
+     {
+      "text": "delivery.md accurate: claims consistent with grading",
+      "passed": true,
+      "evidence": "delivery.md exists; license/candidates present (eval4); verification claims match artifacts"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "9 candidates compared; reportlab BSD; audit-hook offline proof; dual extractor (pypdf+pdfminer)"
+   }
+  },
+  "eval-4-pdf-export/with_skill": {
+   "total_tokens": 1647313,
+   "duration_ms": 1964471,
+   "total_duration_seconds": 1964.5,
+   "tool_uses": 44,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance tests pass",
+      "passed": true,
+      "evidence": "pytest 9/9 (eval3) or grader pass=true + 2/2 (eval4)"
+     },
+     {
+      "text": "Evidence-based approach: mature-library adoption or justified equivalent",
+      "passed": true,
+      "evidence": "reportlab 5.0.1 (BSD) + Noto Sans SC OFL; rejected borb(AGPL)/weasyprint(GTK)/pdfkit(binary) with measurements; clean-venv delivery simulation"
+     },
+     {
+      "text": "delivery.md accurate: claims consistent with grading",
+      "passed": true,
+      "evidence": "delivery.md exists; license/candidates present (eval4); verification claims match artifacts"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "reportlab 5.0.1 (BSD) + Noto Sans SC OFL; rejected borb(AGPL)/weasyprint(GTK)/pdfkit(binary) with measurements; clean-venv delivery simulation"
+   }
+  },
+  "eval-4-pdf-export/without_skill": {
+   "total_tokens": 2307542,
+   "duration_ms": 1794061,
+   "total_duration_seconds": 1794.1,
+   "tool_uses": 62,
+   "grading": {
+    "expectations": [
+     {
+      "text": "All visible + hidden acceptance tests pass",
+      "passed": true,
+      "evidence": "pytest 9/9 (eval3) or grader pass=true + 2/2 (eval4)"
+     },
+     {
+      "text": "Evidence-based approach: mature-library adoption or justified equivalent",
+      "passed": true,
+      "evidence": "Same correct selection; most expensive run (2.3M tokens); pypdfium2 rasterized visual check; 6 candidates in delivery.md"
+     },
+     {
+      "text": "delivery.md accurate: claims consistent with grading",
+      "passed": true,
+      "evidence": "delivery.md exists; license/candidates present (eval4); verification claims match artifacts"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Same correct selection; most expensive run (2.3M tokens); pypdfium2 rasterized visual check; 6 candidates in delivery.md"
+   }
+  }
+ },
+ "benchmark": {
+  "skill_name": "reusebeacon vs search-first (3-arm)",
+  "iterations": [
+   {
+    "iteration": 2,
+    "results": [
+     {
+      "eval_name": "ics-rfc5545-import",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 924.8,
+      "avg_tokens": 688517
+     },
+     {
+      "eval_name": "ics-rfc5545-import",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 1051.3,
+      "avg_tokens": 1525971
+     },
+     {
+      "eval_name": "ics-rfc5545-import",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 1400.8,
+      "avg_tokens": 647955
+     },
+     {
+      "eval_name": "offline-cjk-pdf-export",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 1964.5,
+      "avg_tokens": 1647313
+     },
+     {
+      "eval_name": "offline-cjk-pdf-export",
+      "config": "with_search_first",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 1076.4,
+      "avg_tokens": 1191125
+     },
+     {
+      "eval_name": "offline-cjk-pdf-export",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 1794.1,
+      "avg_tokens": 2307542
+     }
+    ]
+   }
+  ]
+ }
+}

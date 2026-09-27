@@ -1,0 +1,171 @@
+{
+ "iteration": "iteration-1",
+ "runs": {
+  "eval-1-dst-recurrence/with_skill": {
+   "total_tokens": 205221,
+   "duration_ms": 301010,
+   "total_duration_seconds": 301.0,
+   "tool_uses": 12,
+   "grading": {
+    "expectations": [
+     {
+      "text": "Visible acceptance tests pass unmodified",
+      "passed": true,
+      "evidence": "12/12 pytest (visible 4 + hidden 8): spring/fall UTC shift, fold=0 gap 07:30Z, fold=0 ambiguous 05:30Z, Berlin 2nd-Tue, 52-week no-drift, Kathmandu, 5th-Friday all PASSED"
+     },
+     {
+      "text": "Hidden edge-case suite passes (all cases)",
+      "passed": true,
+      "evidence": "12/12 pytest (visible 4 + hidden 8): spring/fall UTC shift, fold=0 gap 07:30Z, fold=0 ambiguous 05:30Z, Berlin 2nd-Tue, 52-week no-drift, Kathmandu, 5th-Friday all PASSED"
+     },
+     {
+      "text": "Solution uses mature/library-based approach, not naive hand-rolling",
+      "passed": true,
+      "evidence": "meetings.py uses zoneinfo (timezone-aware), no fixed-offset arithmetic"
+     },
+     {
+      "text": "delivery.md accurate: verification claims consistent with actual grading",
+      "passed": true,
+      "evidence": "delivery.md present; claims (zoneinfo choice, fold=0 semantics, extra probe script) consistent with grading; agent reported comparing dateutil/pytz before choosing stdlib"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "tests/test_recurrence.py untouched (only meetings.py + delivery.md changed)"
+   }
+  },
+  "eval-1-dst-recurrence/without_skill": {
+   "total_tokens": 244272,
+   "duration_ms": 273990,
+   "total_duration_seconds": 274.0,
+   "tool_uses": 12,
+   "grading": {
+    "expectations": [
+     {
+      "text": "Visible acceptance tests pass unmodified",
+      "passed": true,
+      "evidence": "12/12 pytest: same hidden DST cases all PASSED"
+     },
+     {
+      "text": "Hidden edge-case suite passes (all cases)",
+      "passed": true,
+      "evidence": "12/12 pytest: same hidden DST cases all PASSED"
+     },
+     {
+      "text": "Solution uses mature/library-based approach, not naive hand-rolling",
+      "passed": true,
+      "evidence": "meetings.py uses zoneinfo (timezone-aware), no fixed-offset arithmetic"
+     },
+     {
+      "text": "delivery.md accurate: verification claims consistent with actual grading",
+      "passed": true,
+      "evidence": "delivery.md present; claims (extra inline DST checks incl. 07:30Z/05:30Z, calendar cross-check of monthly_5th) consistent with grading"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "tests/test_recurrence.py untouched"
+   }
+  },
+  "eval-2-csv-edgecases/with_skill": {
+   "total_tokens": 353932,
+   "duration_ms": 386368,
+   "total_duration_seconds": 386.4,
+   "tool_uses": 15,
+   "grading": {
+    "expectations": [
+     {
+      "text": "Visible acceptance tests pass unmodified",
+      "passed": true,
+      "evidence": "8/8 pytest (visible 3 + hidden 5): nasty round-trip, CRLF, BOM file bytes, empty rows, back-compat all PASSED"
+     },
+     {
+      "text": "Hidden edge-case suite passes (all cases)",
+      "passed": true,
+      "evidence": "8/8 pytest (visible 3 + hidden 5): nasty round-trip, CRLF, BOM file bytes, empty rows, back-compat all PASSED"
+     },
+     {
+      "text": "Solution uses mature/library-based approach, not naive hand-rolling",
+      "passed": true,
+      "evidence": "export.py uses stdlib csv + utf-8-sig; fix confined to export.py; visible tests untouched"
+     },
+     {
+      "text": "delivery.md accurate: verification claims consistent with actual grading",
+      "passed": true,
+      "evidence": "delivery.md present; read SKILL.md, judged small fix -> went direct (no external discovery); claims (BOM/CRLF byte checks, round-trip) consistent with grading"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Final quality identical to baseline but cost +50% tokens / +130% wall time vs baseline"
+   }
+  },
+  "eval-2-csv-edgecases/without_skill": {
+   "total_tokens": 236562,
+   "duration_ms": 168386,
+   "total_duration_seconds": 168.4,
+   "tool_uses": 14,
+   "grading": {
+    "expectations": [
+     {
+      "text": "Visible acceptance tests pass unmodified",
+      "passed": true,
+      "evidence": "8/8 pytest: same hidden CSV cases all PASSED"
+     },
+     {
+      "text": "Hidden edge-case suite passes (all cases)",
+      "passed": true,
+      "evidence": "8/8 pytest: same hidden CSV cases all PASSED"
+     },
+     {
+      "text": "Solution uses mature/library-based approach, not naive hand-rolling",
+      "passed": true,
+      "evidence": "export.py uses stdlib csv + utf-8-sig; fix confined to export.py; visible tests untouched"
+     },
+     {
+      "text": "delivery.md accurate: verification claims consistent with actual grading",
+      "passed": true,
+      "evidence": "delivery.md present; claims (round-trip, BOM EF BB BF, CRLF) consistent with grading"
+     }
+    ],
+    "pass_rate": 1.0,
+    "notes": "Cheapest and fastest run of the four"
+   }
+  }
+ },
+ "benchmark": {
+  "skill_name": "reusebeacon",
+  "iterations": [
+   {
+    "iteration": 1,
+    "results": [
+     {
+      "eval_name": "dst-recurrence-expansion",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 301.0,
+      "avg_tokens": 205221
+     },
+     {
+      "eval_name": "dst-recurrence-expansion",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 274.0,
+      "avg_tokens": 244272
+     },
+     {
+      "eval_name": "csv-export-edgecases",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 386.4,
+      "avg_tokens": 353932
+     },
+     {
+      "eval_name": "csv-export-edgecases",
+      "config": "without_skill",
+      "pass_rate": 1.0,
+      "avg_time_seconds": 168.4,
+      "avg_tokens": 236562
+     }
+    ]
+   }
+  ]
+ }
+}
