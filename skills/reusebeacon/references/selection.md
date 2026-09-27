@@ -52,11 +52,11 @@ These paths adapt the framing credited in [the upstream notice](../THIRD_PARTY_N
 4. Vendor a minimal source subset only when packages/APIs cannot satisfy the requirement. Preserve attribution and notices, pin the upstream ref, and explain who will maintain local changes.
 5. Fork an entire application only when the user needs that application as the foundation and its architecture fits. Avoid replacing an existing project to reuse one component.
 
-Build new project-specific logic when existing solutions miss necessary constraints or add more complexity than they remove. State that tradeoff briefly.
+Before rejecting a candidate, identify a failing input/output against an actual requirement; separate hard constraints from preferences or ambiguous wording. Check whether supported configuration or a small adapter resolves it. Build only the remaining necessary behavior when reuse adds more complexity than it removes, and bound the work by the task's acceptance criteria.
 
 ## Validate before committing to a dependency
 
-Identify the hardest uncertainty and use the smallest relevant test that can disprove the choice. Reuse a project test if it already answers that question; avoid a duplicate prototype. Test the actual runtime with representative synthetic or authorized data. Inspect package provenance and setup behavior before execution; use normal isolation and lockfile conventions.
+Identify the hardest uncertainty and use the smallest relevant test that can disprove the choice. Reuse project tests or established reference implementations before creating another parser or verifier. Differential testing is useful for unresolved behavior or conformance questions, not a mandatory step for every dependency. Test the actual runtime with representative synthetic or authorized data. Inspect package provenance and setup behavior before execution; use normal isolation and lockfile conventions.
 
 Stop investigating when one suitable choice has sufficient evidence and the remaining uncertainties do not affect the task. If a candidate fails, record the observed failure, try the next plausible alternative, and revisit the approach when evidence no longer narrows the problem.
 

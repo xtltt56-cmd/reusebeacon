@@ -14,17 +14,33 @@ Project use, task-result checks, and controlled comparisons answer different que
 
 ## Version 0.3.2
 
-- Date: 2026-09-26.
-- Scope: earlier task-specific exits, consistent reuse of existing authorization, verification proportional to the actual change, and concise English/Chinese trigger metadata.
+- Date: 2026-09-27.
+- Scope: a shorter entrypoint with an explicit small-fix exit, consistent authorization, proportional verification, and concise English/Chinese trigger metadata. The scope incorporates the cost feedback in [issue #2](https://github.com/xtltt56-cmd/reusebeacon/issues/2).
 
 | Check | Observed result and scope |
 | --- | --- |
 | Package and authoring validation | Package validation, skill-creator `quick_validate.py`, and `git diff --check` passed with the existing Python 3.12 environment. |
 | Archive installation | skills CLI 1.7.0 installed the complete archive into a disposable Claude Code project on D:. All seven installed files matched the source by SHA-256; installer exit code was 0. Telemetry was disabled. |
-| Release archive | SHA-256 of `reusebeacon.zip`: `4c478af7cd949c16fb5865a4e14beaea62fab6bfd3589c4a18965cc1f47b173c`. |
-| Instruction size | The entrypoint decreased from 1,270 to 1,230 whitespace-delimited words; its description decreased from 452 to 301 characters. The package remains seven files with no new runtime dependencies. These measurements do not establish model cost savings. |
+| Release archive | SHA-256 of `reusebeacon.zip`: `4ed5b281234f0db4120f5855a7b825f90e540585b2ee16cec1ae801470fd79b7`. |
+| Instruction size | The entrypoint decreased from 1,270 to 690 whitespace-delimited words; its description decreased from 452 to 301 characters. Existing references hold detailed assessment and recovery guidance. The package remains seven files with no new runtime dependencies. These measurements do not establish model cost savings. |
 | Trigger metadata | Front-loaded English/Chinese use cases, removed workflow detail from the description, and retained exclusions for explanations and isolated fixes. The existing Codex metadata does not disable implicit invocation; no new activation switch was added. |
-| Scenario coverage | Clarified cases 8, 12, and 16 and added six trigger-check prompts covering implicit selection, exclusions, and explicit invocation. These are acceptance definitions, not measured activation rates or a completed independent model comparison. |
+| Scenario coverage | Clarified research scope, existing authorization, bounded adaptation, and small-fix cases. Case 16 separates forced loading from native selection; six trigger prompts cover implicit selection, exclusions, and explicit invocation. These are acceptance definitions, not measured activation rates or a completed new-version model comparison. |
+
+### Review of the v0.3.1 issue artifacts
+
+Read [issue #1 and its follow-up](https://github.com/xtltt56-cmd/reusebeacon/issues/1) and [issue #2](https://github.com/xtltt56-cmd/reusebeacon/issues/2), then recomputed the supplied 34 `timing.json` records. The tested ZIP matched the published v0.3.1 checksum. The archive contains one CSV run per arm; the other repeated tasks have two or three runs per arm.
+
+| CSV record | ReuseBeacon | No skill | Difference |
+| --- | --- | --- | --- |
+| Reported total tokens | 353,932 | 236,562 | +49.6% |
+| Recorded wall time | 386.368 s | 168.386 s | +129.5% |
+| Reported tool uses | 15 | 14 | +7.1% |
+
+Both CSV artifacts independently passed the original eight tests and two additional checks for single empty cells and exact record/embedded-field newlines. Existing visible tests were unchanged. The additional checks also contradicted an unverified single-empty-cell limitation in the skill arm's delivery notes. Its notes acknowledge correcting two mistakes in a temporary verification script; without per-call traces, their exact contribution to runtime cannot be measured.
+
+The CSV comparison signals overhead in that run, not an established average penalty. Aggregate token counts lack cached/input/output billing detail, and the archived data do not contain per-call trajectories. The archived CSV diff files contain path errors; new diffs were generated during review. One original CRLF assertion contains `or True`, so passing the original suite alone is incomplete evidence. Only the CSV outputs were replayed; this review does not independently confirm every other task's correctness or establish v0.3.2 cost savings.
+
+These findings motivated a small-fix exit before optional reference loading and a shorter entrypoint. Build decisions now distinguish concrete requirement failures from preferences and consider small adapters; differential validation remains conditional on an unresolved compatibility or conformance question.
 
 ## Version 0.3.1
 

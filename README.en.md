@@ -27,7 +27,7 @@ The author reports using ReuseBeacon in their development work. These public pro
 
 [Read the project cases and pinned evidence](PROJECTS.md) · [Validation record](VALIDATION.md)
 
-`v0.3.2` streamlines task branches and English/Chinese trigger descriptions: fix isolated issues directly, end research with findings, honor existing authorization, and choose verification appropriate to the change.
+`v0.3.2` trims core instructions and English/Chinese trigger descriptions: complete isolated fixes at the entrypoint, load details only when needed, honor existing authorization, and verify in proportion to the change.
 
 ## Workflow
 
