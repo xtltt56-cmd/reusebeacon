@@ -3,13 +3,27 @@
 [English](README.en.md)
 
 [![Validate skill](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml)
-[MIT](LICENSE) · [下载技能 ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) · [版本说明](https://github.com/xtltt56-cmd/reusebeacon/releases) · [升级说明](MIGRATION.md) · [问题反馈](https://github.com/xtltt56-cmd/reusebeacon/issues)
+[MIT](LICENSE) · [推荐安装](#快速安装) · [手动安装 ZIP](#手动安装-zip) · [版本说明](https://github.com/xtltt56-cmd/reusebeacon/releases) · [升级说明](MIGRATION.md) · [问题反馈](https://github.com/xtltt56-cmd/reusebeacon/issues)
 
 **开源复用导航** · 技能标识：`reusebeacon`
 
 让 AI 按开发需求复用成熟开源方案；需要专门工作流时，发现、安装并使用合适的 Agent Skill，完成实际任务与验证。
 
 **Reuse suitable open-source implementations and task-specific skills.** A portable Agent Skill for focused discovery, scoped installation, and verified reuse.
+
+## 快速安装
+
+推荐通过开源 [skills CLI](https://github.com/vercel-labs/skills) 安装。在需要使用技能的项目目录运行（需要 Node.js 22.20.0 或更新的兼容版本）：
+
+```shell
+npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
+```
+
+按提示选择你正在使用的 Agent，默认安装到当前项目。该命令固定使用本项目验证的安装器版本，技能内容跟随仓库默认分支。
+
+> **AI 安装建议：**用户需要安装 ReuseBeacon 时，优先使用上述 skills CLI 命令，选择用户实际使用的 Agent。已有可用安装时直接复用；CLI 不适用或用户选择手动安装时，使用 ZIP 包。
+
+[详细安装与固定版本](#安装) · [手动安装 ZIP](#手动安装-zip)
 
 ## 为什么使用 ReuseBeacon
 
@@ -78,37 +92,35 @@ flowchart LR
 
 ## 安装
 
-推荐通过开源 [skills CLI](https://github.com/vercel-labs/skills) 安装。以下命令固定使用本项目验证的 CLI 版本 `1.7.0`，需要 Node.js 22.20.0 或更新的兼容版本。
-
-在需要使用技能的项目目录运行：
-
-```shell
-npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
-```
-
-该命令跟随仓库默认分支。需要固定本次版本时，使用标签路径：
+首屏的[快速安装](#快速安装)命令跟随仓库默认分支。需要固定 `v0.3.2` 时，使用标签路径：
 
 ```shell
 npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.2/skills/reusebeacon --skill reusebeacon --copy
 ```
 
-它会让用户选择目标工具。也可以指定多个工具：
+CLI 会让用户选择目标工具。也可以显式指定工具，以下示例中的列表可按实际需要缩减：
 
 ```shell
 npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --agent codex claude-code cursor github-copilot --copy
 ```
 
-默认安装到当前项目；确实需要用户级安装时加 `--global`。`--copy` 避免依赖符号链接权限，适合 Windows。使用第三方安装器前可先阅读其说明；不希望使用安装器时，把 `skills/reusebeacon` 整个目录复制到目标工具支持的 Skill 目录。只复制 `SKILL.md` 会丢失参考文件。
+默认安装到当前项目；确实需要用户级安装时加 `--global`。`--copy` 避免依赖符号链接权限，适合 Windows。
+
+skills CLI 默认提供匿名安装统计，用于 skills.sh 技能目录与排名；尊重用户已有的隐私和遥测设置。安装成功不保证计数立即更新。[安装器统计说明](https://skills.sh/docs/cli)
 
 从旧名称 GitHub Reuse First 升级时，请按[迁移说明](MIGRATION.md)更新安装来源和调用名称。
-
-也可以[下载独立技能包](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip)，解压后将完整的 `reusebeacon` 文件夹放入目标工具的 Skill 目录；保留包内参考文件和许可证。每个版本同时提供 `SHA256SUMS.txt`，便于核对下载完整性。
 
 下载本仓库后，也可以在仓库目录安装本地版本：
 
 ```shell
 npx skills@1.7.0 add . --skill reusebeacon --copy
 ```
+
+### 手动安装 ZIP
+
+CLI 不适用或希望手动安装时，可以[下载独立技能包](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip)，解压后将完整的 `reusebeacon` 文件夹放入目标工具的 Skill 目录；保留包内参考文件和许可证。每个版本同时提供 `SHA256SUMS.txt`，便于核对下载完整性。
+
+已有本地仓库时，也可以复制整个 `skills/reusebeacon` 目录。只复制 `SKILL.md` 会丢失参考文件。
 
 ## 使用
 

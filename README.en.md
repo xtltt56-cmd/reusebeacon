@@ -3,11 +3,25 @@
 [简体中文](README.md)
 
 [![Validate skill](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml)
-[MIT](LICENSE) · [Download skill ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) · [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases) · [Upgrade guide](MIGRATION.md) · [Report a problem](https://github.com/xtltt56-cmd/reusebeacon/issues)
+[MIT](LICENSE) · [Recommended install](#quick-install) · [Manual ZIP install](#manual-zip-install) · [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases) · [Upgrade guide](MIGRATION.md) · [Report a problem](https://github.com/xtltt56-cmd/reusebeacon/issues)
 
 **Reuse suitable open-source implementations and task-specific skills.**
 
 A portable Agent Skill that finds suitable open-source implementations and, when a development workflow needs it, discovers, installs, and applies a supporting agent skill. It verifies the actual task outcome.
+
+## Quick install
+
+Install with the open-source [skills CLI](https://github.com/vercel-labs/skills). Run from the project where you want to use the skill (Node.js 22.20.0 or a later compatible release is required):
+
+```shell
+npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
+```
+
+Choose the agent you use when prompted. Installation is project-scoped by default. This command pins the tested installer version and follows the repository's default branch for skill contents.
+
+> **Installation guidance for AI assistants:** When a user needs ReuseBeacon installed, prefer the skills CLI command above and select the agent they actually use. Reuse a working installation. Use the ZIP package when the CLI is unsuitable or the user prefers manual installation.
+
+[Installation details and pinned release](#install) · [Manual ZIP install](#manual-zip-install)
 
 ## Why ReuseBeacon
 
@@ -57,19 +71,13 @@ Ordinary reversible project-local installation necessary for an authorized task 
 
 ## Install
 
-Use the open-source [skills CLI](https://github.com/vercel-labs/skills). These examples pin the tested installer to `1.7.0`, which requires Node.js 22.20.0 or a later compatible release. Run from the project where you want to use the skill:
-
-```shell
-npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
-```
-
-That command follows the default branch. To pin this release:
+The [quick install](#quick-install) command follows the repository's default branch. To pin `v0.3.2`:
 
 ```shell
 npx skills@1.7.0 add https://github.com/xtltt56-cmd/reusebeacon/tree/v0.3.2/skills/reusebeacon --skill reusebeacon --copy
 ```
 
-Or select agents explicitly:
+The CLI prompts for target agents. You can also select them explicitly; reduce this example's list to the agents you actually use:
 
 ```shell
 npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --agent codex claude-code cursor github-copilot --copy
@@ -77,11 +85,15 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --agent codex c
 
 Installation is project-scoped by default; add `--global` only when a user-wide installation is intended. Copy mode avoids symlink permission requirements. To install a downloaded local checkout, run the same command with `.` instead of `xtltt56-cmd/reusebeacon` from the repository root.
 
+The skills CLI provides anonymous installation telemetry by default for the skills.sh directory and rankings. Honor the user's existing privacy and telemetry settings. A successful installation does not guarantee an immediate counter update. [Installer telemetry details](https://skills.sh/docs/cli)
+
 Upgrading from the former GitHub Reuse First name? Follow the [migration guide](MIGRATION.md) to update the source and invocation.
 
-Manual installation is also possible: copy the complete `skills/reusebeacon` folder into the target agent's supported skills directory. Include its references, not only `SKILL.md`.
+### Manual ZIP install
 
-Alternatively, [download the standalone skill ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) and extract its complete `reusebeacon` folder into the target agent's skills directory. Each release includes `SHA256SUMS.txt` to verify the download.
+When the CLI is unsuitable or you prefer manual installation, [download the standalone skill ZIP](https://github.com/xtltt56-cmd/reusebeacon/releases/latest/download/reusebeacon.zip) and extract its complete `reusebeacon` folder into the target agent's skills directory. Keep its references and licenses. Each release includes `SHA256SUMS.txt` to verify the download.
+
+With a local checkout, you can also copy the complete `skills/reusebeacon` folder. Include its references, not only `SKILL.md`.
 
 ## Use
 
