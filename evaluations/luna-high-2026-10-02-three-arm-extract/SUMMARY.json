@@ -1,0 +1,170 @@
+{
+  "title": "GPT-6 Luna high 四臂试验的三组公开摘录",
+  "date": "2026-10-02",
+  "publication_scope": "Selected three-arm extract only; not the complete four-arm experiment report.",
+  "included_arms": [
+    "reusebeacon-v0.3.2",
+    "ecc-search-first",
+    "no-additional-skill"
+  ],
+  "excluded_from_publication": "The v0.3.3 candidate arm data, code changes, and candidate-specific results are not included.",
+  "runs_in_this_extract": 48,
+  "design_for_included_arms": {
+    "cases": 8,
+    "repeats_per_case_per_arm": 2,
+    "runs_per_arm": 16
+  },
+  "model": "gpt-6-luna",
+  "effort": "high",
+  "arm_totals": {
+    "reusebeacon-v0.3.2": {
+      "runs": 16,
+      "normal_completions": 16,
+      "full_contract_passes": 14,
+      "input_tokens": 7744217,
+      "cached_input_tokens": 7378176,
+      "output_tokens": 108219,
+      "total_input_plus_output_tokens": 7852436,
+      "uncached_input_plus_output_proxy": 474260,
+      "host_tool_calls": 183
+    },
+    "ecc-search-first": {
+      "runs": 16,
+      "normal_completions": 16,
+      "full_contract_passes": 13,
+      "input_tokens": 7957728,
+      "cached_input_tokens": 7600896,
+      "output_tokens": 112913,
+      "total_input_plus_output_tokens": 8070641,
+      "uncached_input_plus_output_proxy": 469745,
+      "host_tool_calls": 181
+    },
+    "no-additional-skill": {
+      "runs": 16,
+      "normal_completions": 16,
+      "full_contract_passes": 12,
+      "input_tokens": 6070456,
+      "cached_input_tokens": 5815040,
+      "output_tokens": 82558,
+      "total_input_plus_output_tokens": 6153014,
+      "uncached_input_plus_output_proxy": 337974,
+      "host_tool_calls": 149
+    }
+  },
+  "per_case_full_contract_passes": {
+    "C1": {
+      "name": "日历小修复",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 2,
+        "ecc-search-first": 2,
+        "no-additional-skill": 2
+      }
+    },
+    "C2": {
+      "name": "共享接口复用",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 2,
+        "ecc-search-first": 2,
+        "no-additional-skill": 2
+      }
+    },
+    "N1": {
+      "name": "离线 Schema 集成",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 2,
+        "ecc-search-first": 2,
+        "no-additional-skill": 2
+      }
+    },
+    "A1": {
+      "name": "PEP 440 版本选择",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 2,
+        "ecc-search-first": 2,
+        "no-additional-skill": 2
+      }
+    },
+    "G1": {
+      "name": "TOML 布局与注释",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 1,
+        "ecc-search-first": 0,
+        "no-additional-skill": 0
+      }
+    },
+    "B1": {
+      "name": "CSV 精确长整数",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 2,
+        "ecc-search-first": 2,
+        "no-additional-skill": 2
+      }
+    },
+    "B2": {
+      "name": "NDJSON 内存约束",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 2,
+        "ecc-search-first": 2,
+        "no-additional-skill": 2
+      }
+    },
+    "Q1": {
+      "name": "安全 ZIP 导入",
+      "runs_per_arm": 2,
+      "full_contract_passes": {
+        "reusebeacon-v0.3.2": 1,
+        "ecc-search-first": 1,
+        "no-additional-skill": 0
+      }
+    }
+  },
+  "paired_cost_medians_when_both_runs_pass": [
+    {
+      "left_arm": "reusebeacon-v0.3.2",
+      "right_arm": "ecc-search-first",
+      "both_full_contract_pass_pairs": 13,
+      "median_ratio_left_over_right": {
+        "total_input_plus_output_tokens": 0.89,
+        "uncached_input_plus_output_proxy": 0.901,
+        "host_tool_calls": 0.917
+      }
+    },
+    {
+      "left_arm": "reusebeacon-v0.3.2",
+      "right_arm": "no-additional-skill",
+      "both_full_contract_pass_pairs": 12,
+      "median_ratio_left_over_right": {
+        "total_input_plus_output_tokens": 1.203,
+        "uncached_input_plus_output_proxy": 1.353,
+        "host_tool_calls": 1.183
+      }
+    },
+    {
+      "left_arm": "ecc-search-first",
+      "right_arm": "no-additional-skill",
+      "both_full_contract_pass_pairs": 12,
+      "median_ratio_left_over_right": {
+        "total_input_plus_output_tokens": 1.251,
+        "uncached_input_plus_output_proxy": 1.395,
+        "host_tool_calls": 1.226
+      }
+    }
+  ],
+  "cost_proxy_definition": "Uncached input tokens plus output tokens, as recorded by experiment telemetry. It is a comparison proxy, not a billed-cost estimate.",
+  "limitations": [
+    "Only two runs per case and arm; results are descriptive, not statistically significant.",
+    "The no-additional-skill arm still received shared engineering guidance that encouraged reuse.",
+    "Skills were explicitly instructed to load; native or natural triggering was not measured.",
+    "Tasks were development evaluation cases and do not establish general performance across projects or models.",
+    "Concurrent wall time is omitted because it does not support a reliable speed ranking.",
+    "The public extract omits prompts, hidden tests, project diffs, raw sessions, host paths, session identifiers, and tool traces.",
+    "Supplementary diagnostics are reported separately and do not change the frozen main scores."
+  ]
+}

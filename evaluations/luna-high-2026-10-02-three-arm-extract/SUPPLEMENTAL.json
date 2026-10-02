@@ -1,0 +1,55 @@
+{
+  "non_scoring": true,
+  "frozen_main_scores_changed": false,
+  "csv_140000_digit_field": {
+    "description": "Same 140,000-digit CSV field on fresh workers; supplementary diagnostic only.",
+    "results": {
+      "reusebeacon-v0.3.2": {
+        "trials": 2,
+        "passes": 2
+      },
+      "ecc-search-first": {
+        "trials": 2,
+        "passes": 1
+      },
+      "no-additional-skill": {
+        "trials": 2,
+        "passes": 0
+      }
+    }
+  },
+  "ndjson_single_72_mib_line": {
+    "description": "Same legal 72 MiB single-line input; 48 MiB peak working set threshold and 25-second worker timeout.",
+    "results": {
+      "reusebeacon-v0.3.2": {
+        "trials": 2,
+        "passes": 2,
+        "peak_working_set_bytes": [
+          14843904,
+          15003648
+        ],
+        "memory_limit_bytes": 50331648
+      },
+      "ecc-search-first": {
+        "trials": 2,
+        "passes": 2,
+        "peak_working_set_bytes": [
+          14843904,
+          14794752
+        ],
+        "memory_limit_bytes": 50331648
+      },
+      "no-additional-skill": {
+        "trials": 2,
+        "passes": 1,
+        "peak_working_set_bytes": [
+          14827520,
+          171044864
+        ],
+        "memory_limit_bytes": 50331648
+      }
+    },
+    "timing_note": "Per-function elapsed values are omitted; they exclude interpreter and import startup."
+  },
+  "limitations": "Test generators and the measurement helper are not included; this is a result extract, not a replayable diagnostic package."
+}
