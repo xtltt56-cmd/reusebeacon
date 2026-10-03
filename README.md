@@ -34,10 +34,13 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 
 ## 实测（三臂对照评测）
 
-- **GPT-6 Luna high：72 次真实运行。** ReuseBeacon、ECC search-first 与无通用 Skill 组各有 21/24 次外部测试全过；本套题中，ReuseBeacon 相比 search-first 总工具调用少 **16.7%**、总执行时间少 **16.1%**。逐次指标、工具轨迹、代码差异与可重跑证据均已公开。[查看报告与下载证据](evaluations/luna-high-2026-09-27/README.md)
-- **GLM / ZCode：已归档 85 条记录、9 个题型。** 记录涵盖复用选型、小任务、规范一致性和辅助 Skill 使用；v0.3.2 的三次 cron 样本中，平均报告总 tokens 比基线低约 **86%**。[查看既有评测](evaluations/README.md)
+[测试与证据总览](evaluations/README.md)汇集各批次方法、逐次数据、统计审计和复核材料。
 
-以上是指定任务与环境下的结果。两批模型与成本口径不同，分别统计；完整报告保留部分通过、重测与评分说明。[后续改进方向与统计复核](evaluations/NEXT_STEPS.md)
+- **2026-10-02，GPT-6 Luna high：48 条公开结果。** ReuseBeacon v0.3.2、ECC search-first、无额外 Skill 分别有 **14/16、13/16、12/16** 次完整通过；无额外 Skill 组总体成本最低。这是每题每组两次重复的三组结果摘录，不能推断普遍排名。[查看本批结果与范围](evaluations/luna-high-2026-10-02-three-arm-extract/README.md)
+- **2026-09-27，GPT-6 Luna high：72 次真实运行。** 三组各 **21/24** 次完整通过；本套题中 ReuseBeacon 相比 search-first 总工具调用少 **16.7%**、总执行时间少 **16.1%**。逐次指标、工具轨迹、代码差异与重跑证据已公开。[查看报告与下载证据](evaluations/luna-high-2026-09-27/README.md)
+- **GLM / ZCode：85 条归档记录、9 个题型。** v0.3.2 三次 cron 样本平均报告总 tokens 比基线低约 **86%**；小修复等任务有额外开销。[查看批次协议与审计](evaluations/GLM_ZCODE.md)
+
+各批次按自身任务、模型和成本口径分别统计，保留部分通过与评分说明。
 
 ## 项目实践
 
