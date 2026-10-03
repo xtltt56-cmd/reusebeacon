@@ -32,9 +32,13 @@ Choose the agent you use when prompted. Installation is project-scoped by defaul
 
 ## Measured comparisons
 
-**72 GPT-6 Luna high runs:** ReuseBeacon, ECC search-first, and the no-general-skill arm each passed every external assertion in 21/24 runs. In this suite, ReuseBeacon used **16.7% fewer total host tool calls and 16.1% less total execution time than search-first**. Per-run metrics, tool trajectories, code differences and replayable evidence are public. [Report and downloads](evaluations/luna-high-2026-09-27/README.md)
+The [evaluation index](evaluations/README.md) links every public batch, its methods, per-run data, audits, and verification scope.
 
-The earlier GLM/ZCode archive contains 85 records across nine task types. Its three v0.3.2 cron samples report about 86% lower mean total tokens than the baseline. These are separate task-specific observations with different models and token accounting. See the [earlier evaluation](evaluations/README.md) and [data review and improvement priorities](evaluations/NEXT_STEPS.md).
+- **Oct 2, 2026 — 48 public GPT-6 Luna high results:** ReuseBeacon v0.3.2, ECC search-first, and no additional skill fully passed **14/16, 13/16, and 12/16** runs respectively. The no-additional-skill arm had the lowest overall cost. This three-arm extract has only two repetitions per task and arm; it does not establish a general ranking. [Results and scope](evaluations/luna-high-2026-10-02-three-arm-extract/README.md)
+- **Sept 27, 2026 — 72 GPT-6 Luna high runs:** all three arms fully passed **21/24** runs. ReuseBeacon used **16.7% fewer total host tool calls and 16.1% less total execution time than search-first** in this suite. Per-run metrics, tool trajectories, code differences, and replayable evidence are public. [Report and downloads](evaluations/luna-high-2026-09-27/README.md)
+- **Earlier GLM/ZCode archive — 85 records across nine task types:** three v0.3.2 cron samples report about **86% lower mean total tokens than the baseline**; small fixes and other tasks can add overhead. [Batch protocol and audit](evaluations/GLM_ZCODE.md)
+
+Each batch retains its own tasks, model, cost accounting, partial results, and scoring notes. Results are not pooled across experiments.
 
 ## Project practice
 

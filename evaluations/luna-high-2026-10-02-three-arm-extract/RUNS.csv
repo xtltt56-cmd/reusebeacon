@@ -1,0 +1,49 @@
+﻿case_id,case,repeat,arm,model,effort,normal_completion,full_contract_pass,input_tokens,cached_input_tokens,output_tokens,total_tokens,uncached_input_plus_output_proxy,host_tool_calls
+C1,日历小修复,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,281038,270336,3090,284128,13792,7
+C1,日历小修复,1,ecc-search-first,gpt-6-luna,high,True,True,247520,237824,2371,249891,12067,6
+C1,日历小修复,1,no-additional-skill,gpt-6-luna,high,True,True,237224,229632,2130,239354,9722,6
+C1,日历小修复,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,207498,197120,2394,209892,12772,5
+C1,日历小修复,2,ecc-search-first,gpt-6-luna,high,True,True,320612,302848,3088,323700,20852,8
+C1,日历小修复,2,no-additional-skill,gpt-6-luna,high,True,True,283070,272384,4024,287094,14710,7
+C2,共享接口复用,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,316129,304896,2244,318373,13477,8
+C2,共享接口复用,1,ecc-search-first,gpt-6-luna,high,True,True,355612,344576,2360,357972,13396,9
+C2,共享接口复用,1,no-additional-skill,gpt-6-luna,high,True,True,271320,263168,1875,273195,10027,7
+C2,共享接口复用,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,389774,371968,3090,392864,20896,10
+C2,共享接口复用,2,ecc-search-first,gpt-6-luna,high,True,True,282810,269312,2270,285080,15768,7
+C2,共享接口复用,2,no-additional-skill,gpt-6-luna,high,True,True,237142,229632,1975,239117,9485,6
+N1,离线 Schema 集成,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,453534,434176,6315,459849,25673,11
+N1,离线 Schema 集成,1,ecc-search-first,gpt-6-luna,high,True,True,509640,488192,7061,516701,28509,12
+N1,离线 Schema 集成,1,no-additional-skill,gpt-6-luna,high,True,True,292239,276480,5014,297253,20773,7
+N1,离线 Schema 集成,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,504394,472832,6387,510781,37949,12
+N1,离线 Schema 集成,2,ecc-search-first,gpt-6-luna,high,True,True,652213,617728,9938,662151,44423,14
+N1,离线 Schema 集成,2,no-additional-skill,gpt-6-luna,high,True,True,430766,408832,5945,436711,27879,10
+A1,PEP 440 版本选择,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,490571,471808,5323,495894,24086,12
+A1,PEP 440 版本选择,1,ecc-search-first,gpt-6-luna,high,True,True,329289,316160,4794,334083,17923,8
+A1,PEP 440 版本选择,1,no-additional-skill,gpt-6-luna,high,True,True,499125,483840,4439,503564,19724,13
+A1,PEP 440 版本选择,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,319902,305920,3608,323510,17590,8
+A1,PEP 440 版本选择,2,ecc-search-first,gpt-6-luna,high,True,True,369448,353792,5477,374925,21133,9
+A1,PEP 440 版本选择,2,no-additional-skill,gpt-6-luna,high,True,True,277084,263168,3784,280868,17700,7
+G1,TOML 布局与注释,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,False,482060,463616,4571,486631,23015,12
+G1,TOML 布局与注释,1,ecc-search-first,gpt-6-luna,high,True,False,531249,504576,7404,538653,34077,12
+G1,TOML 布局与注释,1,no-additional-skill,gpt-6-luna,high,True,False,490113,472832,5122,495235,22403,12
+G1,TOML 布局与注释,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,803140,760064,13272,816412,56348,18
+G1,TOML 布局与注释,2,ecc-search-first,gpt-6-luna,high,True,False,453475,436224,4760,458235,22011,11
+G1,TOML 布局与注释,2,no-additional-skill,gpt-6-luna,high,True,False,392642,377088,4037,396679,19591,10
+B1,CSV 精确长整数,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,537330,515584,7270,544600,29016,13
+B1,CSV 精确长整数,1,ecc-search-first,gpt-6-luna,high,True,True,329986,316160,4288,334274,18114,8
+B1,CSV 精确长整数,1,no-additional-skill,gpt-6-luna,high,True,True,356382,343552,3369,359751,16199,9
+B1,CSV 精确长整数,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,394827,375296,4758,399585,24289,9
+B1,CSV 精确长整数,2,ecc-search-first,gpt-6-luna,high,True,True,575586,548608,6861,582447,33839,12
+B1,CSV 精确长整数,2,no-additional-skill,gpt-6-luna,high,True,True,280780,269312,3478,284258,14946,7
+B2,NDJSON 内存约束,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,630895,601344,12571,643466,42122,14
+B2,NDJSON 内存约束,1,ecc-search-first,gpt-6-luna,high,True,True,604178,569856,16231,620409,50553,13
+B2,NDJSON 内存约束,1,no-additional-skill,gpt-6-luna,high,True,True,517796,494336,10147,527943,33607,12
+B2,NDJSON 内存约束,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,635346,605440,12689,648035,42595,14
+B2,NDJSON 内存约束,2,ecc-search-first,gpt-6-luna,high,True,True,1359176,1306368,18808,1377984,71616,28
+B2,NDJSON 内存约束,2,no-additional-skill,gpt-6-luna,high,True,True,447368,429056,6584,453952,24896,11
+Q1,安全 ZIP 导入,1,reusebeacon-v0.3.2,gpt-6-luna,high,True,False,752930,715264,11796,764726,49462,17
+Q1,安全 ZIP 导入,1,ecc-search-first,gpt-6-luna,high,True,False,517887,492288,8010,525897,33609,12
+Q1,安全 ZIP 导入,1,no-additional-skill,gpt-6-luna,high,True,False,467686,444416,11052,478738,34322,11
+Q1,安全 ZIP 导入,2,reusebeacon-v0.3.2,gpt-6-luna,high,True,True,544849,512512,8841,553690,41178,13
+Q1,安全 ZIP 导入,2,ecc-search-first,gpt-6-luna,high,True,True,519047,496384,9192,528239,31855,12
+Q1,安全 ZIP 导入,2,no-additional-skill,gpt-6-luna,high,True,False,589719,557312,9583,599302,41990,14

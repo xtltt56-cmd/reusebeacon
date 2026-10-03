@@ -36,6 +36,6 @@ This tool uses a pinned `pynput` dependency for global mouse capture and keeps e
 
 ## 记录方式 / About these records
 
-上述源码、文档和 CI 状态于 2026-09-26 核对。项目案例说明实际工程用法；Skill 对照实验的版本、方法和结论范围单独记录在 [VALIDATION.md](VALIDATION.md)。欢迎用“任务 → 采用方案 → 项目适配 → 测试结果”的结构补充自己的案例。
+上述源码、文档和 CI 状态于 2026-09-26 核对。项目案例说明实际工程用法；Skill 对照实验的版本、方法和结论范围见[测试与证据总览](evaluations/README.md)，安装与版本检查见[验证记录](VALIDATION.md)。欢迎用“任务 → 采用方案 → 项目适配 → 测试结果”的结构补充自己的案例。
 
-The linked source, documentation, and CI status were checked on 2026-09-26. These cases describe engineering practice; versioned skill evaluations are tracked in [VALIDATION.md](VALIDATION.md). To contribute a case, record the task, selected implementation, integration work, and observed test results.
+The linked source, documentation, and CI status were checked on 2026-09-26. These cases describe engineering practice; versioned skill comparisons are listed in the [evaluation index](evaluations/README.md), with installation and version checks in [VALIDATION.md](VALIDATION.md). To contribute a case, record the task, selected implementation, integration work, and observed test results.
