@@ -3,7 +3,7 @@
 [English](README.en.md)
 
 [![Validate skill](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml)
-[MIT](LICENSE) · [推荐安装](#快速安装) · [手动安装 ZIP](#手动安装-zip) · [版本说明](https://github.com/xtltt56-cmd/reusebeacon/releases) · [升级说明](MIGRATION.md) · [问题反馈](https://github.com/xtltt56-cmd/reusebeacon/issues)
+[MIT](LICENSE) · [推荐安装](#快速安装) · [上手示例](docs/USAGE.md) · [测试与证据](evaluations/README.md) · [手动安装 ZIP](#手动安装-zip) · [版本说明](https://github.com/xtltt56-cmd/reusebeacon/releases) · [升级说明](MIGRATION.md) · [问题反馈](https://github.com/xtltt56-cmd/reusebeacon/issues)
 
 **开源复用导航** · 技能标识：`reusebeacon`
 
@@ -25,12 +25,31 @@ npx skills@1.7.0 add xtltt56-cmd/reusebeacon --skill reusebeacon --copy
 
 [详细安装与固定版本](#安装) · [手动安装 ZIP](#手动安装-zip)
 
+### 安装后开始使用
+
+按工具要求刷新技能列表或打开新会话，在当前项目发送：
+
+```text
+使用 reusebeacon，给当前项目增加 Excel 导出功能。
+沿用现有技术栈，优先复用已有依赖或适用的成熟库，完成实现与测试。
+```
+
+[更多可复制的任务示例与常见问题](docs/USAGE.md) · [已完成的项目案例](PROJECTS.md)
+
 ## 为什么使用 ReuseBeacon
 
 - **把需求落实为可复用方案**：先看项目已有能力，再查标准库、官方 SDK 和适用的开源实现，把精力留给项目特有的需求。
 - **代码与 Skill 一起考虑**：缺少专门工作流时，寻找并实际使用合适的辅助 Skill，覆盖选型、实现和验证。
 - **小任务保持轻量**：已有实现足够就直接修复与测试；公开检索无需先登录 GitHub，外部搜索与安装按需进行。
 - **以集成结果作交付**：检查版本、平台和许可证信息，验证关键行为，并留下采用来源与测试结果。
+
+## 选择适合的任务
+
+| 你要完成什么 | 如何开始 |
+| --- | --- |
+| 给现有项目增加功能，寻找适用的成熟实现 | [实现功能：复用现有代码与依赖](docs/USAGE.md#示例一实现功能) |
+| 技术选型或比较候选方案，暂时不修改项目 | [只做选型：给出有依据的建议](docs/USAGE.md#示例二只做选型) |
+| 缺少浏览器测试等专门工作流，需要合适的辅助 Skill | [补充工作流：寻找并实际使用 Skill](docs/USAGE.md#示例三补充开发工作流) |
 
 ## 实测（三臂对照评测）
 
@@ -127,31 +146,11 @@ CLI 不适用或希望手动安装时，可以[下载独立技能包](https://gi
 
 ## 使用
 
-在支持 `$` 技能调用的 Codex 界面中：
+在工具的技能选择器中选择 ReuseBeacon，或在任务中明确写“使用 reusebeacon”。支持 `$` 调用的 Codex 界面也可以使用 `$reusebeacon`。
 
-```text
-使用 $reusebeacon。给这个现有项目增加 Excel 导出功能。
-请先评估现有依赖和适合的成熟方案，按需要检查访问，完成集成与测试。
-```
+[上手指南](docs/USAGE.md)提供安装后的首次调用、三个任务提示词、结果检查和常见问题；[项目实践](PROJECTS.md)提供已完成项目的源码与测试链接。
 
-其他工具可使用其技能选择器，或明确要求使用 `reusebeacon`：
-
-```text
-使用 reusebeacon，帮我实现一个支持断点续传的文件下载功能。
-保留当前 Python 技术栈，优先复用成熟实现。
-```
-
-```text
-使用 reusebeacon，给项目接入 Markdown 编辑器。
-先比较可维护的候选方案，再实现适合现有界面的方案。
-```
-
-```text
-使用 reusebeacon，给现有网页补充浏览器端到端测试。
-先使用已有工具和技能；确有工作流缺口时，可以寻找、检查并在当前项目安装一个合适的 Skill，实际使用它完成测试。
-```
-
-自动匹配面向“找成熟方案、技术选型、避免重复造轮子、找并使用开发 Skill”等需求。要明确使用它，可以在技能选择器中选中 ReuseBeacon，或按所用工具支持的方式点名调用。若选择器找不到，先核对安装位置、版本和工具的刷新要求；只下载仓库不代表工具已加载技能。
+自动匹配面向“找成熟方案、技术选型、避免重复造轮子、找并使用开发 Skill”等需求。若选择器找不到，先核对安装位置、版本和工具的刷新要求；只下载仓库不代表工具已加载技能。
 
 自动触发取决于工具和模型。需要项目持续采用这套流程时，可在项目规则中注明“涉及开源选型或技能发现时使用 ReuseBeacon，小修复直接处理”，并在目标工具中验证。触发检查示例见[场景清单](tests/scenarios.md#trigger-checks)。
 
@@ -172,6 +171,8 @@ CLI 不适用或希望手动安装时，可以[下载独立技能包](https://gi
 - [公开仓库](https://github.com/xtltt56-cmd/reusebeacon)：源文件、中英文说明和安装入口。
 - [版本发布](https://github.com/xtltt56-cmd/reusebeacon/releases)：查看变更说明和下载版本归档。
 - [问题与建议](https://github.com/xtltt56-cmd/reusebeacon/issues)：反馈安装问题、触发失效或筛选流程的缺陷；请隐去凭据和私有项目内容。
+
+如果它帮助你完成了实际任务，欢迎分享使用案例，或给仓库一个 Star。[简短反馈格式](docs/USAGE.md#分享使用结果)
 
 可以在 GitHub 搜索 `reusebeacon`，或使用 `agent-skills`、`code-reuse` 等主题发现相关项目。安装命令和 ZIP 下载链接都指向本仓库。
 

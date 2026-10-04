@@ -2,7 +2,11 @@
 
 作者已在自己的开发任务中使用 ReuseBeacon。下面整理作者公开项目中的相关复用实践，并提供固定提交的文档、源码和测试记录。作者提供使用经历，公开记录支持读者查看具体的选型与交付内容。
 
+想在自己的项目试用，可从[中文上手示例](docs/USAGE.md)或[英文指南](docs/USAGE.en.md)开始；各批次对照结果见[测试与证据总览](evaluations/README.md)。
+
 The author reports using ReuseBeacon in development. These author-maintained projects illustrate related reuse practices through pinned documentation, implementation, and test records. Follow the links to inspect the specific choices and outputs described here.
+
+Try it in your project using the [English usage guide](docs/USAGE.en.md). For versioned comparisons, see the [evaluation index](evaluations/README.md).
 
 ## A 股量化工作台 / A-share quant workbench
 
