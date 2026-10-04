@@ -1,5 +1,9 @@
 # Validation record
 
+[测试与证据总览 / Evaluation index](evaluations/README.md) · [Project practice](PROJECTS.md)
+
+This file tracks version-specific installation, package, and validation checks. The evaluation index is the entrypoint for comparison results and their evidence.
+
 ## Practical use and completed checks
 
 ReuseBeacon is used in the author's development work. [Project cases](PROJECTS.md) link to public candidate assessments, implementation code, supporting-skill adaptation notes, and successful Windows CI runs. These are author-maintained projects, with usage reported by the author and the linked engineering artifacts checked on 2026-09-26.
@@ -8,7 +12,8 @@ ReuseBeacon is used in the author's development work. [Project cases](PROJECTS.m
 | --- | --- | --- |
 | Project practice | Reviewed the quant workbench's candidate assessment, RiceQuant skill adaptation, DuckDB/Parquet implementation, and the mouse recorder's `pynput` integration and release checks. | Concrete engineering choices and outputs; links are pinned in [PROJECTS.md](PROJECTS.md). |
 | v0.2.0 task-result replay | On 2026-09-26, an independent Codex review reran the maintainer's WorkBuddy experiment: eight cases across three conditions, with all 24 existing checks passing. | Confirms the tested artifacts' behavior. The review found hidden-test access and concurrent directory writes; tool counts were self-reported. This run is not used to claim comparative quality or cost gains. |
-| v0.3.2 model comparison | 72 GPT-6 Luna high runs (8 tasks × 3 arms × 3 repetitions), with host telemetry and external scoring; all 72 output scores reproduced from the public export, including nine real-browser checks. | Each arm fully passed 21/24 runs. All other results are partial T5 scores; frozen grader conflicts are retained. [Report and evidence](evaluations/luna-high-2026-09-27/README.md). |
+| v0.3.2 model comparison (2026-09-27) | 72 GPT-6 Luna high runs (8 tasks × 3 arms × 3 repetitions), with host telemetry and external scoring; all 72 output scores reproduced from the public export, including nine real-browser checks. | Each arm fully passed 21/24 runs. All other results are partial T5 scores; frozen grader conflicts are retained. [Report and evidence](evaluations/luna-high-2026-09-27/README.md). |
+| v0.3.2 result extract (2026-10-02) | 48 public GPT-6 Luna high records; ReuseBeacon, search-first, and no additional skill fully passed 14/16, 13/16, and 12/16 runs. | Two repetitions per task and arm; a three-arm extract without complete replay artifacts. [Results and scope](evaluations/luna-high-2026-10-02-three-arm-extract/README.md). |
 | Distribution | Public installation, copied-file hashes, package validation, and Linux/Windows CI completed for the release records below. | Version-specific package and installation results. |
 
 Project use, task-result checks, and controlled comparisons answer different questions. A pending comparison does not imply an absence of practical use or executed tests. Host-native automatic activation remains unmeasured. The v0.3.2 comparison observed supporting-skill use under an explicit task request; it does not establish spontaneous discovery or cross-host behavior.
@@ -29,15 +34,15 @@ Project use, task-result checks, and controlled comparisons answer different que
 | Trigger metadata | Front-loaded English/Chinese use cases, removed workflow detail from the description, and retained exclusions for explanations and isolated fixes. The existing Codex metadata does not disable implicit invocation; no new activation switch was added. |
 | Scenario coverage | Clarified research scope, existing authorization, bounded adaptation, and small-fix cases. Case 16 separates forced loading from native selection; six trigger prompts cover implicit selection, exclusions, and explicit invocation. These are acceptance definitions, not measured activation rates. A separate 72-run forced-load model comparison is now published below. |
 
-### Executed GPT-6 Luna high comparison
+### Executed model comparisons
 
-[Full report, per-run records and downloadable evidence](evaluations/luna-high-2026-09-27/README.md): eight tasks × three arms × three repeats, frozen ReuseBeacon commit `03a0902dd0583c76ecb6bb2fb4a996ac3d6fadb8` and ECC search-first commit `db7f2a6fd5b013d56ec0ba0cfc547ba77baddbce`. All main/research agents were GPT-6 Luna high; researcher cost is included.
+See the [evaluation index](evaluations/README.md) for the Sept 27 replayable Luna comparison, the Oct 2 public result extract, and the earlier GLM/ZCode archive. Each batch documents its fixed versions, shared instructions, scoring boundaries, and cost measures; results are not pooled across batches.
 
-The three arms each fully passed 21/24 runs. Relative to the no-general-skill arm, paired median host-tool-call / wall-time changes were +2.9% / +3.1% for ReuseBeacon and +14.2% / +19.0% for search-first. No correctness gain over that strong baseline was measured. T5 has a documented frozen instruction/grader conflict; all partial scores remain available. Publication replay reproduced every score without model calls.
-
-Shared user instructions already favored reuse, several tasks named dependencies, and T7 explicitly requested a supporting skill. These conditions limit inference about discovery and implicit activation. See [next steps and the separate GLM record audit](evaluations/NEXT_STEPS.md).
+The Sept 27 publication replay reproduced all 72 scores, including nine partial T5 results. The Oct 2 release is a result extract without complete replay artifacts. Neither explicit-loading evaluation measures native automatic activation.
 
 ### Review of the v0.3.1 issue artifacts
+
+For the later seven-round archive and corrected counts, see the [GLM/ZCode record index and audit](evaluations/GLM_ZCODE.md#数据索引与后续审计).
 
 Read [issue #1 and its follow-up](https://github.com/xtltt56-cmd/reusebeacon/issues/1) and [issue #2](https://github.com/xtltt56-cmd/reusebeacon/issues/2), then recomputed the supplied 34 `timing.json` records. The tested ZIP matched the published v0.3.1 checksum. The archive contains one CSV run per arm; the other repeated tasks have two or three runs per arm.
 

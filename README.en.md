@@ -3,7 +3,7 @@
 [简体中文](README.md)
 
 [![Validate skill](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml/badge.svg)](https://github.com/xtltt56-cmd/reusebeacon/actions/workflows/validate.yml)
-[MIT](LICENSE) · [Recommended install](#quick-install) · [Manual ZIP install](#manual-zip-install) · [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases) · [Upgrade guide](MIGRATION.md) · [Report a problem](https://github.com/xtltt56-cmd/reusebeacon/issues)
+[MIT](LICENSE) · [Recommended install](#quick-install) · [Usage examples](docs/USAGE.en.md) · [Evaluations](evaluations/README.md) · [Manual ZIP install](#manual-zip-install) · [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases) · [Upgrade guide](MIGRATION.md) · [Report a problem](https://github.com/xtltt56-cmd/reusebeacon/issues)
 
 **Reuse suitable open-source implementations and task-specific skills.**
 
@@ -23,6 +23,18 @@ Choose the agent you use when prompted. Installation is project-scoped by defaul
 
 [Installation details and pinned release](#install) · [Manual ZIP install](#manual-zip-install)
 
+### Start using it
+
+Refresh the skill list or open a new session as required by your agent, then send this from your project:
+
+```text
+Use reusebeacon to add Excel export to this project.
+Keep the existing stack, prefer suitable existing dependencies or maintained libraries,
+and complete the implementation and tests.
+```
+
+[More copyable task examples and troubleshooting](docs/USAGE.en.md) · [Completed project cases](PROJECTS.md)
+
 ## Why ReuseBeacon
 
 - **Turn requirements into suitable reuse choices.** Check existing project capabilities, standard libraries, official SDKs, and maintained implementations before building project-specific logic.
@@ -30,11 +42,23 @@ Choose the agent you use when prompted. Installation is project-scoped by defaul
 - **Keep small tasks small.** Fix and test an adequate existing implementation directly. Public research needs no GitHub login, and external discovery runs only when useful.
 - **Deliver a working integration.** Check versions, platform fit, and license information, verify key behavior, and record sources and test results.
 
+## Choose a task
+
+| What you need | Where to start |
+| --- | --- |
+| Add a feature using a suitable existing implementation | [Implement a feature](docs/USAGE.en.md#example-1-implement-a-feature) |
+| Compare implementation options before changing code | [Research without code changes](docs/USAGE.en.md#example-2-research-without-code-changes) |
+| Find a supporting skill for a missing development workflow | [Add a development workflow](docs/USAGE.en.md#example-3-add-a-development-workflow) |
+
 ## Measured comparisons
 
-**72 GPT-6 Luna high runs:** ReuseBeacon, ECC search-first, and the no-general-skill arm each passed every external assertion in 21/24 runs. In this suite, ReuseBeacon used **16.7% fewer total host tool calls and 16.1% less total execution time than search-first**. Per-run metrics, tool trajectories, code differences and replayable evidence are public. [Report and downloads](evaluations/luna-high-2026-09-27/README.md)
+The [evaluation index](evaluations/README.md) links every public batch, its methods, per-run data, audits, and verification scope.
 
-The earlier GLM/ZCode archive contains 85 records across nine task types. Its three v0.3.2 cron samples report about 86% lower mean total tokens than the baseline. These are separate task-specific observations with different models and token accounting. See the [earlier evaluation](evaluations/README.md) and [data review and improvement priorities](evaluations/NEXT_STEPS.md).
+- **Oct 2, 2026 — 48 public GPT-6 Luna high results:** ReuseBeacon v0.3.2, ECC search-first, and no additional skill fully passed **14/16, 13/16, and 12/16** runs respectively. The no-additional-skill arm had the lowest overall cost. This three-arm extract has only two repetitions per task and arm; it does not establish a general ranking. [Results and scope](evaluations/luna-high-2026-10-02-three-arm-extract/README.md)
+- **Sept 27, 2026 — 72 GPT-6 Luna high runs:** all three arms fully passed **21/24** runs. ReuseBeacon used **16.7% fewer total host tool calls and 16.1% less total execution time than search-first** in this suite. Per-run metrics, tool trajectories, code differences, and replayable evidence are public. [Report and downloads](evaluations/luna-high-2026-09-27/README.md)
+- **Earlier GLM/ZCode archive — 85 records across nine task types:** three v0.3.2 cron samples report about **86% lower mean total tokens than the baseline**; small fixes and other tasks can add overhead. [Batch protocol and audit](evaluations/GLM_ZCODE.md)
+
+Each batch retains its own tasks, model, cost accounting, partial results, and scoring notes. Results are not pooled across experiments.
 
 ## Project practice
 
@@ -97,12 +121,11 @@ With a local checkout, you can also copy the complete `skills/reusebeacon` folde
 
 ## Use
 
-```text
-Use reusebeacon to add CSV import to this project. Check required access,
-compare suitable maintained implementations, then integrate and test the best fit.
-```
+Choose ReuseBeacon in your agent's skill picker, or explicitly say "Use reusebeacon" in the task. Use `$reusebeacon` where supported.
 
-Use `$reusebeacon` where supported, or select ReuseBeacon through the skill picker. Implicit matching targets implementation research, library selection, avoiding reinvention, and development-skill discovery. If it is absent from the picker, check installation location, version, and host refresh requirements; downloading a repository alone does not establish discovery.
+The [usage guide](docs/USAGE.en.md) covers the first invocation, three task prompts, result checks, and troubleshooting. [Project practice](PROJECTS.md) links completed implementations and tests.
+
+Implicit matching targets implementation research, library selection, avoiding reinvention, and development-skill discovery. If it is absent from the picker, check installation location, version, and host refresh requirements; downloading a repository alone does not establish discovery.
 
 Automatic activation varies by host and model. Teams can add a scoped project rule: use ReuseBeacon for open-source selection or skill discovery, and handle isolated fixes directly. Verify that behavior in the target host using the [trigger checks](tests/scenarios.md#trigger-checks).
 
@@ -128,6 +151,8 @@ For workflow changes, include a minimal scenario and observed behavior. Reports 
 - [Public repository](https://github.com/xtltt56-cmd/reusebeacon): source, bilingual documentation, and installation instructions.
 - [Releases](https://github.com/xtltt56-cmd/reusebeacon/releases): version notes and downloadable archives.
 - [Issues](https://github.com/xtltt56-cmd/reusebeacon/issues): report installation, activation, or assessment problems without including secrets or private project data.
+
+If it helps you complete a real task, share your experience or give the repository a Star. [Short feedback format](docs/USAGE.en.md#share-your-results)
 
 Search GitHub for `reusebeacon`, or browse related topics such as `agent-skills` and `code-reuse`. The installation commands and ZIP download links point directly to this repository.
 

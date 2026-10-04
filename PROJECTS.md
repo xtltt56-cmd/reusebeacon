@@ -2,7 +2,11 @@
 
 作者已在自己的开发任务中使用 ReuseBeacon。下面整理作者公开项目中的相关复用实践，并提供固定提交的文档、源码和测试记录。作者提供使用经历，公开记录支持读者查看具体的选型与交付内容。
 
+想在自己的项目试用，可从[中文上手示例](docs/USAGE.md)或[英文指南](docs/USAGE.en.md)开始；各批次对照结果见[测试与证据总览](evaluations/README.md)。
+
 The author reports using ReuseBeacon in development. These author-maintained projects illustrate related reuse practices through pinned documentation, implementation, and test records. Follow the links to inspect the specific choices and outputs described here.
+
+Try it in your project using the [English usage guide](docs/USAGE.en.md). For versioned comparisons, see the [evaluation index](evaluations/README.md).
 
 ## A 股量化工作台 / A-share quant workbench
 
@@ -36,6 +40,6 @@ This tool uses a pinned `pynput` dependency for global mouse capture and keeps e
 
 ## 记录方式 / About these records
 
-上述源码、文档和 CI 状态于 2026-09-26 核对。项目案例说明实际工程用法；Skill 对照实验的版本、方法和结论范围单独记录在 [VALIDATION.md](VALIDATION.md)。欢迎用“任务 → 采用方案 → 项目适配 → 测试结果”的结构补充自己的案例。
+上述源码、文档和 CI 状态于 2026-09-26 核对。项目案例说明实际工程用法；Skill 对照实验的版本、方法和结论范围见[测试与证据总览](evaluations/README.md)，安装与版本检查见[验证记录](VALIDATION.md)。欢迎用“任务 → 采用方案 → 项目适配 → 测试结果”的结构补充自己的案例。
 
-The linked source, documentation, and CI status were checked on 2026-09-26. These cases describe engineering practice; versioned skill evaluations are tracked in [VALIDATION.md](VALIDATION.md). To contribute a case, record the task, selected implementation, integration work, and observed test results.
+The linked source, documentation, and CI status were checked on 2026-09-26. These cases describe engineering practice; versioned skill comparisons are listed in the [evaluation index](evaluations/README.md), with installation and version checks in [VALIDATION.md](VALIDATION.md). To contribute a case, record the task, selected implementation, integration work, and observed test results.
